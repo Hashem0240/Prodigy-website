@@ -1,381 +1,182 @@
-// Prodigy Ventilation Systems - Main JavaScript - v2024-final
-// Hero Slider
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-            slide.classList.add('active');
-        }
+/* Shared static-site interactions. Production website v2. */
+(function () {
+  const html = document.documentElement,
+    menu = document.getElementById("menuToggle"),
+    nav = document.getElementById("mainNav"),
+    theme = document.getElementById("themeToggle"),
+    language = document.getElementById("languageToggle");
+  const storage = {
+    get: (key, fallback) => {
+      try {
+        return localStorage.getItem(key) || fallback;
+      } catch {
+        return fallback;
+      }
+    },
+    set: (key, value) => {
+      try {
+        localStorage.setItem(key, value);
+      } catch {}
+    },
+  };
+  function setTheme(value) {
+    html.dataset.theme = value;
+    const icon = theme?.querySelector("i");
+    if (icon) icon.className = value === "dark" ? "fas fa-sun" : "fas fa-moon";
+    theme?.setAttribute("aria-pressed", String(value === "dark"));
+    storage.set("theme", value);
+  }
+  function setLanguage(lang) {
+    html.lang = lang;
+    html.dir = lang === "ar" ? "rtl" : "ltr";
+    document.querySelectorAll("[data-en][data-ar]").forEach((el) => {
+      el.textContent = el.dataset[lang];
     });
-}
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(currentSlide);
-}
-
-// Auto-advance slider
-let slideInterval = null;
-if (totalSlides > 0) slideInterval = setInterval(nextSlide, 5000);
-
-// Slider controls
-const nextSlideBtn = document.getElementById('nextSlide');
-const prevSlideBtn = document.getElementById('prevSlide');
-
-if (nextSlideBtn) {
-    nextSlideBtn.addEventListener('click', () => {
-        if (slideInterval) clearInterval(slideInterval);
-        nextSlide();
-        slideInterval = setInterval(nextSlide, 5000);
-    });
-}
-
-if (prevSlideBtn) {
-    prevSlideBtn.addEventListener('click', () => {
-        if (slideInterval) clearInterval(slideInterval);
-        prevSlide();
-        slideInterval = setInterval(nextSlide, 5000);
-    });
-}
-
-// Mobile Menu Toggle
-const menuToggle = document.getElementById('menuToggle');
-const mainNav = document.getElementById('mainNav');
-
-if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-        mainNav.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!menuToggle.contains(e.target) && !mainNav.contains(e.target)) {
-            mainNav.classList.remove('active');
-        }
-    });
-}
-
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (!href || href === '#') {
-            e.preventDefault();
-            return;
-        }
-        e.preventDefault();
-        const target = document.getElementById(href.slice(1));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-            // Close mobile menu after clicking
-            if (mainNav) mainNav.classList.remove('active');
-        }
-    });
-});
-
-// Active navigation link on scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section[id]');
-    const scrollPosition = window.scrollY + 100;
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-    });
-});
-
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-        
-        // Create mailto link
-        const subject = encodeURIComponent(`Contact from ${name}`);
-        const body = encodeURIComponent(
-            `Name: ${name}\n` +
-            `Email: ${email}\n` +
-            `Phone: ${phone}\n\n` +
-            `Message:\n${message}`
-        );
-        
-        const mailtoLink = `mailto:info@prodigysystems.ae?subject=${subject}&body=${body}`;
-        
-        // Open default email client
-        window.location.href = mailtoLink;
-        
-        // Show confirmation
-        alert('Opening your email client...');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
-
-// Set current year in footer
-const currentYearElement = document.getElementById('currentYear');
-if (currentYearElement) {
-    currentYearElement.textContent = new Date().getFullYear();
-}
-
-// Calculate dynamic years of experience (company started in 2024)
-const yearsExperienceElement = document.getElementById('yearsExperience');
-if (yearsExperienceElement) {
-    const startYear = 2024;
-    const currentYear = new Date().getFullYear();
-    const yearsInBusiness = currentYear - startYear;
-    yearsExperienceElement.textContent = yearsInBusiness + '+';
-}
-
-// Theme Toggle
-const themeToggle = document.getElementById('themeToggle');
-const html = document.documentElement;
-
-// Load saved theme
-const savedTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', savedTheme);
-if (themeToggle) {
-    updateThemeIcon(savedTheme);
-}
-
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
-    });
-}
-
-function updateThemeIcon(theme) {
-    if (!themeToggle) return;
-    const icon = themeToggle.querySelector('i');
-    if (icon) {
-        if (theme === 'dark') {
-            icon.className = 'fas fa-sun';
-        } else {
-            icon.className = 'fas fa-moon';
-        }
+    document
+      .querySelectorAll("[data-en-placeholder][data-ar-placeholder]")
+      .forEach((el) => {
+        el.placeholder = el.getAttribute("data-" + lang + "-placeholder");
+      });
+    if (language) {
+      language.textContent = lang === "en" ? "العربية" : "English";
+      language.lang = lang === "en" ? "ar" : "en";
     }
-}
-
-// Language Toggle
-const languageToggle = document.getElementById('languageToggle');
-let currentLang = localStorage.getItem('language') || 'en';
-
-// Set initial language
-document.documentElement.setAttribute('lang', currentLang);
-document.documentElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
-
-// Apply translations on page load
-updateLanguage(currentLang);
-
-// Update language button text on page load
-if (languageToggle) {
-    languageToggle.textContent = currentLang === 'en' ? 'العربية' : 'English';
-}
-
-if (languageToggle) {
-    languageToggle.addEventListener('click', () => {
-        currentLang = currentLang === 'en' ? 'ar' : 'en';
-        
-        // Save to localStorage
-        localStorage.setItem('language', currentLang);
-        
-        // Update HTML attributes
-        document.documentElement.setAttribute('lang', currentLang);
-        document.documentElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
-        
-        // Update all text
-        updateLanguage(currentLang);
-        
-        // Update button text
-        languageToggle.textContent = currentLang === 'en' ? 'العربية' : 'English';
-        languageToggle.setAttribute('data-lang', currentLang === 'en' ? 'ar' : 'en');
+    storage.set("language", lang);
+    document.dispatchEvent(
+      new CustomEvent("prodigy:language", { detail: lang }),
+    );
+  }
+  setTheme(storage.get("theme", "light") === "dark" ? "dark" : "light");
+  setLanguage(storage.get("language", "en") === "ar" ? "ar" : "en");
+  theme?.addEventListener("click", () =>
+    setTheme(html.dataset.theme === "dark" ? "light" : "dark"),
+  );
+  language?.addEventListener("click", () =>
+    setLanguage(html.lang === "ar" ? "en" : "ar"),
+  );
+  function closeDropdowns() {
+    document.querySelectorAll(".dropdown-toggle").forEach((button) => {
+      button.setAttribute("aria-expanded", "false");
+      button.parentElement.classList.remove("is-open");
     });
-}
-
-function updateLanguage(lang) {
-    // Update all elements with data-en and data-ar attributes
-    const elements = document.querySelectorAll('[data-en][data-ar]');
-    
-    elements.forEach(element => {
-        const translation = element.getAttribute(`data-${lang}`);
-        if (translation) {
-            // Special handling for option elements
-            if (element.tagName === 'OPTION') {
-                element.textContent = translation;
-            } else {
-                element.textContent = translation;
-            }
-        }
+  }
+  function closeNav() {
+    nav?.classList.remove("active");
+    menu?.setAttribute("aria-expanded", "false");
+    closeDropdowns();
+  }
+  menu?.addEventListener("click", () => {
+    const open = !nav.classList.contains("active");
+    closeDropdowns();
+    nav.classList.toggle("active", open);
+    menu.setAttribute("aria-expanded", String(open));
+  });
+  document.querySelectorAll(".dropdown-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+      const open = button.getAttribute("aria-expanded") !== "true";
+      closeDropdowns();
+      button.setAttribute("aria-expanded", String(open));
+      button.parentElement.classList.toggle("is-open", open);
     });
-    
-    // Update placeholders
-    const placeholderElements = document.querySelectorAll('[data-en-placeholder][data-ar-placeholder]');
-    placeholderElements.forEach(element => {
-        const placeholderTranslation = element.getAttribute(`data-${lang}-placeholder`);
-        if (placeholderTranslation) {
-            element.placeholder = placeholderTranslation;
-        }
-    });
-    
-    // Update button text (only if languageToggle exists)
-    if (languageToggle) {
-        languageToggle.textContent = lang === 'en' ? 'العربية' : 'English';
-    }
-}
-
-// Add fade-in animation on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe all cards and sections
-document.querySelectorAll('.card, .feature-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
-
-// Dropdown menu functionality for mobile
-const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', (e) => {
-        if (window.innerWidth > 1024) return;
+    button.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") {
         e.preventDefault();
-        e.stopPropagation();
-        const dropdown = toggle.nextElementSibling;
-        if (!dropdown) return;
-        const isVisible = dropdown.style.display === 'block';
-        document.querySelectorAll('.dropdown-menu').forEach(menu => menu.style.display = 'none');
-        if (!isVisible) {
-            dropdown.style.display = 'block';
-            dropdown.style.position = 'static';
-            dropdown.style.opacity = '1';
-            dropdown.style.visibility = 'visible';
-            dropdown.style.transform = 'none';
-        }
+        closeDropdowns();
+        button.setAttribute("aria-expanded", "true");
+        button.parentElement.classList.add("is-open");
+        button.nextElementSibling?.querySelector("a")?.focus();
+      }
     });
-});
-
-// Handle window resize
-let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        // Reset mobile menu on resize
-        if (window.innerWidth > 1024) {
-            if (mainNav) mainNav.classList.remove('active');
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.style.display = '';
-                menu.style.position = '';
-                menu.style.opacity = '';
-                menu.style.visibility = '';
-                menu.style.transform = '';
-            });
-        }
-    }, 250);
-});
-
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallax = document.querySelector('.hero-slider');
-    
-    if (parallax && scrolled < parallax.offsetHeight) {
-        const activeSlide = document.querySelector('.slide.active');
-        if (activeSlide) {
-            activeSlide.style.transform = `translateY(${scrolled * 0.5}px)`;
-        }
+  });
+  document.addEventListener("click", (e) => {
+    if (!nav?.contains(e.target) && !menu?.contains(e.target)) closeNav();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      const expanded = nav?.querySelector('[aria-expanded="true"]');
+      if (expanded) {
+        closeDropdowns();
+        expanded.focus();
+      } else if (nav?.classList.contains("active")) {
+        closeNav();
+        menu.focus();
+      }
     }
-});
-
-// Counter animation for stats
-function animateCounter(element, target, duration = 2000) {
-    let start = 0;
-    const increment = target / (duration / 16);
-    
-    const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-            element.textContent = target + (element.dataset.suffix || '');
-            clearInterval(timer);
-        } else {
-            element.textContent = Math.floor(start) + (element.dataset.suffix || '');
-        }
-    }, 16);
-}
-
-// Observe stats section for counter animation
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const statNumbers = entry.target.querySelectorAll('.stat-number');
-            statNumbers.forEach(stat => {
-                const text = stat.textContent;
-                const number = parseInt(text.replace(/\D/g, ''));
-                const suffix = text.replace(/[0-9]/g, '');
-                stat.dataset.suffix = suffix;
-                animateCounter(stat, number);
-            });
-            statsObserver.unobserve(entry.target);
-        }
+  });
+  nav?.addEventListener("focusout", (e) => {
+    if (!nav.contains(e.relatedTarget)) closeDropdowns();
+  });
+  window.addEventListener("resize", () => {
+    if (innerWidth > 1024) closeNav();
+  });
+  document.querySelectorAll('a[href^="#"]').forEach((a) =>
+    a.addEventListener("click", (e) => {
+      const target = document.getElementById(a.getAttribute("href").slice(1));
+      if (!target) return;
+      e.preventDefault();
+      closeNav();
+      target.scrollIntoView({
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+      });
+      if (a.classList.contains("skip-link")) target.focus();
+    }),
+  );
+  const contact = document.getElementById("contactForm");
+  contact?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!contact.reportValidity()) return;
+    const get = (id) => document.getElementById(id)?.value || "";
+    const subject = encodeURIComponent("Contact from " + get("name"));
+    const body = encodeURIComponent(
+      "Name: " +
+        get("name") +
+        "\nEmail: " +
+        get("email") +
+        "\nPhone: " +
+        get("phone") +
+        "\n\n" +
+        get("message"),
+    );
+    location.href =
+      "mailto:info@prodigysystems.ae?subject=" + subject + "&body=" + body;
+  });
+  const year = document.getElementById("currentYear");
+  if (year) year.textContent = new Date().getFullYear();
+  const slides = [...document.querySelectorAll(".slide")];
+  let current = 0,
+    timer = null;
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  function show(delta) {
+    if (!slides.length) return;
+    current = (current + delta + slides.length) % slides.length;
+    slides.forEach((el, i) => {
+      el.classList.toggle("active", i === current);
+      el.setAttribute("aria-hidden", String(i !== current));
+      el.inert = i !== current;
     });
-}, { threshold: 0.5 });
-
-const statsSection = document.querySelector('.stats-section');
-if (statsSection) {
-    statsObserver.observe(statsSection);
-}
-
-// Video playback speed control for "Why Choose Us" section
-const featureVideo = document.querySelector('.features-image video');
-if (featureVideo) {
-    featureVideo.addEventListener('loadedmetadata', () => {
-        featureVideo.playbackRate = 0.5; // Slow down to 50% speed for a more professional look
-    });
-}
-
-console.log('Prodigy Ventilation Systems - Website Loaded Successfully');
+  }
+  function start() {
+    clearInterval(timer);
+    if (slides.length > 1 && !reduced.matches && !document.hidden)
+      timer = setInterval(() => show(1), 5000);
+  }
+  document.getElementById("nextSlide")?.addEventListener("click", () => {
+    show(1);
+    start();
+  });
+  document.getElementById("prevSlide")?.addEventListener("click", () => {
+    show(-1);
+    start();
+  });
+  document.addEventListener("visibilitychange", start);
+  reduced.addEventListener("change", start);
+  const hero = document.querySelector(".hero-slider");
+  hero?.addEventListener("mouseenter", () => clearInterval(timer));
+  hero?.addEventListener("mouseleave", start);
+  hero?.addEventListener("focusin", () => clearInterval(timer));
+  hero?.addEventListener("focusout", start);
+  show(0);
+  start();
+})();

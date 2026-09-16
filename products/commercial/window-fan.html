@@ -1,225 +1,142 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Window Fan - Prodigy Ventilation Systems</title>
-
-    <!-- Prevent Dark Mode Flash -->
-    <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Window Fan - Prodigy Ventilation Systems</title>
+<script>
         (function () {
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', savedTheme);
         })();
     </script>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-    <link rel="alternate icon" href="../../favicon.svg">
-    <link rel="apple-touch-icon" href="../../Media/logo.png">
-
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../../styles/products.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="../../index.html" class="logo">
-                    <img src="../../Media/logo.png" alt="Prodigy Logo" class="logo-img">
-                    <div class="logo-text">
-                        <span class="logo-brand">PRODIGY</span>
-                        <span class="logo-subtitle" data-en="Ventilation Systems" data-ar="أنظمة التهوية">Ventilation
-                            Systems</span>
-                    </div>
-                </a>
-                <nav class="nav" id="mainNav">
-
-                    <div class="nav-dropdown">
-                        <button class="nav-link dropdown-toggle">
-                            <span data-en="Products" data-ar="المنتجات">Products</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-menu products-menu">
-                            <div class="products-grid">
-                                <div>
-                                    <div class="product-header" data-en="Commercial" data-ar="تجاري">Commercial</div>
-                                    <a href="inline-duct-fan.html" class="dropdown-item" data-en="In-Line Duct Fan"
-                                        data-ar="مروحة دكت داخلية">In-Line Duct Fan</a>
-                                    <a href="cabinet-fan.html" class="dropdown-item" data-en="Cabinet Fan"
-                                        data-ar="مروحة خزانة">Cabinet Fan</a>
-                                    <a href="../accessories.html" class="dropdown-item" data-en="Accessories"
-                                        data-ar="الملحقات">Accessories</a>
-                                </div>
-                                <div>
-                                    <div class="product-header" data-en="Residential" data-ar="سكني">Residential</div>
-                                    <a href="inline-duct-fan.html" class="dropdown-item" data-en="In-Line Duct Fan"
-                                        data-ar="مروحة دكت داخلية">In-Line Duct Fan</a>
-                                    <a href="window-fan.html" class="dropdown-item active" data-en="Window Fan"
-                                        data-ar="مروحة نافذة">Window Fan</a>
-                                    <a href="../accessories.html" class="dropdown-item" data-en="Accessories"
-                                        data-ar="الملحقات">Accessories</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-dropdown">
-                        <button class="nav-link dropdown-toggle">
-                            <span data-en="Technical Support" data-ar="الدعم الفني">Technical Support</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="../../tools/fan-selector.html" class="dropdown-item" data-en="Fan Selector Tool"
-                                data-ar="أداة اختيار المروحة">Fan Selector Tool</a>
-                            <a href="../../tools/airflow-calculator.html" class="dropdown-item"
-                                data-en="Airflow Calculator" data-ar="حاسبة تدفق الهواء">Airflow Calculator</a>
-                            <a href="../../tools/esp-calculator.html" class="dropdown-item" data-en="ESP Calculator"
-                                data-ar="ESP حاسبة">ESP Calculator</a>
-                        </div>
-                    </div>
-
-                    <a href="../../index.html#about" class="nav-link" data-en="About Us" data-ar="من نحن">About Us</a>
-                    <!-- <a href="../../index.html#catalogue" class="nav-link" data-en="Catalogue"
-                        data-ar="الدليل">Catalogue</a> -->
-                </nav>
-                <div class="header-controls">
-                    <button id="themeToggle" class="control-btn" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button id="languageToggle" class="control-btn lang-btn" data-lang="ar">
+<link href="../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../favicon.svg" rel="alternate icon"/>
+<link href="../../Media/logo.png" rel="apple-touch-icon"/>
+<link href="../../styles/style.css" rel="stylesheet"/>
+<link href="../../styles/products.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<meta content="Window Fan — Prodigy ventilation products, documentation and engineering support." name="description"/><meta content="Window Fan - Prodigy Ventilation Systems" property="og:title"/><meta content="Window Fan — Prodigy ventilation products, documentation and engineering support." property="og:description"/><meta content="website" property="og:type"/><link href="../../styles/website-v2.css" rel="stylesheet"/><meta content="https://sohaibalasmark5.github.io/Prodogy_enhanced/Media/optimized/logo.webp" property="og:image"/></head>
+<body><a class="skip-link" data-ar="انتقل إلى المحتوى" data-en="Skip to content" href="#main-content">Skip to content</a>
+<header class="header">
+<div class="container">
+<div class="header-content">
+<nav class="nav" id="mainNav">
+<div class="nav-dropdown">
+<button aria-controls="navDropdown0" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
+<span data-ar="المنتجات" data-en="Products">Products</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="dropdown-menu products-menu" id="navDropdown0">
+<div class="products-grid">
+<div>
+<div class="product-header" data-ar="تجاري" data-en="Commercial">Commercial</div>
+<a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="../../products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
+<a class="dropdown-item" data-ar="مروحة صندوقية" data-en="Cabinet Fan" href="../../products/commercial/cabinet-fan.html">Cabinet Fan</a>
+<a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="../../products/accessories.html">Accessories</a>
+</div>
+<div>
+<div class="product-header" data-ar="سكني" data-en="Residential">Residential</div>
+<a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="../../products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
+<a class="dropdown-item" data-ar="مروحة نافذة" data-en="Window Fan" href="../../products/commercial/window-fan.html">Window Fan</a>
+<a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="../../products/accessories.html">Accessories</a>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-controls="navDropdown1" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
+<span data-ar="الدعم الفني" data-en="Technical Support">Technical Support</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="dropdown-menu" id="navDropdown1">
+<a class="dropdown-item" data-ar="أداة اختيار المروحة" data-en="Fan Selector Tool" href="../../tools/fan-selector.html">Fan Selector Tool</a>
+<a class="dropdown-item" data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator" href="../../tools/airflow-calculator.html">Airflow Calculator</a>
+<a class="dropdown-item" data-ar="حاسبة الضغط الساكن الخارجي" data-en="ESP Calculator" href="../../tools/esp-calculator.html">ESP Calculator</a>
+</div>
+</div>
+<a class="nav-link" data-ar="من نحن" data-en="About Us" href="../../index.html#about">About Us</a>
+</nav>
+<div class="header-controls">
+<button aria-label="Switch colour theme" class="control-btn" id="themeToggle" type="button">
+<i class="fas fa-moon"></i>
+</button>
+<button aria-label="Switch language / تغيير اللغة" class="control-btn lang-btn" data-lang="ar" id="languageToggle" type="button">
                         العربية
                     </button>
-                    <button class="menu-toggle" id="menuToggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Product Hero -->
-    <section class="product-hero" style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);">
-        <div class="container">
-            <div class="product-hero-content" style="color: #ffffff;">
-                <h1 style="color: #ffffff;" data-en="WINDOW FAN" data-ar="مروحة النافذة">WINDOW FAN</h1>
-                <p style="color: #ffffff;" data-en="Coming Soon - Residential ventilation solution"
-                    data-ar="قريباً - حل تهوية سكني">Coming Soon - Residential ventilation solution</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coming Soon Section -->
-    <section class="product-section"
-        style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-        <div class="container">
-            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-                <i class="fas fa-tools" style="font-size: 5rem; color: #dc2626; margin-bottom: 2rem; opacity: 0.5;"></i>
-                <h2 style="font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem;"
-                    data-en="Product Information Coming Soon" data-ar="معلومات المنتج ��ريباً">Product Information
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle" type="button">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="tool-main" id="main-content" tabindex="-1"><div class="container"><h1 data-ar="مروحة نافذة" data-en="Window Fan">Window Fan</h1><h2 data-ar="معلومات المنتج قريباً" data-en="Product information coming soon">Product information coming soon</h2><p data-ar="المواصفات المعتمدة وصور المنتج قيد المراجعة. تواصل معنا للاستفسار عن التوفر." data-en="Approved specifications and product images are pending review. Contact us for availability.">Approved specifications and product images are pending review. Contact us for availability.</p><a class="btn" data-ar="تواصل مع بروديجي" data-en="Contact Prodigy" href="../../index.html#contact">Contact Prodigy</a></div></main>
+<section class="product-section" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+<div class="container">
+<div style="text-align: center; max-width: 600px; margin: 0 auto;">
+<i class="fas fa-tools" style="font-size: 5rem; color: #dc2626; margin-bottom: 2rem; opacity: 0.5;"></i>
+<h2 data-ar="معلومات المنتج قريباً" data-en="Product Information Coming Soon" style="font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem;">Product Information
                     Coming Soon</h2>
-                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;"
-                    data-en="We're currently updating our Window Fan product details. Please check back soon or contact us for more information."
-                    data-ar="نحن نقوم حالياً بتحديث تفاصيل منتج مروحة النافذة. يرجى التحقق مرة أخرى قريباً أو الاتصال بنا للحصول على مزيد من المعلومات.">
+<p data-ar="نحن نقوم حالياً بتحديث تفاصيل منتج مروحة النافذة. يرجى التحقق مرة أخرى قريباً أو الاتصال بنا للحصول على مزيد من المعلومات." data-en="We're currently updating our Window Fan product details. Please check back soon or contact us for more information." style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
                     We're currently updating our Window Fan product details. Please check back soon or contact us for
                     more information.</p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="../../index.html#contact" class="btn"
-                        style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: white; padding: 0.875rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;"
-                        data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
-                    <a href="../../index.html" class="btn"
-                        style="background: var(--surface-color); color: var(--text-primary); padding: 0.875rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; border: 2px solid #dc2626;"
-                        data-en="Back to Home" data-ar="��لعودة إلى الرئيسية">Back to Home</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="../../Media/logo.png" alt="Prodigy Logo" class="footer-logo-img">
-                        <div class="footer-logo-text">
-                            <span class="logo-brand">PRODIGY</span>
-                            <span class="logo-subtitle" data-en="Ventilation Systems"
-                                data-ar="أنظمة التهوية">Ventilation Systems</span>
-                        </div>
-                    </div>
-                    <p class="footer-description"
-                        data-en="Professional ventilation solutions for a healthier environment."
-                        data-ar="حلول تهوية احترافية لبيئة أكثر صحة.">
+<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+<a class="btn" data-ar="اتصل بنا" data-en="Contact Us" href="../../index.html#contact" style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: white; padding: 0.875rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Contact Us</a>
+<a class="btn" data-ar="العودة إلى الرئيسية" data-en="Back to Home" href="../../index.html" style="background: var(--surface-color); color: var(--text-primary); padding: 0.875rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; border: 2px solid #dc2626;">Back to Home</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-column">
+<div class="footer-logo">
+<img alt="Prodigy Logo" class="footer-logo-img" decoding="async" height="388" loading="lazy" src="../../Media/optimized/logo.webp" width="489"/>
+<div class="footer-logo-text">
+<span class="logo-brand">PRODIGY</span>
+<span class="logo-subtitle" data-ar="أنظمة التهوية" data-en="Ventilation Systems">Ventilation Systems</span>
+</div>
+</div>
+<p class="footer-description" data-ar="حلول تهوية احترافية لبيئة أكثر صحة." data-en="Professional ventilation solutions for a healthier environment.">
                         Professional ventilation solutions for a healthier environment.
                     </p>
-                    <div class="footer-social">
-                        <a href="https://ae.linkedin.com/company/prodigy-ventilation-systems-company-l-l-c?trk=public_post_feed-actor-name"
-                            target="_blank" rel="noopener noreferrer" class="social-link"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@ProdigyVentilationSystem" target="_blank"
-                            rel="noopener noreferrer" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
-                        <li><a href="../../tools/fan-selector.html" data-en="Fan Selector" data-ar="اختيار المروحة">Fan
-                                Selector</a></li>
-                        <li><a href="../../tools/airflow-calculator.html" data-en="Airflow Calculator"
-                                data-ar="حاسبة التدفق">Airflow Calculator</a></li>
-                        <li><a href="../../tools/esp-calculator.html" data-en="ESP Calculator" data-ar="حاسبة ESP">ESP
-                                Calculator</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-en="Company" data-ar="الشركة">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../index.html#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
-                        <li><a href="../../index.html#catalogue" data-en="Catalogue" data-ar="الدليل">Catalogue</a></li>
-                        <li><a href="../../index.html#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-link" href="https://ae.linkedin.com/company/prodigy-ventilation-systems-company-l-l-c?trk=public_post_feed-actor-name" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a aria-label="YouTube" class="social-link" href="https://www.youtube.com/@ProdigyVentilationSystem" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+<div class="footer-column"><h4 data-ar="الأدوات الهندسية" data-en="Engineering tools">Engineering tools</h4><ul class="footer-links"><li><a data-ar="حاسبة تدفق الهواء" data-en="Airflow calculator" href="../../tools/airflow-calculator.html">Airflow calculator</a></li><li><a data-ar="ضغط النظام" data-en="System ESP" href="../../tools/esp-calculator.html">System ESP</a></li><li><a data-ar="اختيار المروحة" data-en="Fan selection" href="../../tools/fan-selector.html">Fan selection</a></li></ul></div>
+<div class="footer-column"><h4 data-ar="الشركة والمنتجات" data-en="Company &amp; products">Company &amp; products</h4><ul class="footer-links"><li><a data-ar="من نحن" data-en="About us" href="../../index.html#about">About us</a></li><li><a data-ar="المنتجات" data-en="Products" href="../../products.html">Products</a></li><li><a data-ar="اتصل بنا" data-en="Contact" href="../../index.html#contact">Contact</a></li></ul></div>
+<div class="footer-column">
+<h4 data-ar="معلومات الاتصال" data-en="Contact Info">Contact Info</h4>
+<ul class="footer-contact">
+<li>
+<i class="fas fa-envelope"></i>
+<a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a>
+</li>
+<li>
+<i class="fas fa-phone"></i>+971 9 228 9674
                         </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            +971 9 228 9674
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span data-en="Fujairah, UAE" data-ar="الفجيرة، الإمارات">Fujairah, UAE</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-mail-bulk"></i>
-                            <span data-en="P.O. Box 1216" data-ar="صندوق البريد 1216">P.O. Box 1216</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> <span
-                        data-en="Prodigy Ventilation Systems. All Rights Reserved."
-                        data-ar="أنظمة التهوية بروديجي. جميع الحقوق محفوظة.">Prodigy Ventilation Systems. All Rights
+<li>
+<i class="fas fa-map-marker-alt"></i>
+<span data-ar="الفجيرة، الإمارات العربية المتحدة" data-en="Fujairah, United Arab Emirates">Fujairah, United Arab Emirates</span>
+</li>
+<li>
+<i class="fas fa-mail-bulk"></i>
+<span data-ar="صندوق البريد 1216" data-en="P.O. Box 1216">P.O. Box 1216</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© <span id="currentYear"></span> <span data-ar="أنظمة التهوية بروديجي. جميع الحقوق محفوظة." data-en="Prodigy Ventilation Systems. All Rights Reserved.">Prodigy Ventilation Systems. All Rights
                         Reserved.</span></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../../script.js"></script>
-</body>
-
+</div>
+</div>
+</footer>
+<script src="../../data/fans-master.js"></script><script src="../../scripts/engineering.js"></script><script src="../../script.js"></script>
+<script src="../../scripts/product-data.js"></script></body>
 </html>
