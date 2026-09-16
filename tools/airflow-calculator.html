@@ -1,310 +1,150 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airflow Calculator - Prodigy Ventilation Systems</title>
-
-    <!-- Prevent Dark Mode Flash -->
-    <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Airflow Calculator - Prodigy Ventilation Systems</title>
+<script>
         (function () {
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', savedTheme);
         })();
     </script>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <link rel="alternate icon" href="../favicon.svg">
-    <link rel="apple-touch-icon" href="../Media/logo.png">
-
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/tools.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="../index.html" class="logo">
-                    <img src="../Media/logo.png" alt="Prodigy Logo" class="logo-img" style="width: 70px;">
-                    <div class="logo-text">
-                        <span class="logo-brand">PRODIGY</span>
-                        <span class="logo-subtitle" data-en="Ventilation Systems" data-ar="أنظمة التهوية">Ventilation
-                            Systems</span>
-                    </div>
-                </a>
-                <nav class="nav" id="mainNav">
-                    <div class="nav-dropdown">
-                        <button class="nav-link dropdown-toggle">
-                            <span data-en="Products" data-ar="المنتجات">Products</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-menu products-menu">
-                            <div class="products-grid">
-                                <div>
-                                    <div class="product-header" data-en="Commercial" data-ar="تجاري">Commercial</div>
-                                    <a href="../products/commercial/inline-duct-fan.html" class="dropdown-item"
-                                        data-en="In-Line Duct Fan" data-ar="مروحة دكت داخلية">In-Line Duct Fan</a>
-                                    <a href="../products/commercial/cabinet-fan.html" class="dropdown-item"
-                                        data-en="Cabinet Fan" data-ar="مروحة خزانة">Cabinet Fan</a>
-                                    <a href="../products/accessories.html" class="dropdown-item" data-en="Accessories"
-                                        data-ar="الملحقات">Accessories</a>
-                                </div>
-                                <div>
-                                    <div class="product-header" data-en="Residential" data-ar="سكني">Residential</div>
-                                    <a href="../products/commercial/inline-duct-fan.html" class="dropdown-item"
-                                        data-en="In-Line Duct Fan" data-ar="مروحة دكت داخلية">In-Line Duct Fan</a>
-                                    <a href="../products/commercial/window-fan.html" class="dropdown-item"
-                                        data-en="Window Fan" data-ar="مروحة نافذة">Window Fan</a>
-                                    <a href="../products/accessories.html" class="dropdown-item" data-en="Accessories"
-                                        data-ar="الملحقات">Accessories</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-dropdown">
-                        <button class="nav-link dropdown-toggle">
-                            <span data-en="Technical Support" data-ar="الدعم الفني">Technical Support</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="fan-selector.html" class="dropdown-item" data-en="Fan Selector Tool"
-                                data-ar="أداة تحديد المروحة">Fan Selector Tool</a>
-                            <a href="airflow-calculator.html" class="dropdown-item active" data-en="Airflow Calculator"
-                                data-ar="حاسبة تدفق الهواء">Airflow Calculator</a>
-                            <a href="esp-calculator.html" class="dropdown-item" data-en="ESP Calculator"
-                                data-ar="ESP حاسبة">ESP Calculator</a>
-                        </div>
-                    </div>
-                    <a href="../index.html#about" class="nav-link" data-en="About Us" data-ar="من نحن">About Us</a>
-                    <!-- <a href="../index.html#catalogue" class="nav-link" data-en="Catalogue" data-ar="الدليل">Catalogue</a> -->
-                </nav>
-                <div class="header-controls">
-                    <button id="themeToggle" class="control-btn" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button id="languageToggle" class="control-btn lang-btn" data-lang="ar">
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../favicon.svg" rel="alternate icon"/>
+<link href="../Media/logo.png" rel="apple-touch-icon"/>
+<link href="../styles/style.css" rel="stylesheet"/>
+<link href="../styles/tools.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<meta content="Airflow Calculator — Prodigy ventilation products, documentation and engineering support." name="description"/><meta content="Airflow Calculator - Prodigy Ventilation Systems" property="og:title"/><meta content="Airflow Calculator — Prodigy ventilation products, documentation and engineering support." property="og:description"/><meta content="website" property="og:type"/><link href="../styles/website-v2.css" rel="stylesheet"/><meta content="https://sohaibalasmark5.github.io/Prodogy_enhanced/Media/optimized/logo.webp" property="og:image"/></head>
+<body><a class="skip-link" data-ar="انتقل إلى المحتوى" data-en="Skip to content" href="#main-content">Skip to content</a>
+<header class="header">
+<div class="container">
+<div class="header-content">
+<nav class="nav" id="mainNav">
+<div class="nav-dropdown">
+<button aria-controls="navDropdown0" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
+<span data-ar="المنتجات" data-en="Products">Products</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="dropdown-menu products-menu" id="navDropdown0">
+<div class="products-grid">
+<div>
+<div class="product-header" data-ar="تجاري" data-en="Commercial">Commercial</div>
+<a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="../products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
+<a class="dropdown-item" data-ar="مروحة صندوقية" data-en="Cabinet Fan" href="../products/commercial/cabinet-fan.html">Cabinet Fan</a>
+<a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="../products/accessories.html">Accessories</a>
+</div>
+<div>
+<div class="product-header" data-ar="سكني" data-en="Residential">Residential</div>
+<a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="../products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
+<a class="dropdown-item" data-ar="مروحة نافذة" data-en="Window Fan" href="../products/commercial/window-fan.html">Window Fan</a>
+<a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="../products/accessories.html">Accessories</a>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-controls="navDropdown1" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
+<span data-ar="الدعم الفني" data-en="Technical Support">Technical Support</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<div class="dropdown-menu" id="navDropdown1">
+<a class="dropdown-item" data-ar="أداة اختيار المروحة" data-en="Fan Selector Tool" href="../tools/fan-selector.html">Fan Selector Tool</a>
+<a class="dropdown-item" data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator" href="../tools/airflow-calculator.html">Airflow Calculator</a>
+<a class="dropdown-item" data-ar="حاسبة الضغط الساكن الخارجي" data-en="ESP Calculator" href="../tools/esp-calculator.html">ESP Calculator</a>
+</div>
+</div>
+<a class="nav-link" data-ar="من نحن" data-en="About Us" href="../index.html#about">About Us</a>
+</nav>
+<div class="header-controls">
+<button aria-label="Switch colour theme" class="control-btn" id="themeToggle" type="button">
+<i class="fas fa-moon"></i>
+</button>
+<button aria-label="Switch language / تغيير اللغة" class="control-btn lang-btn" data-lang="ar" id="languageToggle" type="button">
                         العربية
                     </button>
-                    <button class="menu-toggle" id="menuToggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Tool Content -->
-    <main class="tool-page">
-        <div class="container">
-            <div class="tool-header" style="text-align: center; margin-bottom: 1.5rem;">
-                <h1 data-en="Airflow Calculator" data-ar="حاسبة تدفق الهواء">Airflow Calculator</h1>
-                <p data-en="Calculate required airflow and fan selection for your space"
-                    data-ar="احسب تدفق الهواء المطلوب واختيار المروحة لمساحتك">Calculate required airflow and fan
-                    selection for your space</p>
-            </div>
-
-            <div class="calculator-grid">
-                <!-- Airflow Calculator -->
-                <div class="calculator-card">
-                    <h2 data-en="Airflow Calculator" data-ar="حاسبة تدفق الهواء">Airflow Calculator</h2>
-
-                    <div class="airflow-inputs">
-                        <div class="form-group">
-                            <label data-en="Length (m)" data-ar="الطول (م)">Length (m)</label>
-                            <input type="number" id="length" class="form-input" step="0.01" min="0">
-                        </div>
-
-                        <div class="form-group">
-                            <label data-en="Width (m)" data-ar="العرض (م)">Width (m)</label>
-                            <input type="number" id="width" class="form-input" step="0.01" min="0">
-                        </div>
-
-                        <div class="form-group">
-                            <label data-en="Height (m)" data-ar="الارتفاع (م)">Height (m)</label>
-                            <input type="number" id="height" class="form-input" step="0.01" min="0">
-                        </div>
-
-                        <div class="form-group">
-                            <label data-en="Room Type" data-ar="نوع الغرفة">Room Type</label>
-                            <select id="room" class="form-input">
-                                <option value="Basements" data-en="Basements (3–4 ACH)" data-ar="الأقبية (3-4 ACH)">
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle" type="button">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="tool-main" id="main-content" tabindex="-1"><div class="container"><nav aria-label="Engineering workflow" class="workflow"><a href="airflow-calculator.html"><span data-ar="١ · تدفق الهواء" data-en="1 · Airflow">1 · Airflow</span></a><a href="esp-calculator.html"><span data-ar="٢ · ضغط النظام" data-en="2 · System ESP">2 · System ESP</span></a><a href="fan-selector.html"><span data-ar="٣ · اختيار المروحة والتقرير" data-en="3 · Fan selection &amp; report">3 · Fan selection &amp; report</span></a></nav><h1 data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator">Airflow Calculator</h1><form class="calculator-card" id="airflowForm" novalidate=""><div class="form-grid"><div class="form-group"><label data-ar="الطول (m)" data-en="Length (m)" for="length">Length (m)</label><input class="form-input" id="length" min="0.01" name="length" required="" step="any" type="number" value=""/></div><div class="form-group"><label data-ar="العرض (m)" data-en="Width (m)" for="width">Width (m)</label><input class="form-input" id="width" min="0.01" name="width" required="" step="any" type="number" value=""/></div><div class="form-group"><label data-ar="الارتفاع (m)" data-en="Height (m)" for="height">Height (m)</label><input class="form-input" id="height" min="0.01" name="height" required="" step="any" type="number" value=""/></div><div class="form-group"><label data-ar="نوع الغرفة" data-en="Room type" for="room">Room type</label><select class="form-input" id="room">
+<option data-ar="الأقبية (3-4 ACH)" data-en="Basements (3–4 ACH)" value="Basements">
                                     Basements (3–4 ACH)</option>
-                                <option value="Bathrooms" data-en="Bathrooms (6–7 ACH)" data-ar="الحمامات (6-7 ACH)">
+<option data-ar="الحمامات (6-7 ACH)" data-en="Bathrooms (6–7 ACH)" value="Bathrooms">
                                     Bathrooms (6–7 ACH)</option>
-                                <option value="Bedrooms" data-en="Bedrooms (5–6 ACH)" data-ar="غرف النوم (5-6 ACH)">
+<option data-ar="غرف النوم (5-6 ACH)" data-en="Bedrooms (5–6 ACH)" value="Bedrooms">
                                     Bedrooms (5–6 ACH)</option>
-                                <option value="Kitchens" data-en="Kitchens (Residential) (7–8 ACH)"
-                                    data-ar="المطابخ (سكني) (7-8 ACH)">Kitchens (Residential) (7–8 ACH)</option>
-                                <option value="Laundry" data-en="Laundry Rooms (8–9 ACH)"
-                                    data-ar="غرف الغسيل (8-9 ACH)">Laundry Rooms (8–9 ACH)</option>
-                                <option value="Living" data-en="Living Rooms (6–8 ACH)" data-ar="غرف المعيشة (6-8 ACH)">
+<option data-ar="المطابخ (سكني) (7-8 ACH)" data-en="Kitchens (Residential) (7–8 ACH)" value="Kitchens">Kitchens (Residential) (7–8 ACH)</option>
+<option data-ar="غرف الغسيل (8-9 ACH)" data-en="Laundry Rooms (8–9 ACH)" value="Laundry">Laundry Rooms (8–9 ACH)</option>
+<option data-ar="غرف المعيشة (6-8 ACH)" data-en="Living Rooms (6–8 ACH)" value="Living">
                                     Living Rooms (6–8 ACH)</option>
-                                <option value="Offices" data-en="Offices (6–8 ACH)" data-ar="المكاتب (6-8 ACH)">Offices
+<option data-ar="المكاتب (6-8 ACH)" data-en="Offices (6–8 ACH)" value="Offices">Offices
                                     (6–8 ACH)</option>
-                                <option value="Conference" data-en="Conference Rooms (8–12 ACH)"
-                                    data-ar="قاعات الاجتماعات (8-12 ACH)">Conference Rooms (8–12 ACH)</option>
-                                <option value="Server" data-en="Computer / Server Rooms (10–14 ACH)"
-                                    data-ar="غرف الكمبيوتر/الخوادم (10-14 ACH)">Computer / Server Rooms (10–14 ACH)
+<option data-ar="قاعات الاجتماعات (8-12 ACH)" data-en="Conference Rooms (8–12 ACH)" value="Conference">Conference Rooms (8–12 ACH)</option>
+<option data-ar="غرف الكمبيوتر/الخوادم (10-14 ACH)" data-en="Computer / Server Rooms (10–14 ACH)" value="Server">Computer / Server Rooms (10–14 ACH)
                                 </option>
-                                <option value="Break" data-en="Break Rooms (7–8 ACH)" data-ar="غرف الاستراحة (7-8 ACH)">
+<option data-ar="غرف الاستراحة (7-8 ACH)" data-en="Break Rooms (7–8 ACH)" value="Break">
                                     Break Rooms (7–8 ACH)</option>
-                                <option value="Retail" data-en="Retail Stores (6–10 ACH)" data-ar="المتاجر (6-10 ACH)">
+<option data-ar="المتاجر (6-10 ACH)" data-en="Retail Stores (6–10 ACH)" value="Retail">
                                     Retail Stores (6–10 ACH)</option>
-                                <option value="Restaurant" data-en="Restaurant Dining Areas (8–10 ACH)"
-                                    data-ar="قاعات المطاعم (8-10 ACH)">Restaurant Dining Areas (8–10 ACH)</option>
-                                <option value="CommercialKitchen" data-en="Commercial Kitchens (14–18 ACH)"
-                                    data-ar="المطابخ التجارية (14-18 ACH)">Commercial Kitchens (14–18 ACH)</option>
-                                <option value="PublicRestrooms" data-en="Public Restrooms (10–12 ACH)"
-                                    data-ar="المراحيض العامة (10-12 ACH)">Public Restrooms (10–12 ACH)</option>
-                                <option value="Auditorium" data-en="Auditoriums (12–14 ACH)"
-                                    data-ar="القاعات (12-14 ACH)">Auditoriums (12–14 ACH)</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label data-en="Fan Material" data-ar="مادة المروحة">Fan Material</label>
-                        <select id="material" class="form-input">
-                            <option value="ms" data-en="Metal (MS)" data-ar="معدن (MS)">Metal (MS)</option>
-                            <option value="hs" data-en="Plastic (HS)" data-ar="بلاستيك (HS)">Plastic (HS)</option>
-                        </select>
-                    </div>
-
-                    <button class="btn-calculate" onclick="calculateAirflow()" data-en="Calculate & Show Fan Selector"
-                        data-ar="احسب وأظهر محدد المروحة">Calculate & Show Fan Selector</button>
-
-                    <div class="airflow-result" id="result" style="display:none;"></div>
-                </div>
-
-                <!-- Fan Selector -->
-                <div class="calculator-card" id="selector" style="display:none;">
-                    <h2 data-en="Fan Selector" data-ar="محدد المروحة">Fan Selector</h2>
-
-                    <div class="form-row">
-                        <label data-en="Required Airflow (CFM)" data-ar="تدفق الهواء المطلوب (CFM)">Required Airflow
-                            (CFM)</label>
-                        <input type="number" id="cfmInput" class="form-input" readonly>
-                    </div>
-
-                    <div class="custom-checkbox">
-                        <input type="checkbox" id="customCheck">
-                        <label for="customCheck" data-en="Use Custom Airflow (CFM)"
-                            data-ar="استخدم تدفق هواء مخصص (CFM)">Use Custom Airflow (CFM)</label>
-                    </div>
-
-                    <div class="form-group" id="customCFMGroup" style="display:none;">
-                        <label data-en="Custom Airflow (CFM)" data-ar="تدفق الهواء المخصص (CFM)">Custom Airflow
-                            (CFM)</label>
-                        <input type="number" id="customCFM" class="form-input">
-                    </div>
-
-                    <div class="chart-card" style="padding: 1rem; margin-top: 1.5rem;">
-                        <div class="chart-container">
-                            <canvas id="fanChart"></canvas>
-                        </div>
-                    </div>
-
-                    <div class="result-box" id="selectedFan" style="margin-top: 1.5rem;"></div>
-
-                    <div style="text-align: right; margin-top: 1rem;">
-                        <button class="btn-calculate" onclick="sendToESP()" data-en="Send to ESP Calculator →"
-                            data-ar="إرسال إلى حاسبة ESP ←" style="background: #059669;">Send to ESP Calculator
-                            →</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="../Media/logo.png" alt="Prodigy Logo" class="footer-logo-img">
-                        <div class="footer-logo-text">
-                            <span class="logo-brand">PRODIGY</span>
-                            <span class="logo-subtitle" data-en="Ventilation Systems"
-                                data-ar="أنظمة التهوية">Ventilation Systems</span>
-                        </div>
-                    </div>
-                    <p class="footer-description"
-                        data-en="Professional ventilation solutions for a healthier environment."
-                        data-ar="حلول تهوية احترافية لبيئة أكثر صحة.">
+<option data-ar="قاعات المطاعم (8-10 ACH)" data-en="Restaurant Dining Areas (8–10 ACH)" value="Restaurant">Restaurant Dining Areas (8–10 ACH)</option>
+<option data-ar="المطابخ التجارية (14-18 ACH)" data-en="Commercial Kitchens (14–18 ACH)" value="CommercialKitchen">Commercial Kitchens (14–18 ACH)</option>
+<option data-ar="المراحيض العامة (10-12 ACH)" data-en="Public Restrooms (10–12 ACH)" value="PublicRestrooms">Public Restrooms (10–12 ACH)</option>
+<option data-ar="القاعات (12-14 ACH)" data-en="Auditoriums (12–14 ACH)" value="Auditorium">Auditoriums (12–14 ACH)</option>
+</select></div><div class="form-group"><label data-ar="معدل تبديل الهواء المختار (ACH)" data-en="Selected air changes per hour (ACH)" for="ach">Selected air changes per hour (ACH)</label><input class="form-input" id="ach" name="ach" required="" step="any" type="number" value=""/></div></div><p id="achGuidance"></p><p class="review-note" data-ar="إرشادات تصميم أولية. المصادر والمعاملات الهندسية قيد المراجعة؛ هذه الحسابات لا تثبت المطابقة للكود." data-en="Preliminary design guidance. Engineering sources and coefficients are pending review; this is not a code-compliance calculation.">Preliminary design guidance. Engineering sources and coefficients are pending review; this is not a code-compliance calculation.</p><button class="btn-calculate" data-ar="احسب تدفق الهواء" data-en="Calculate airflow" id="calculateAirflow" type="submit">Calculate airflow</button><p id="formError" role="alert"></p><section aria-live="polite" hidden="" id="result"></section><a class="btn" hidden="" id="continueESP"><span data-ar="المتابعة إلى حساب ضغط النظام" data-en="Continue to System ESP">Continue to System ESP</span></a></form></div></main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-column">
+<div class="footer-logo">
+<img alt="Prodigy Logo" class="footer-logo-img" decoding="async" height="388" loading="lazy" src="../Media/optimized/logo.webp" width="489"/>
+<div class="footer-logo-text">
+<span class="logo-brand">PRODIGY</span>
+<span class="logo-subtitle" data-ar="أنظمة التهوية" data-en="Ventilation Systems">Ventilation Systems</span>
+</div>
+</div>
+<p class="footer-description" data-ar="حلول تهوية احترافية لبيئة أكثر صحة." data-en="Professional ventilation solutions for a healthier environment.">
                         Professional ventilation solutions for a healthier environment.
                     </p>
-                    <div class="footer-social">
-                        <a href="https://ae.linkedin.com/company/prodigy-ventilation-systems-company-l-l-c?trk=public_post_feed-actor-name"
-                            target="_blank" rel="noopener noreferrer" class="social-link"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@ProdigyVentilationSystem" target="_blank"
-                            rel="noopener noreferrer" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
-                        <li><a href="fan-selector.html" data-en="Fan Selector" data-ar="اختيار المروحة">Fan Selector</a>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-link" href="https://ae.linkedin.com/company/prodigy-ventilation-systems-company-l-l-c?trk=public_post_feed-actor-name" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a aria-label="YouTube" class="social-link" href="https://www.youtube.com/@ProdigyVentilationSystem" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+<div class="footer-column"><h4 data-ar="الأدوات الهندسية" data-en="Engineering tools">Engineering tools</h4><ul class="footer-links"><li><a data-ar="حاسبة تدفق الهواء" data-en="Airflow calculator" href="../tools/airflow-calculator.html">Airflow calculator</a></li><li><a data-ar="ضغط النظام" data-en="System ESP" href="../tools/esp-calculator.html">System ESP</a></li><li><a data-ar="اختيار المروحة" data-en="Fan selection" href="../tools/fan-selector.html">Fan selection</a></li></ul></div>
+<div class="footer-column"><h4 data-ar="الشركة والمنتجات" data-en="Company &amp; products">Company &amp; products</h4><ul class="footer-links"><li><a data-ar="من نحن" data-en="About us" href="../index.html#about">About us</a></li><li><a data-ar="المنتجات" data-en="Products" href="../products.html">Products</a></li><li><a data-ar="اتصل بنا" data-en="Contact" href="../index.html#contact">Contact</a></li></ul></div>
+<div class="footer-column">
+<h4 data-ar="معلومات الاتصال" data-en="Contact Info">Contact Info</h4>
+<ul class="footer-contact">
+<li>
+<i class="fas fa-envelope"></i>
+<a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a>
+</li>
+<li>
+<i class="fas fa-phone"></i>+971 9 228 9674
                         </li>
-                        <li><a href="esp-calculator.html" data-en="ESP Calculator" data-ar="حاسبة ESP">ESP
-                                Calculator</a></li>
-                        <li><a href="airflow-calculator.html" data-en="Airflow Calculator"
-                                data-ar="حاسبة التدفق">Airflow Calculator</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-en="Company" data-ar="الشركة">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
-                        <li><a href="../index.html#catalogue" data-en="Catalogue" data-ar="الدليل">Catalogue</a></li>
-                        <li><a href="../index.html#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            +971 9 228 9674
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span data-en="Fujairah, UAE" data-ar="الفجيرة، الإمارات">Fujairah, UAE</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-mail-bulk"></i>
-                            <span data-en="P.O. Box 1216" data-ar="صندوق البريد 1216">P.O. Box 1216</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> <span
-                        data-en="Prodigy Ventilation Systems. All Rights Reserved."
-                        data-ar="أنظمة التهوية بروديجي. جميع الحقوق محفوظة.">Prodigy Ventilation Systems. All Rights
+<li>
+<i class="fas fa-map-marker-alt"></i>
+<span data-ar="الفجيرة، الإمارات العربية المتحدة" data-en="Fujairah, United Arab Emirates">Fujairah, United Arab Emirates</span>
+</li>
+<li>
+<i class="fas fa-mail-bulk"></i>
+<span data-ar="صندوق البريد 1216" data-en="P.O. Box 1216">P.O. Box 1216</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© <span id="currentYear"></span> <span data-ar="أنظمة التهوية بروديجي. جميع الحقوق محفوظة." data-en="Prodigy Ventilation Systems. All Rights Reserved.">Prodigy Ventilation Systems. All Rights
                         Reserved.</span></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
-    <script src="airflow-calculator.js"></script>
-</body>
-
+</div>
+</div>
+</footer>
+<script src="../script.js"></script>
+<script src="../data/fans-master.js"></script><script src="../data/design-guidance.js"></script><script src="../scripts/engineering.js"></script><script src="../scripts/tool-common.js"></script><script src="airflow-calculator.js"></script></body>
 </html>
