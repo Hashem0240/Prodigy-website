@@ -1,0 +1,282 @@
+[
+  {
+    "original": "Media/CabinetFan.png",
+    "derivative": "Media/optimized/CabinetFan.webp",
+    "originalBytes": 12309370,
+    "bytes": 95636,
+    "width": 1400,
+    "height": 1174
+  },
+  {
+    "original": "Media/DiscValve.jpeg",
+    "derivative": "Media/optimized/DiscValve.webp",
+    "originalBytes": 38925,
+    "bytes": 7668,
+    "width": 204,
+    "height": 247
+  },
+  {
+    "original": "Media/Flexbleduct.jpeg",
+    "derivative": "Media/optimized/Flexbleduct.webp",
+    "originalBytes": 172335,
+    "bytes": 33242,
+    "width": 482,
+    "height": 518
+  },
+  {
+    "original": "Media/HS-100P/1.JPG",
+    "derivative": "Media/optimized/HS-100P/1.webp",
+    "originalBytes": 2922144,
+    "bytes": 11144,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-100P/2.JPG",
+    "derivative": "Media/optimized/HS-100P/2.webp",
+    "originalBytes": 2612012,
+    "bytes": 12240,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-100P/3.JPG",
+    "derivative": "Media/optimized/HS-100P/3.webp",
+    "originalBytes": 3618918,
+    "bytes": 18956,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-100P/4.JPG",
+    "derivative": "Media/optimized/HS-100P/4.webp",
+    "originalBytes": 3818294,
+    "bytes": 18536,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-125P/1.JPG",
+    "derivative": "Media/optimized/HS-125P/1.webp",
+    "originalBytes": 2922144,
+    "bytes": 11144,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-125P/2.JPG",
+    "derivative": "Media/optimized/HS-125P/2.webp",
+    "originalBytes": 2612012,
+    "bytes": 12240,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-125P/3.JPG",
+    "derivative": "Media/optimized/HS-125P/3.webp",
+    "originalBytes": 3618918,
+    "bytes": 18956,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-125P/4.JPG",
+    "derivative": "Media/optimized/HS-125P/4.webp",
+    "originalBytes": 3818294,
+    "bytes": 18536,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-150P/1.JPG",
+    "derivative": "Media/optimized/HS-150P/1.webp",
+    "originalBytes": 5016772,
+    "bytes": 14366,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-150P/2.JPG",
+    "derivative": "Media/optimized/HS-150P/2.webp",
+    "originalBytes": 3688736,
+    "bytes": 16364,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-150P/3.JPG",
+    "derivative": "Media/optimized/HS-150P/3.webp",
+    "originalBytes": 5250206,
+    "bytes": 16382,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-150P/4.JPG",
+    "derivative": "Media/optimized/HS-150P/4.webp",
+    "originalBytes": 3756776,
+    "bytes": 18734,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-200P/1.JPG",
+    "derivative": "Media/optimized/HS-200P/1.webp",
+    "originalBytes": 5556424,
+    "bytes": 17456,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-200P/2.JPG",
+    "derivative": "Media/optimized/HS-200P/2.webp",
+    "originalBytes": 3493008,
+    "bytes": 17754,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-200P/3.JPG",
+    "derivative": "Media/optimized/HS-200P/3.webp",
+    "originalBytes": 4451256,
+    "bytes": 19838,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-200P/4.JPG",
+    "derivative": "Media/optimized/HS-200P/4.webp",
+    "originalBytes": 3989935,
+    "bytes": 15346,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-250P/1.JPG",
+    "derivative": "Media/optimized/HS-250P/1.webp",
+    "originalBytes": 4542098,
+    "bytes": 18838,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-250P/2.JPG",
+    "derivative": "Media/optimized/HS-250P/2.webp",
+    "originalBytes": 4442617,
+    "bytes": 21370,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-250P/3.JPG",
+    "derivative": "Media/optimized/HS-250P/3.webp",
+    "originalBytes": 5016348,
+    "bytes": 20970,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-250P/4.JPG",
+    "derivative": "Media/optimized/HS-250P/4.webp",
+    "originalBytes": 5123934,
+    "bytes": 17862,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-315P/1.JPG",
+    "derivative": "Media/optimized/HS-315P/1.webp",
+    "originalBytes": 6063168,
+    "bytes": 21454,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-315P/2.JPG",
+    "derivative": "Media/optimized/HS-315P/2.webp",
+    "originalBytes": 5444403,
+    "bytes": 20842,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-315P/3.JPG",
+    "derivative": "Media/optimized/HS-315P/3.webp",
+    "originalBytes": 6018641,
+    "bytes": 22594,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HS-315P/4.JPG",
+    "derivative": "Media/optimized/HS-315P/4.webp",
+    "originalBytes": 6299639,
+    "bytes": 17148,
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "original": "Media/HSFan.png",
+    "derivative": "Media/optimized/HSFan.webp",
+    "originalBytes": 105514,
+    "bytes": 17166,
+    "width": 409,
+    "height": 304
+  },
+  {
+    "original": "Media/HS_100P_125P.jpg",
+    "derivative": "Media/optimized/HS_100P_125P.webp",
+    "originalBytes": 129171,
+    "bytes": 14994,
+    "width": 587,
+    "height": 425
+  },
+  {
+    "original": "Media/HS_150P.jpg",
+    "derivative": "Media/optimized/HS_150P.webp",
+    "originalBytes": 130396,
+    "bytes": 14436,
+    "width": 587,
+    "height": 425
+  },
+  {
+    "original": "Media/HS_200P.jpg",
+    "derivative": "Media/optimized/HS_200P.webp",
+    "originalBytes": 112446,
+    "bytes": 12558,
+    "width": 587,
+    "height": 425
+  },
+  {
+    "original": "Media/HS_250P_315P.jpg",
+    "derivative": "Media/optimized/HS_250P_315P.webp",
+    "originalBytes": 160599,
+    "bytes": 17782,
+    "width": 587,
+    "height": 425
+  },
+  {
+    "original": "Media/MSFan.png",
+    "derivative": "Media/optimized/MSFan.webp",
+    "originalBytes": 100737,
+    "bytes": 19322,
+    "width": 337,
+    "height": 330
+  },
+  {
+    "original": "Media/NRD.jpeg",
+    "derivative": "Media/optimized/NRD.webp",
+    "originalBytes": 124918,
+    "bytes": 20232,
+    "width": 500,
+    "height": 500
+  },
+  {
+    "original": "Media/logo.png",
+    "derivative": "Media/optimized/logo.webp",
+    "originalBytes": 91637,
+    "bytes": 22724,
+    "width": 489,
+    "height": 388
+  }
+]

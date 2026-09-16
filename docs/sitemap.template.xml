@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/index.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/accessories.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/index.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/ms-100m.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/ms-125m.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/ms-150m.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/ms-200m.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/ms-250m.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/backward-centrifugal/ms-315m.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/cabinet-fan.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/inline-duct-fan.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/hs-100p.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/hs-125p.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/hs-150p.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/hs-200p.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/hs-250p.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/hs-315p.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/mixed-flow/index.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/products/commercial/window-fan.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/tools/airflow-calculator.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/tools/esp-calculator.html</loc></url>
+  <url><loc>{{CONFIRMED_SITE_BASE_URL}}/tools/fan-selector.html</loc></url>
+</urlset>

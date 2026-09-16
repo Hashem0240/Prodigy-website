@@ -1,0 +1,784 @@
+TAP version 13
+# Subtest: ACH volume and explicit range, invalid and overflow inputs
+ok 1 - ACH volume and explicit range, invalid and overflow inputs
+  ---
+  duration_ms: 1.388318
+  type: 'test'
+  ...
+# Subtest: CFM conversion uses cubic feet to metres and minutes to hours
+ok 2 - CFM conversion uses cubic feet to metres and minutes to hours
+  ---
+  duration_ms: 0.125479
+  type: 'test'
+  ...
+# Subtest: Bilinear friction interpolation and exact bounds
+ok 3 - Bilinear friction interpolation and exact bounds
+  ---
+  duration_ms: 0.508254
+  type: 'test'
+  ...
+# Subtest: Rectangular ESP uses actual velocity, no rounded intermediate and reconciles
+ok 4 - Rectangular ESP uses actual velocity, no rounded intermediate and reconciles
+  ---
+  duration_ms: 0.351038
+  type: 'test'
+  ...
+# Subtest: ESP rejects malformed/negative losses and fitting counts
+ok 5 - ESP rejects malformed/negative losses and fitting counts
+  ---
+  duration_ms: 0.475676
+  type: 'test'
+  ...
+# Subtest: Synthetic fixtures: verified duty/margin, no arbitrary threshold or extrapolation
+ok 6 - Synthetic fixtures: verified duty/margin, no arbitrary threshold or extrapolation
+  ---
+  duration_ms: 0.742737
+  type: 'test'
+  ...
+# Subtest: Synthetic fixed-system intersection / non-monotonic curve multiple roots
+ok 7 - Synthetic fixed-system intersection / non-monotonic curve multiple roots
+  ---
+  duration_ms: 0.222725
+  type: 'test'
+  ...
+# Subtest: All actual model curves remain pending, including both 125 models
+ok 8 - All actual model curves remain pending, including both 125 models
+  ---
+  duration_ms: 0.214002
+  type: 'test'
+  ...
+# Subtest: A pending speed inside a verified record cannot leak a curve into a report
+ok 9 - A pending speed inside a verified record cannot leak a curve into a report
+  ---
+  duration_ms: 0.31267
+  type: 'test'
+  ...
+# Subtest: Intersections include tangencies and two roots within one rising segment
+ok 10 - Intersections include tangencies and two roots within one rising segment
+  ---
+  duration_ms: 0.448585
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: index.html
+ok 11 - Static structure and resources: index.html
+  ---
+  duration_ms: 224.19081
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products.html
+ok 12 - Static structure and resources: products.html
+  ---
+  duration_ms: 127.039931
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/accessories.html
+ok 13 - Static structure and resources: products/accessories.html
+  ---
+  duration_ms: 113.209889
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/index.html
+ok 14 - Static structure and resources: products/commercial/backward-centrifugal/index.html
+  ---
+  duration_ms: 80.535802
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/ms-100m.html
+ok 15 - Static structure and resources: products/commercial/backward-centrifugal/ms-100m.html
+  ---
+  duration_ms: 79.794277
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/ms-125m.html
+ok 16 - Static structure and resources: products/commercial/backward-centrifugal/ms-125m.html
+  ---
+  duration_ms: 84.108034
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/ms-150m.html
+ok 17 - Static structure and resources: products/commercial/backward-centrifugal/ms-150m.html
+  ---
+  duration_ms: 97.492002
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/ms-200m.html
+ok 18 - Static structure and resources: products/commercial/backward-centrifugal/ms-200m.html
+  ---
+  duration_ms: 82.128668
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/ms-250m.html
+ok 19 - Static structure and resources: products/commercial/backward-centrifugal/ms-250m.html
+  ---
+  duration_ms: 98.717844
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/backward-centrifugal/ms-315m.html
+ok 20 - Static structure and resources: products/commercial/backward-centrifugal/ms-315m.html
+  ---
+  duration_ms: 71.635117
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/cabinet-fan.html
+ok 21 - Static structure and resources: products/commercial/cabinet-fan.html
+  ---
+  duration_ms: 140.756243
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/inline-duct-fan.html
+ok 22 - Static structure and resources: products/commercial/inline-duct-fan.html
+  ---
+  duration_ms: 52.112078
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/hs-100p.html
+ok 23 - Static structure and resources: products/commercial/mixed-flow/hs-100p.html
+  ---
+  duration_ms: 83.011656
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/hs-125p.html
+ok 24 - Static structure and resources: products/commercial/mixed-flow/hs-125p.html
+  ---
+  duration_ms: 116.312569
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/hs-150p.html
+ok 25 - Static structure and resources: products/commercial/mixed-flow/hs-150p.html
+  ---
+  duration_ms: 83.810317
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/hs-200p.html
+ok 26 - Static structure and resources: products/commercial/mixed-flow/hs-200p.html
+  ---
+  duration_ms: 64.480668
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/hs-250p.html
+ok 27 - Static structure and resources: products/commercial/mixed-flow/hs-250p.html
+  ---
+  duration_ms: 84.275155
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/hs-315p.html
+ok 28 - Static structure and resources: products/commercial/mixed-flow/hs-315p.html
+  ---
+  duration_ms: 94.306781
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/mixed-flow/index.html
+ok 29 - Static structure and resources: products/commercial/mixed-flow/index.html
+  ---
+  duration_ms: 92.564266
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: products/commercial/window-fan.html
+ok 30 - Static structure and resources: products/commercial/window-fan.html
+  ---
+  duration_ms: 81.25271
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: tools/airflow-calculator.html
+ok 31 - Static structure and resources: tools/airflow-calculator.html
+  ---
+  duration_ms: 82.101593
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: tools/esp-calculator.html
+ok 32 - Static structure and resources: tools/esp-calculator.html
+  ---
+  duration_ms: 85.373705
+  type: 'test'
+  ...
+# Subtest: Static structure and resources: tools/fan-selector.html
+ok 33 - Static structure and resources: tools/fan-selector.html
+  ---
+  duration_ms: 58.945042
+  type: 'test'
+  ...
+# Subtest: DOM scripts index.html en/light
+ok 34 - DOM scripts index.html en/light
+  ---
+  duration_ms: 90.3624
+  type: 'test'
+  ...
+# Subtest: DOM scripts index.html en/dark
+ok 35 - DOM scripts index.html en/dark
+  ---
+  duration_ms: 31.866663
+  type: 'test'
+  ...
+# Subtest: DOM scripts index.html ar/light
+ok 36 - DOM scripts index.html ar/light
+  ---
+  duration_ms: 36.296148
+  type: 'test'
+  ...
+# Subtest: DOM scripts index.html ar/dark
+ok 37 - DOM scripts index.html ar/dark
+  ---
+  duration_ms: 28.882143
+  type: 'test'
+  ...
+# Subtest: DOM scripts products.html en/light
+ok 38 - DOM scripts products.html en/light
+  ---
+  duration_ms: 30.403442
+  type: 'test'
+  ...
+# Subtest: DOM scripts products.html en/dark
+ok 39 - DOM scripts products.html en/dark
+  ---
+  duration_ms: 43.661569
+  type: 'test'
+  ...
+# Subtest: DOM scripts products.html ar/light
+ok 40 - DOM scripts products.html ar/light
+  ---
+  duration_ms: 25.482989
+  type: 'test'
+  ...
+# Subtest: DOM scripts products.html ar/dark
+ok 41 - DOM scripts products.html ar/dark
+  ---
+  duration_ms: 25.747747
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/accessories.html en/light
+ok 42 - DOM scripts products/accessories.html en/light
+  ---
+  duration_ms: 29.865202
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/accessories.html en/dark
+ok 43 - DOM scripts products/accessories.html en/dark
+  ---
+  duration_ms: 22.06019
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/accessories.html ar/light
+ok 44 - DOM scripts products/accessories.html ar/light
+  ---
+  duration_ms: 22.287807
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/accessories.html ar/dark
+ok 45 - DOM scripts products/accessories.html ar/dark
+  ---
+  duration_ms: 20.517158
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/index.html en/light
+ok 46 - DOM scripts products/commercial/backward-centrifugal/index.html en/light
+  ---
+  duration_ms: 40.925502
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/index.html en/dark
+ok 47 - DOM scripts products/commercial/backward-centrifugal/index.html en/dark
+  ---
+  duration_ms: 24.944439
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/index.html ar/light
+ok 48 - DOM scripts products/commercial/backward-centrifugal/index.html ar/light
+  ---
+  duration_ms: 25.638463
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/index.html ar/dark
+ok 49 - DOM scripts products/commercial/backward-centrifugal/index.html ar/dark
+  ---
+  duration_ms: 22.80431
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-100m.html en/light
+ok 50 - DOM scripts products/commercial/backward-centrifugal/ms-100m.html en/light
+  ---
+  duration_ms: 21.407988
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-100m.html en/dark
+ok 51 - DOM scripts products/commercial/backward-centrifugal/ms-100m.html en/dark
+  ---
+  duration_ms: 39.351173
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-100m.html ar/light
+ok 52 - DOM scripts products/commercial/backward-centrifugal/ms-100m.html ar/light
+  ---
+  duration_ms: 26.239542
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-100m.html ar/dark
+ok 53 - DOM scripts products/commercial/backward-centrifugal/ms-100m.html ar/dark
+  ---
+  duration_ms: 25.945004
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-125m.html en/light
+ok 54 - DOM scripts products/commercial/backward-centrifugal/ms-125m.html en/light
+  ---
+  duration_ms: 24.551828
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-125m.html en/dark
+ok 55 - DOM scripts products/commercial/backward-centrifugal/ms-125m.html en/dark
+  ---
+  duration_ms: 23.811164
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-125m.html ar/light
+ok 56 - DOM scripts products/commercial/backward-centrifugal/ms-125m.html ar/light
+  ---
+  duration_ms: 25.637952
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-125m.html ar/dark
+ok 57 - DOM scripts products/commercial/backward-centrifugal/ms-125m.html ar/dark
+  ---
+  duration_ms: 25.036237
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-150m.html en/light
+ok 58 - DOM scripts products/commercial/backward-centrifugal/ms-150m.html en/light
+  ---
+  duration_ms: 43.255227
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-150m.html en/dark
+ok 59 - DOM scripts products/commercial/backward-centrifugal/ms-150m.html en/dark
+  ---
+  duration_ms: 23.648318
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-150m.html ar/light
+ok 60 - DOM scripts products/commercial/backward-centrifugal/ms-150m.html ar/light
+  ---
+  duration_ms: 25.53655
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-150m.html ar/dark
+ok 61 - DOM scripts products/commercial/backward-centrifugal/ms-150m.html ar/dark
+  ---
+  duration_ms: 27.565642
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-200m.html en/light
+ok 62 - DOM scripts products/commercial/backward-centrifugal/ms-200m.html en/light
+  ---
+  duration_ms: 25.961449
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-200m.html en/dark
+ok 63 - DOM scripts products/commercial/backward-centrifugal/ms-200m.html en/dark
+  ---
+  duration_ms: 26.333879
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-200m.html ar/light
+ok 64 - DOM scripts products/commercial/backward-centrifugal/ms-200m.html ar/light
+  ---
+  duration_ms: 41.306996
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-200m.html ar/dark
+ok 65 - DOM scripts products/commercial/backward-centrifugal/ms-200m.html ar/dark
+  ---
+  duration_ms: 22.974295
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-250m.html en/light
+ok 66 - DOM scripts products/commercial/backward-centrifugal/ms-250m.html en/light
+  ---
+  duration_ms: 21.760078
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-250m.html en/dark
+ok 67 - DOM scripts products/commercial/backward-centrifugal/ms-250m.html en/dark
+  ---
+  duration_ms: 22.056524
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-250m.html ar/light
+ok 68 - DOM scripts products/commercial/backward-centrifugal/ms-250m.html ar/light
+  ---
+  duration_ms: 24.645649
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-250m.html ar/dark
+ok 69 - DOM scripts products/commercial/backward-centrifugal/ms-250m.html ar/dark
+  ---
+  duration_ms: 21.830344
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-315m.html en/light
+ok 70 - DOM scripts products/commercial/backward-centrifugal/ms-315m.html en/light
+  ---
+  duration_ms: 24.505178
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-315m.html en/dark
+ok 71 - DOM scripts products/commercial/backward-centrifugal/ms-315m.html en/dark
+  ---
+  duration_ms: 42.610787
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-315m.html ar/light
+ok 72 - DOM scripts products/commercial/backward-centrifugal/ms-315m.html ar/light
+  ---
+  duration_ms: 26.414365
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/backward-centrifugal/ms-315m.html ar/dark
+ok 73 - DOM scripts products/commercial/backward-centrifugal/ms-315m.html ar/dark
+  ---
+  duration_ms: 24.136323
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/cabinet-fan.html en/light
+ok 74 - DOM scripts products/commercial/cabinet-fan.html en/light
+  ---
+  duration_ms: 42.044446
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/cabinet-fan.html en/dark
+ok 75 - DOM scripts products/commercial/cabinet-fan.html en/dark
+  ---
+  duration_ms: 59.727165
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/cabinet-fan.html ar/light
+ok 76 - DOM scripts products/commercial/cabinet-fan.html ar/light
+  ---
+  duration_ms: 84.672209
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/cabinet-fan.html ar/dark
+ok 77 - DOM scripts products/commercial/cabinet-fan.html ar/dark
+  ---
+  duration_ms: 39.650294
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/inline-duct-fan.html en/light
+ok 78 - DOM scripts products/commercial/inline-duct-fan.html en/light
+  ---
+  duration_ms: 17.1288
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/inline-duct-fan.html en/dark
+ok 79 - DOM scripts products/commercial/inline-duct-fan.html en/dark
+  ---
+  duration_ms: 19.165685
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/inline-duct-fan.html ar/light
+ok 80 - DOM scripts products/commercial/inline-duct-fan.html ar/light
+  ---
+  duration_ms: 19.281679
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/inline-duct-fan.html ar/dark
+ok 81 - DOM scripts products/commercial/inline-duct-fan.html ar/dark
+  ---
+  duration_ms: 22.139679
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-100p.html en/light
+ok 82 - DOM scripts products/commercial/mixed-flow/hs-100p.html en/light
+  ---
+  duration_ms: 30.531384
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-100p.html en/dark
+ok 83 - DOM scripts products/commercial/mixed-flow/hs-100p.html en/dark
+  ---
+  duration_ms: 34.260284
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-100p.html ar/light
+ok 84 - DOM scripts products/commercial/mixed-flow/hs-100p.html ar/light
+  ---
+  duration_ms: 29.350988
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-100p.html ar/dark
+ok 85 - DOM scripts products/commercial/mixed-flow/hs-100p.html ar/dark
+  ---
+  duration_ms: 25.383329
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-125p.html en/light
+ok 86 - DOM scripts products/commercial/mixed-flow/hs-125p.html en/light
+  ---
+  duration_ms: 25.491812
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-125p.html en/dark
+ok 87 - DOM scripts products/commercial/mixed-flow/hs-125p.html en/dark
+  ---
+  duration_ms: 23.141006
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-125p.html ar/light
+ok 88 - DOM scripts products/commercial/mixed-flow/hs-125p.html ar/light
+  ---
+  duration_ms: 39.501049
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-125p.html ar/dark
+ok 89 - DOM scripts products/commercial/mixed-flow/hs-125p.html ar/dark
+  ---
+  duration_ms: 23.447096
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-150p.html en/light
+ok 90 - DOM scripts products/commercial/mixed-flow/hs-150p.html en/light
+  ---
+  duration_ms: 23.866798
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-150p.html en/dark
+ok 91 - DOM scripts products/commercial/mixed-flow/hs-150p.html en/dark
+  ---
+  duration_ms: 23.369609
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-150p.html ar/light
+ok 92 - DOM scripts products/commercial/mixed-flow/hs-150p.html ar/light
+  ---
+  duration_ms: 23.375709
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-150p.html ar/dark
+ok 93 - DOM scripts products/commercial/mixed-flow/hs-150p.html ar/dark
+  ---
+  duration_ms: 22.27978
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-200p.html en/light
+ok 94 - DOM scripts products/commercial/mixed-flow/hs-200p.html en/light
+  ---
+  duration_ms: 41.80071
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-200p.html en/dark
+ok 95 - DOM scripts products/commercial/mixed-flow/hs-200p.html en/dark
+  ---
+  duration_ms: 22.525119
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-200p.html ar/light
+ok 96 - DOM scripts products/commercial/mixed-flow/hs-200p.html ar/light
+  ---
+  duration_ms: 21.783243
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-200p.html ar/dark
+ok 97 - DOM scripts products/commercial/mixed-flow/hs-200p.html ar/dark
+  ---
+  duration_ms: 21.298844
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-250p.html en/light
+ok 98 - DOM scripts products/commercial/mixed-flow/hs-250p.html en/light
+  ---
+  duration_ms: 21.317892
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-250p.html en/dark
+ok 99 - DOM scripts products/commercial/mixed-flow/hs-250p.html en/dark
+  ---
+  duration_ms: 20.655122
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-250p.html ar/light
+ok 100 - DOM scripts products/commercial/mixed-flow/hs-250p.html ar/light
+  ---
+  duration_ms: 29.378838
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-250p.html ar/dark
+ok 101 - DOM scripts products/commercial/mixed-flow/hs-250p.html ar/dark
+  ---
+  duration_ms: 21.12422
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-315p.html en/light
+ok 102 - DOM scripts products/commercial/mixed-flow/hs-315p.html en/light
+  ---
+  duration_ms: 20.788723
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-315p.html en/dark
+ok 103 - DOM scripts products/commercial/mixed-flow/hs-315p.html en/dark
+  ---
+  duration_ms: 21.946581
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-315p.html ar/light
+ok 104 - DOM scripts products/commercial/mixed-flow/hs-315p.html ar/light
+  ---
+  duration_ms: 22.374936
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/hs-315p.html ar/dark
+ok 105 - DOM scripts products/commercial/mixed-flow/hs-315p.html ar/dark
+  ---
+  duration_ms: 31.604261
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/index.html en/light
+ok 106 - DOM scripts products/commercial/mixed-flow/index.html en/light
+  ---
+  duration_ms: 34.233698
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/index.html en/dark
+ok 107 - DOM scripts products/commercial/mixed-flow/index.html en/dark
+  ---
+  duration_ms: 34.796127
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/index.html ar/light
+ok 108 - DOM scripts products/commercial/mixed-flow/index.html ar/light
+  ---
+  duration_ms: 30.618624
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/mixed-flow/index.html ar/dark
+ok 109 - DOM scripts products/commercial/mixed-flow/index.html ar/dark
+  ---
+  duration_ms: 38.781269
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/window-fan.html en/light
+ok 110 - DOM scripts products/commercial/window-fan.html en/light
+  ---
+  duration_ms: 17.05488
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/window-fan.html en/dark
+ok 111 - DOM scripts products/commercial/window-fan.html en/dark
+  ---
+  duration_ms: 17.20065
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/window-fan.html ar/light
+ok 112 - DOM scripts products/commercial/window-fan.html ar/light
+  ---
+  duration_ms: 17.383466
+  type: 'test'
+  ...
+# Subtest: DOM scripts products/commercial/window-fan.html ar/dark
+ok 113 - DOM scripts products/commercial/window-fan.html ar/dark
+  ---
+  duration_ms: 17.772083
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/airflow-calculator.html en/light
+ok 114 - DOM scripts tools/airflow-calculator.html en/light
+  ---
+  duration_ms: 23.733757
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/airflow-calculator.html en/dark
+ok 115 - DOM scripts tools/airflow-calculator.html en/dark
+  ---
+  duration_ms: 19.393549
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/airflow-calculator.html ar/light
+ok 116 - DOM scripts tools/airflow-calculator.html ar/light
+  ---
+  duration_ms: 19.850058
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/airflow-calculator.html ar/dark
+ok 117 - DOM scripts tools/airflow-calculator.html ar/dark
+  ---
+  duration_ms: 27.841063
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/esp-calculator.html en/light
+ok 118 - DOM scripts tools/esp-calculator.html en/light
+  ---
+  duration_ms: 24.634056
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/esp-calculator.html en/dark
+ok 119 - DOM scripts tools/esp-calculator.html en/dark
+  ---
+  duration_ms: 21.808787
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/esp-calculator.html ar/light
+ok 120 - DOM scripts tools/esp-calculator.html ar/light
+  ---
+  duration_ms: 20.435711
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/esp-calculator.html ar/dark
+ok 121 - DOM scripts tools/esp-calculator.html ar/dark
+  ---
+  duration_ms: 19.111884
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/fan-selector.html en/light
+ok 122 - DOM scripts tools/fan-selector.html en/light
+  ---
+  duration_ms: 26.79156
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/fan-selector.html en/dark
+ok 123 - DOM scripts tools/fan-selector.html en/dark
+  ---
+  duration_ms: 35.670786
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/fan-selector.html ar/light
+ok 124 - DOM scripts tools/fan-selector.html ar/light
+  ---
+  duration_ms: 23.339833
+  type: 'test'
+  ...
+# Subtest: DOM scripts tools/fan-selector.html ar/dark
+ok 125 - DOM scripts tools/fan-selector.html ar/dark
+  ---
+  duration_ms: 20.575662
+  type: 'test'
+  ...
+# Subtest: Airflow invalidation and explicit ESP handoff
+ok 126 - Airflow invalidation and explicit ESP handoff
+  ---
+  duration_ms: 43.565027
+  type: 'test'
+  ...
+# Subtest: ESP user input computes reconciled losses and selection handoff
+ok 127 - ESP user input computes reconciled losses and selection handoff
+  ---
+  duration_ms: 21.110319
+  type: 'test'
+  ...
+# Subtest: Selector never recommends legacy models and report context is invalidated
+ok 128 - Selector never recommends legacy models and report context is invalidated
+  ---
+  duration_ms: 25.582496
+  type: 'test'
+  ...
+# Subtest: Real jsPDF creates a three-page preliminary report without legacy technical values
+ok 129 - Real jsPDF creates a three-page preliminary report without legacy technical values
+  ---
+  duration_ms: 57.031354
+  type: 'test'
+  ...
+1..129
+# tests 129
+# suites 0
+# pass 129
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5319.55922

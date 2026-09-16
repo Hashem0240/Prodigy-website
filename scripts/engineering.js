@@ -132,27 +132,40 @@
     if (!curveValid(points)) return [];
     number(q, "airflow", 0, true);
     number(p, "pressure");
-    const system = (x) => p * (x / q) ** 2;
+    const a = p / q / q;
     const roots = [];
     for (let i = 1; i < points.length; i++) {
-      let a = points[i - 1][0],
-        b = points[i][0];
-      const f = (x) => interpolate(points, x) - system(x);
-      const fa = f(a),
-        fb = f(b);
-      if (fa === 0) roots.push({ q: a, p: system(a) });
-      if (fa * fb < 0) {
-        for (let j = 0; j < 64; j++) {
-          const m = (a + b) / 2;
-          if (f(a) * f(m) <= 0) b = m;
-          else a = m;
-        }
-        const x = (a + b) / 2;
-        roots.push({ q: x, p: system(x) });
+      const [x0, y0] = points[i - 1],
+        [x1, y1] = points[i];
+      const slope = (y1 - y0) / (x1 - x0);
+      const intercept = y0 - slope * x0;
+      let candidates;
+      if (a === 0) {
+        // A zero-pressure coincident segment has infinitely many intersections;
+        // report its endpoints as bounds, not a uniquely predicted operating point.
+        candidates =
+          slope === 0
+            ? intercept === 0
+              ? [x0, x1]
+              : []
+            : [-intercept / slope];
+      } else {
+        const discriminant = slope * slope + 4 * a * intercept;
+        if (discriminant < 0) continue;
+        const sqrt = Math.sqrt(discriminant);
+        // Stable quadratic roots for a*x² - slope*x - intercept = 0.
+        const numerator = 0.5 * (slope + (slope >= 0 ? sqrt : -sqrt));
+        candidates =
+          numerator === 0 ? [0] : [numerator / a, -intercept / numerator];
       }
-      if (i === points.length - 1 && fb === 0)
-        roots.push({ q: b, p: system(b) });
+      for (const x of candidates) {
+        if (Number.isFinite(x) && x >= x0 - 1e-9 && x <= x1 + 1e-9) {
+          const bounded = Math.min(x1, Math.max(x0, x));
+          roots.push({ q: bounded, p: p * (bounded / q) ** 2 });
+        }
+      }
     }
+    roots.sort((a, b) => a.q - b.q);
     return roots.filter(
       (r, i) => i === 0 || Math.abs(r.q - roots[i - 1].q) > 1e-7,
     );

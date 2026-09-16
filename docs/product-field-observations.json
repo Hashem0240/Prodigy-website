@@ -1,0 +1,1250 @@
+{
+  "HS-150P / speeds.high.airflowM3h": [
+    {
+      "value": "530",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "530",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / electrical.high.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / speeds.high.rpm": [
+    {
+      "value": "2250",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2250",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / electrical.high.powerW": [
+    {
+      "value": "54",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "54",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / electrical.high.currentA": [
+    {
+      "value": "0.26",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.22",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / speeds.high.noiseDb": [
+    {
+      "value": "33",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "33",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / speeds.low.airflowM3h": [
+    {
+      "value": "410",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "410",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / electrical.low.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "V~/50Hz",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / speeds.low.rpm": [
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / electrical.low.powerW": [
+    {
+      "value": "44",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "44",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / electrical.low.currentA": [
+    {
+      "value": "0.21",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.19",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-150P / speeds.low.noiseDb": [
+    {
+      "value": "29",
+      "source": "products/commercial/mixed-flow/hs-150p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "29",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / speeds.high.airflowM3h": [
+    {
+      "value": "1405",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1405",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / electrical.high.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / speeds.high.rpm": [
+    {
+      "value": "2450",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2450",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / electrical.high.powerW": [
+    {
+      "value": "225",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "225",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / electrical.high.currentA": [
+    {
+      "value": "1.09",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1.20",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / speeds.high.noiseDb": [
+    {
+      "value": "66",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "66",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / speeds.low.airflowM3h": [
+    {
+      "value": "1064",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1064",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / electrical.low.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "V~/50HZ",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / speeds.low.rpm": [
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / electrical.low.powerW": [
+    {
+      "value": "165",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "165",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / electrical.low.currentA": [
+    {
+      "value": "0.80",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.75",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-250P / speeds.low.noiseDb": [
+    {
+      "value": "58",
+      "source": "products/commercial/mixed-flow/hs-250p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "58",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / speeds.high.airflowM3h": [
+    {
+      "value": "840",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "840",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / electrical.high.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / speeds.high.rpm": [
+    {
+      "value": "2450",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2450",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / electrical.high.powerW": [
+    {
+      "value": "128",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "128",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / electrical.high.currentA": [
+    {
+      "value": "0.62",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.53",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / speeds.high.noiseDb": [
+    {
+      "value": "63",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "63",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / speeds.low.airflowM3h": [
+    {
+      "value": "690",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "690",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / electrical.low.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "V~/50Hz",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / speeds.low.rpm": [
+    {
+      "value": "1950",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1950",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / electrical.low.powerW": [
+    {
+      "value": "123",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "123",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / electrical.low.currentA": [
+    {
+      "value": "0.60",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.52",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-200P / speeds.low.noiseDb": [
+    {
+      "value": "55",
+      "source": "products/commercial/mixed-flow/hs-200p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "55",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / speeds.high.airflowM3h": [
+    {
+      "value": "284",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "284",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / electrical.high.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / speeds.high.rpm": [
+    {
+      "value": "2250",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2250",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / electrical.high.powerW": [
+    {
+      "value": "33",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "33",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / electrical.high.currentA": [
+    {
+      "value": "0.16",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.14",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / speeds.high.noiseDb": [
+    {
+      "value": "32",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "32",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / speeds.low.airflowM3h": [
+    {
+      "value": "248",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "248",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / electrical.low.voltage": [
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / speeds.low.rpm": [
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / electrical.low.powerW": [
+    {
+      "value": "28",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "28",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / electrical.low.currentA": [
+    {
+      "value": "0.13",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.13",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-125P / speeds.low.noiseDb": [
+    {
+      "value": "26",
+      "source": "products/commercial/mixed-flow/hs-125p.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "26",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / speeds.high.airflowM3h": [
+    {
+      "value": "198",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "198",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / electrical.high.voltage": [
+    {
+      "value": "220-240",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / speeds.high.rpm": [
+    {
+      "value": "2200",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2200",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / electrical.high.powerW": [
+    {
+      "value": "26",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "26",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / electrical.high.currentA": [
+    {
+      "value": "0.12",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.12",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / speeds.high.noiseDb": [
+    {
+      "value": "31",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "31",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / speeds.low.airflowM3h": [
+    {
+      "value": "165",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "165",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / electrical.low.voltage": [
+    {
+      "value": "V~/50HZ",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / speeds.low.rpm": [
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1850",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / electrical.low.powerW": [
+    {
+      "value": "23",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "23",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / electrical.low.currentA": [
+    {
+      "value": "0.11",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "0.11",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-100P / speeds.low.noiseDb": [
+    {
+      "value": "26",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "26",
+      "source": "products/commercial/mixed-flow/hs-100p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / speeds.high.airflowM3h": [
+    {
+      "value": "2206",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2206",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / electrical.high.voltage": [
+    {
+      "value": "220-240",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / speeds.high.rpm": [
+    {
+      "value": "2350",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "2350",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / electrical.high.powerW": [
+    {
+      "value": "390",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "390",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / electrical.high.currentA": [
+    {
+      "value": "1.90",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1.90",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / speeds.high.noiseDb": [
+    {
+      "value": "69",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "69",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / speeds.low.airflowM3h": [
+    {
+      "value": "1750",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1750",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / electrical.low.voltage": [
+    {
+      "value": "V~/50HZ",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "220-240V~/50Hz",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / speeds.low.rpm": [
+    {
+      "value": "1650",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1650",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / electrical.low.powerW": [
+    {
+      "value": "275",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "290",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / electrical.low.currentA": [
+    {
+      "value": "1.40",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1.40",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "HS-315P / speeds.low.noiseDb": [
+    {
+      "value": "61",
+      "source": "products/commercial/mixed-flow/index.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "61",
+      "source": "products/commercial/mixed-flow/hs-315p.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / electrical.high.powerW": [
+    {
+      "value": "260W",
+      "source": "products/commercial/backward-centrifugal/ms-315m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "260",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / speeds.high.airflowM3h": [
+    {
+      "value": "1900 m³/h",
+      "source": "products/commercial/backward-centrifugal/ms-315m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1900",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / speeds.high.declaredPressurePa": [
+    {
+      "value": "700 Pa",
+      "source": "products/commercial/backward-centrifugal/ms-315m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / dimensions.high.diameterMm": [
+    {
+      "value": "Ø315 mm",
+      "source": "products/commercial/backward-centrifugal/ms-315m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / speeds.high.noiseDb": [
+    {
+      "value": "65 dB",
+      "source": "products/commercial/backward-centrifugal/ms-315m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "65",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / dimensions.high.weightKg": [
+    {
+      "value": "7.8 kg",
+      "source": "products/commercial/backward-centrifugal/ms-315m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / electrical.high.powerW": [
+    {
+      "value": "85W",
+      "source": "products/commercial/backward-centrifugal/ms-100m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "85",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / speeds.high.airflowM3h": [
+    {
+      "value": "310 m³/h",
+      "source": "products/commercial/backward-centrifugal/ms-100m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "310",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / speeds.high.declaredPressurePa": [
+    {
+      "value": "315 Pa",
+      "source": "products/commercial/backward-centrifugal/ms-100m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / dimensions.high.diameterMm": [
+    {
+      "value": "Ø100 mm",
+      "source": "products/commercial/backward-centrifugal/ms-100m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / speeds.high.noiseDb": [
+    {
+      "value": "52 dB",
+      "source": "products/commercial/backward-centrifugal/ms-100m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "52",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / dimensions.high.weightKg": [
+    {
+      "value": "3.6 kg",
+      "source": "products/commercial/backward-centrifugal/ms-100m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / electrical.high.powerW": [
+    {
+      "value": "105W",
+      "source": "products/commercial/backward-centrifugal/ms-150m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "105",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / speeds.high.airflowM3h": [
+    {
+      "value": "720 m³/h",
+      "source": "products/commercial/backward-centrifugal/ms-150m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "720",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / speeds.high.declaredPressurePa": [
+    {
+      "value": "443 Pa",
+      "source": "products/commercial/backward-centrifugal/ms-150m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / dimensions.high.diameterMm": [
+    {
+      "value": "Ø150 mm",
+      "source": "products/commercial/backward-centrifugal/ms-150m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / speeds.high.noiseDb": [
+    {
+      "value": "53 dB",
+      "source": "products/commercial/backward-centrifugal/ms-150m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "53",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / dimensions.high.weightKg": [
+    {
+      "value": "5.2 kg",
+      "source": "products/commercial/backward-centrifugal/ms-150m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / electrical.high.powerW": [
+    {
+      "value": "182W",
+      "source": "products/commercial/backward-centrifugal/ms-250m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "182",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / speeds.high.airflowM3h": [
+    {
+      "value": "1320 m³/h",
+      "source": "products/commercial/backward-centrifugal/ms-250m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1320",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / speeds.high.declaredPressurePa": [
+    {
+      "value": "570 Pa",
+      "source": "products/commercial/backward-centrifugal/ms-250m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / dimensions.high.diameterMm": [
+    {
+      "value": "Ø250 mm",
+      "source": "products/commercial/backward-centrifugal/ms-250m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / speeds.high.noiseDb": [
+    {
+      "value": "62 dB",
+      "source": "products/commercial/backward-centrifugal/ms-250m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "62",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / dimensions.high.weightKg": [
+    {
+      "value": "6.0 kg",
+      "source": "products/commercial/backward-centrifugal/ms-250m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / electrical.high.powerW": [
+    {
+      "value": "85W",
+      "source": "products/commercial/backward-centrifugal/ms-125m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "85",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / speeds.high.airflowM3h": [
+    {
+      "value": "385 m³/h",
+      "source": "products/commercial/backward-centrifugal/ms-125m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "385",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / speeds.high.declaredPressurePa": [
+    {
+      "value": "350 Pa",
+      "source": "products/commercial/backward-centrifugal/ms-125m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / dimensions.high.diameterMm": [
+    {
+      "value": "Ø125 mm",
+      "source": "products/commercial/backward-centrifugal/ms-125m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / speeds.high.noiseDb": [
+    {
+      "value": "50 dB",
+      "source": "products/commercial/backward-centrifugal/ms-125m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "50",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / dimensions.high.weightKg": [
+    {
+      "value": "3.6 kg",
+      "source": "products/commercial/backward-centrifugal/ms-125m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / electrical.high.powerW": [
+    {
+      "value": "160W",
+      "source": "products/commercial/backward-centrifugal/ms-200m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "160",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / speeds.high.airflowM3h": [
+    {
+      "value": "1120 m³/h",
+      "source": "products/commercial/backward-centrifugal/ms-200m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "1120",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / speeds.high.declaredPressurePa": [
+    {
+      "value": "580 Pa",
+      "source": "products/commercial/backward-centrifugal/ms-200m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / dimensions.high.diameterMm": [
+    {
+      "value": "Ø200 mm",
+      "source": "products/commercial/backward-centrifugal/ms-200m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / speeds.high.noiseDb": [
+    {
+      "value": "60 dB",
+      "source": "products/commercial/backward-centrifugal/ms-200m.html",
+      "status": "pending_review"
+    },
+    {
+      "value": "60",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / dimensions.high.weightKg": [
+    {
+      "value": "6.0 kg",
+      "source": "products/commercial/backward-centrifugal/ms-200m.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-100M / speeds.high.rpm": [
+    {
+      "value": "2350",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-125M / speeds.high.rpm": [
+    {
+      "value": "2450",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-150M / speeds.high.rpm": [
+    {
+      "value": "2400",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-200M / speeds.high.rpm": [
+    {
+      "value": "2450",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-250M / speeds.high.rpm": [
+    {
+      "value": "2450",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ],
+  "MS-315M / speeds.high.rpm": [
+    {
+      "value": "2450",
+      "source": "products/commercial/backward-centrifugal/index.html",
+      "status": "pending_review"
+    }
+  ]
+}
