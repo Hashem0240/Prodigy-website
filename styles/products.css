@@ -1,0 +1,19 @@
+/* Compatibility stylesheet for standalone commercial product pages.
+   Cabinet Fan and Window Fan currently reference styles/products.css. */
+:root {
+  --surface-color: var(--color-card);
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-text-light);
+  --card-bg: var(--color-card);
+}
+.product-hero { padding: 8rem 0 4rem; text-align: center; }
+.product-hero-content { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+.product-hero-content h1 { font-size: clamp(2rem,5vw,3.5rem); line-height: 1.15; margin-bottom: 1rem; }
+.product-hero-content p { font-size: clamp(1rem,2vw,1.25rem); line-height: 1.7; }
+.product-section { padding: 4rem 0; }
+.specs-table-wrapper { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.specs-table { min-width: 760px; }
+@media (max-width: 768px) {
+  .product-hero { padding: 6rem 0 3rem; }
+  .product-section { padding: 2.5rem 0; }
+}

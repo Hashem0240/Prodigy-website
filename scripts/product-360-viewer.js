@@ -9,7 +9,6 @@ const PRODUCT_IMAGES = {
     'HS-100P': {
         basePath: '../../../Media/HS-100P/',
         images: [
-            'Hs.JPG',
             '1.JPG',
             '2.JPG',
             '3.JPG',
@@ -21,7 +20,6 @@ const PRODUCT_IMAGES = {
     'HS-125P': {
         basePath: '../../../Media/HS-125P/',
         images: [
-            'Hs.JPG',
             '1.JPG',
             '2.JPG',
             '3.JPG',

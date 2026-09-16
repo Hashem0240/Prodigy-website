@@ -24,7 +24,8 @@ function prevSlide() {
 }
 
 // Auto-advance slider
-let slideInterval = setInterval(nextSlide, 5000);
+let slideInterval = null;
+if (totalSlides > 0) slideInterval = setInterval(nextSlide, 5000);
 
 // Slider controls
 const nextSlideBtn = document.getElementById('nextSlide');
@@ -32,7 +33,7 @@ const prevSlideBtn = document.getElementById('prevSlide');
 
 if (nextSlideBtn) {
     nextSlideBtn.addEventListener('click', () => {
-        clearInterval(slideInterval);
+        if (slideInterval) clearInterval(slideInterval);
         nextSlide();
         slideInterval = setInterval(nextSlide, 5000);
     });
@@ -40,7 +41,7 @@ if (nextSlideBtn) {
 
 if (prevSlideBtn) {
     prevSlideBtn.addEventListener('click', () => {
-        clearInterval(slideInterval);
+        if (slideInterval) clearInterval(slideInterval);
         prevSlide();
         slideInterval = setInterval(nextSlide, 5000);
     });
@@ -66,15 +67,20 @@ if (menuToggle && mainNav) {
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#') {
+            e.preventDefault();
+            return;
+        }
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.getElementById(href.slice(1));
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
             // Close mobile menu after clicking
-            mainNav.classList.remove('active');
+            if (mainNav) mainNav.classList.remove('active');
         }
     });
 });
@@ -274,31 +280,25 @@ document.querySelectorAll('.card, .feature-item').forEach(el => {
 });
 
 // Dropdown menu functionality for mobile
-if (window.innerWidth <= 1024) {
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-    
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const dropdown = toggle.nextElementSibling;
-            const isVisible = dropdown.style.display === 'block';
-            
-            // Close all dropdowns
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.style.display = 'none';
-            });
-            
-            // Toggle current dropdown
-            if (!isVisible) {
-                dropdown.style.display = 'block';
-                dropdown.style.position = 'static';
-                dropdown.style.opacity = '1';
-                dropdown.style.visibility = 'visible';
-                dropdown.style.transform = 'none';
-            }
-        });
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        if (window.innerWidth > 1024) return;
+        e.preventDefault();
+        e.stopPropagation();
+        const dropdown = toggle.nextElementSibling;
+        if (!dropdown) return;
+        const isVisible = dropdown.style.display === 'block';
+        document.querySelectorAll('.dropdown-menu').forEach(menu => menu.style.display = 'none');
+        if (!isVisible) {
+            dropdown.style.display = 'block';
+            dropdown.style.position = 'static';
+            dropdown.style.opacity = '1';
+            dropdown.style.visibility = 'visible';
+            dropdown.style.transform = 'none';
+        }
     });
-}
+});
 
 // Handle window resize
 let resizeTimer;
@@ -307,10 +307,13 @@ window.addEventListener('resize', () => {
     resizeTimer = setTimeout(() => {
         // Reset mobile menu on resize
         if (window.innerWidth > 1024) {
-            mainNav.classList.remove('active');
+            if (mainNav) mainNav.classList.remove('active');
             document.querySelectorAll('.dropdown-menu').forEach(menu => {
                 menu.style.display = '';
                 menu.style.position = '';
+                menu.style.opacity = '';
+                menu.style.visibility = '';
+                menu.style.transform = '';
             });
         }
     }, 250);

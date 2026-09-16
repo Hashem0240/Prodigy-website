@@ -464,7 +464,12 @@
     }
 
     .product-specs {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        width: 100%;
+    }
+    .specs-left,
+    .specs-right {
+        width: 100%;
     }
 
     .product-page-layout {
