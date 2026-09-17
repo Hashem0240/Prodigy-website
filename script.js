@@ -343,3 +343,94 @@ if (document.body.classList.contains("home-intarcon")) {
   `;
   document.head.appendChild(navType);
 }
+
+/* Prodigy logo proportions based on the supplied logo reference. */
+if (document.body.classList.contains("home-intarcon")) {
+  const logoStyle = document.createElement("style");
+  logoStyle.textContent = `
+    .home-intarcon .concept-logo {
+      min-width: 310px !important;
+      gap: 16px !important;
+      align-items: center !important;
+    }
+
+    .home-intarcon .concept-logo img {
+      width: 66px !important;
+      height: 66px !important;
+      flex: 0 0 66px !important;
+      object-fit: contain !important;
+    }
+
+    .home-intarcon .concept-logo-copy {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+      line-height: 1 !important;
+    }
+
+    .home-intarcon .concept-logo-copy strong {
+      display: block !important;
+      margin: 0 !important;
+      color: #202630 !important;
+      font-family: "Arial Black", Arial, Helvetica, sans-serif !important;
+      font-size: 34px !important;
+      font-weight: 900 !important;
+      line-height: .94 !important;
+      letter-spacing: .045em !important;
+      text-transform: uppercase !important;
+    }
+
+    .home-intarcon .concept-logo-copy small {
+      display: block !important;
+      margin-top: 8px !important;
+      color: #d71920 !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      letter-spacing: 0 !important;
+      white-space: nowrap !important;
+    }
+
+    @media (max-width: 1180px) {
+      .home-intarcon .concept-logo {
+        min-width: 278px !important;
+        gap: 14px !important;
+      }
+      .home-intarcon .concept-logo img {
+        width: 58px !important;
+        height: 58px !important;
+        flex-basis: 58px !important;
+      }
+      .home-intarcon .concept-logo-copy strong {
+        font-size: 30px !important;
+      }
+      .home-intarcon .concept-logo-copy small {
+        margin-top: 6px !important;
+        font-size: 14px !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .home-intarcon .concept-logo {
+        min-width: 0 !important;
+        gap: 10px !important;
+      }
+      .home-intarcon .concept-logo img {
+        width: 46px !important;
+        height: 46px !important;
+        flex-basis: 46px !important;
+      }
+      .home-intarcon .concept-logo-copy strong {
+        font-size: 23px !important;
+        letter-spacing: .035em !important;
+      }
+      .home-intarcon .concept-logo-copy small {
+        margin-top: 4px !important;
+        font-size: 11px !important;
+      }
+    }
+  `;
+  document.head.appendChild(logoStyle);
+}
