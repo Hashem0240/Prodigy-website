@@ -5,18 +5,17 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Prodigy Ventilation Systems | Engineered Air Solutions</title>
 <script>
-(function () {
+(function(){
   const savedTheme = localStorage.getItem('theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
 })();
 </script>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="favicon.svg" rel="alternate icon"/>
 <link href="Media/logo.png" rel="apple-touch-icon"/>
 <link href="styles/style.css?v=2024-final" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 <link href="styles/website-v2.css" rel="stylesheet"/>
-<link href="styles/homepage-redesign.css?v=2" rel="stylesheet"/>
+<link href="styles/homepage-intarcon.css?v=1" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 <meta content="Prodigy Ventilation Systems provides ventilation products, engineering tools, documentation and project support." name="description"/>
 <meta content="Prodigy Ventilation Systems | Engineered Air Solutions" property="og:title"/>
 <meta content="Ventilation products, engineering tools, documentation and project support." property="og:description"/>
@@ -24,340 +23,220 @@
 <meta content="Media/optimized/logo.webp" property="og:image"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Prodigy Ventilation Systems","url":"https://www.prodigysystems.ae/"}</script>
 </head>
-<body class="home-redesign">
+<body class="home-intarcon">
 <a class="skip-link" data-ar="انتقل إلى المحتوى" data-en="Skip to content" href="#main-content">Skip to content</a>
 
-<header class="header">
-  <div class="container">
-    <div class="header-content">
-      <a class="logo" href="index.html" aria-label="Prodigy Ventilation Systems home">
-        <img alt="Prodigy Ventilation Systems" class="logo-img" src="Media/optimized/logo.webp" width="489" height="388"/>
-        <span class="logo-text">
-          <span class="logo-brand">PRODIGY</span>
-          <span class="logo-subtitle" data-ar="أنظمة التهوية" data-en="Ventilation Systems">Ventilation Systems</span>
-        </span>
-      </a>
+<header class="header concept-header">
+  <div class="concept-shell header-shell">
+    <a class="concept-logo" href="index.html" aria-label="Prodigy Ventilation Systems home">
+      <img src="Media/optimized/logo.webp" alt="Prodigy icon"/>
+      <span class="concept-logo-copy">
+        <strong>PRODIGY</strong>
+        <small data-ar="أنظمة التهوية" data-en="Ventilation Systems">Ventilation Systems</small>
+      </span>
+    </a>
 
-      <nav class="nav" id="mainNav">
-        <div class="nav-dropdown">
-          <button aria-controls="navDropdown0" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
-            <span data-ar="المنتجات" data-en="Products">Products</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-menu products-menu" id="navDropdown0">
-            <div class="products-grid">
-              <div>
-                <div class="product-header" data-ar="تجاري" data-en="Commercial">Commercial</div>
-                <a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
-                <a class="dropdown-item" data-ar="مروحة صندوقية" data-en="Cabinet Fan" href="products/commercial/cabinet-fan.html">Cabinet Fan</a>
-                <a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="products/accessories.html">Accessories</a>
-              </div>
-              <div>
-                <div class="product-header" data-ar="سكني" data-en="Residential">Residential</div>
-                <a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
-                <a class="dropdown-item" data-ar="مروحة نافذة" data-en="Window Fan" href="products/commercial/window-fan.html">Window Fan</a>
-                <a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="products/accessories.html">Accessories</a>
-              </div>
+    <nav class="nav" id="mainNav">
+      <div class="nav-dropdown">
+        <button aria-controls="navDropdown0" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
+          <span data-ar="المنتجات" data-en="Products">Products</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu products-menu" id="navDropdown0">
+          <div class="products-grid">
+            <div>
+              <div class="product-header" data-ar="تجاري" data-en="Commercial">Commercial</div>
+              <a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
+              <a class="dropdown-item" data-ar="مروحة صندوقية" data-en="Cabinet Fan" href="products/commercial/cabinet-fan.html">Cabinet Fan</a>
+              <a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="products/accessories.html">Accessories</a>
+            </div>
+            <div>
+              <div class="product-header" data-ar="سكني" data-en="Residential">Residential</div>
+              <a class="dropdown-item" data-ar="مروحة داخل الدكت" data-en="In-Line Duct Fan" href="products/commercial/inline-duct-fan.html">In-Line Duct Fan</a>
+              <a class="dropdown-item" data-ar="مروحة نافذة" data-en="Window Fan" href="products/commercial/window-fan.html">Window Fan</a>
+              <a class="dropdown-item" data-ar="الملحقات" data-en="Accessories" href="products/accessories.html">Accessories</a>
             </div>
           </div>
         </div>
-
-        <div class="nav-dropdown">
-          <button aria-controls="navDropdown1" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
-            <span data-ar="الدعم الفني" data-en="Engineering">Engineering</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-menu" id="navDropdown1">
-            <a class="dropdown-item" data-ar="أداة اختيار المروحة" data-en="Fan Selector Tool" href="tools/fan-selector.html">Fan Selector Tool</a>
-            <a class="dropdown-item" data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator" href="tools/airflow-calculator.html">Airflow Calculator</a>
-            <a class="dropdown-item" data-ar="حاسبة الضغط الساكن" data-en="ESP Calculator" href="tools/esp-calculator.html">ESP Calculator</a>
-          </div>
-        </div>
-
-        <a class="nav-link" data-ar="من نحن" data-en="About" href="#about">About</a>
-        <a class="nav-link" data-ar="تواصل معنا" data-en="Contact" href="#contact">Contact</a>
-      </nav>
-
-      <div class="header-controls">
-        <button aria-label="Switch colour theme" class="control-btn" id="themeToggle" type="button"><i class="fas fa-moon"></i></button>
-        <button aria-label="Switch language / تغيير اللغة" class="control-btn lang-btn" data-lang="ar" id="languageToggle" type="button">العربية</button>
-        <button aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle" type="button"><i class="fas fa-bars"></i></button>
       </div>
+
+      <div class="nav-dropdown">
+        <button aria-controls="navDropdown1" aria-expanded="false" class="nav-link dropdown-toggle" type="button">
+          <span data-ar="الهندسة" data-en="Engineering">Engineering</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="dropdown-menu" id="navDropdown1">
+          <a class="dropdown-item" data-ar="أداة اختيار المروحة" data-en="Fan Selector Tool" href="tools/fan-selector.html">Fan Selector Tool</a>
+          <a class="dropdown-item" data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator" href="tools/airflow-calculator.html">Airflow Calculator</a>
+          <a class="dropdown-item" data-ar="حاسبة الضغط الساكن" data-en="ESP Calculator" href="tools/esp-calculator.html">ESP Calculator</a>
+        </div>
+      </div>
+
+      <a class="nav-link" data-ar="من نحن" data-en="About" href="#about">About</a>
+      <a class="nav-link" data-ar="الدعم" data-en="Support" href="#support">Support</a>
+      <a class="nav-link" data-ar="تواصل" data-en="Contact" href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-controls">
+      <button aria-label="Switch colour theme" class="control-btn" id="themeToggle" type="button"><i class="fas fa-moon"></i></button>
+      <button aria-label="Switch language / تغيير اللغة" class="control-btn lang-btn" data-lang="ar" id="languageToggle" type="button">العربية</button>
+      <button aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle" type="button"><i class="fas fa-bars"></i></button>
     </div>
   </div>
 </header>
 
 <main id="main-content" tabindex="-1">
-
-  <section class="quick-strip" aria-label="Quick access">
-    <div class="home-shell quick-grid">
-      <a class="quick-card" href="products.html">
-        <span class="quick-icon"><i class="fas fa-layer-group"></i></span>
-        <span class="quick-copy"><strong data-ar="مجموعة المنتجات" data-en="Product Range">Product Range</strong><span data-ar="استعرض عائلات بروديجي" data-en="Explore Prodigy product families">Explore Prodigy product families</span></span>
-      </a>
-      <a class="quick-card" href="tools/fan-selector.html">
-        <span class="quick-icon"><i class="fas fa-fan"></i></span>
-        <span class="quick-copy"><strong data-ar="اختيار المروحة" data-en="Fan Selection">Fan Selection</strong><span data-ar="ابدأ من متطلبات المشروع" data-en="Start from project requirements">Start from project requirements</span></span>
-      </a>
-      <a class="quick-card" href="tools/airflow-calculator.html">
-        <span class="quick-icon"><i class="fas fa-calculator"></i></span>
-        <span class="quick-copy"><strong data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator">Airflow Calculator</strong><span data-ar="خطوة حساب سريعة للمشروع" data-en="A quick project calculation step">A quick project calculation step</span></span>
-      </a>
-      <a class="quick-card" href="#contact">
-        <span class="quick-icon"><i class="fas fa-headset"></i></span>
-        <span class="quick-copy"><strong data-ar="دعم فني" data-en="Technical Support">Technical Support</strong><span data-ar="تواصل مع فريق بروديجي" data-en="Contact the Prodigy team">Contact the Prodigy team</span></span>
-      </a>
+  <section class="gateway-strip" aria-label="Quick access">
+    <div class="gateway-grid concept-shell">
+      <a href="products.html" class="gateway-item"><i class="fas fa-book-open"></i><span><strong data-ar="مجموعة المنتجات" data-en="PRODUCT RANGE">PRODUCT RANGE</strong><small data-ar="استعرض عائلات بروديجي" data-en="Explore product families">Explore product families</small></span></a>
+      <a href="tools/fan-selector.html" class="gateway-item"><i class="fas fa-fan"></i><span><strong data-ar="اختيار المروحة" data-en="FAN SELECTION">FAN SELECTION</strong><small data-ar="ابدأ من بيانات المشروع" data-en="Start from project inputs">Start from project inputs</small></span></a>
+      <a href="tools/airflow-calculator.html" class="gateway-item"><i class="fas fa-wind"></i><span><strong data-ar="تدفق الهواء" data-en="AIRFLOW">AIRFLOW</strong><small data-ar="حاسبة تدفق الهواء" data-en="Airflow calculator">Airflow calculator</small></span></a>
+      <a href="tools/esp-calculator.html" class="gateway-item"><i class="fas fa-gauge-high"></i><span><strong data-ar="ضغط النظام" data-en="SYSTEM ESP">SYSTEM ESP</strong><small data-ar="حاسبة الضغط الساكن" data-en="Static pressure calculator">Static pressure calculator</small></span></a>
+      <a href="#support" class="gateway-item"><i class="fas fa-headset"></i><span><strong data-ar="الدعم الفني" data-en="TECHNICAL ADVICE">TECHNICAL ADVICE</strong><small data-ar="تواصل مع فريق بروديجي" data-en="Talk to Prodigy">Talk to Prodigy</small></span></a>
     </div>
   </section>
 
-  <section class="industry-hero" id="home">
-    <div class="home-shell hero-layout">
+  <section class="cinematic-hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="concept-shell hero-content">
       <div class="hero-copy">
-        <span class="eyebrow" data-ar="حلول هواء هندسية" data-en="ENGINEERED AIR SOLUTIONS">ENGINEERED AIR SOLUTIONS</span>
-        <h1>
-          <span data-ar="حلول تهوية" data-en="VENTILATION">VENTILATION</span><br/>
-          <span class="red-line" data-ar="للمشاريع الحقيقية." data-en="FOR REAL PROJECTS.">FOR REAL PROJECTS.</span>
-        </h1>
-        <p data-ar="منتجات تهوية عملية، أدوات هندسية واضحة، ودعم فني يساعد الاستشاريين والمقاولين وفرق المشاريع على الانتقال من المتطلبات إلى اختيار المروحة المناسب." data-en="Practical ventilation products, clear engineering tools and technical support that help consultants, contractors and project teams move from requirements to fan selection.">Practical ventilation products, clear engineering tools and technical support that help consultants, contractors and project teams move from requirements to fan selection.</p>
+        <span class="hero-kicker" data-ar="حلول هواء هندسية" data-en="ENGINEERED AIR SOLUTIONS">ENGINEERED AIR SOLUTIONS</span>
+        <h1><span data-ar="حلول تهوية" data-en="VENTILATION SOLUTIONS">VENTILATION SOLUTIONS</span><br/><em data-ar="مصممة للمشاريع." data-en="BUILT FOR PROJECTS.">BUILT FOR PROJECTS.</em></h1>
+        <p data-ar="منتجات تهوية وأدوات هندسية ودعم فني تساعد فرق المشاريع على الانتقال من متطلبات الهواء إلى اختيار المنتج المناسب." data-en="Ventilation products, engineering tools and technical support that help project teams move from airflow requirements to product selection.">Ventilation products, engineering tools and technical support that help project teams move from airflow requirements to product selection.</p>
         <div class="hero-actions">
-          <a class="home-btn home-btn-primary" href="products.html"><span data-ar="استعرض المنتجات" data-en="EXPLORE PRODUCTS">EXPLORE PRODUCTS</span><i class="fas fa-arrow-right"></i></a>
-          <a class="home-btn home-btn-light" href="tools/fan-selector.html"><span data-ar="أدوات المهندسين" data-en="ENGINEERING TOOLS">ENGINEERING TOOLS</span><i class="fas fa-calculator"></i></a>
+          <a class="concept-btn concept-btn-red" href="products.html"><span data-ar="استعرض المنتجات" data-en="EXPLORE PRODUCTS">EXPLORE PRODUCTS</span><i class="fas fa-arrow-right"></i></a>
+          <a class="concept-btn concept-btn-ghost" href="tools/fan-selector.html"><span data-ar="أداة اختيار المروحة" data-en="FAN SELECTOR">FAN SELECTOR</span><i class="fas fa-fan"></i></a>
         </div>
       </div>
-
-      <div class="hero-art" aria-label="Prodigy ventilation product range">
-        <div class="hero-grid-lines"></div>
-        <img class="hero-product hs" src="Media/optimized/HSFan.webp" alt="Prodigy HS inline duct fan" loading="eager"/>
-        <img class="hero-product ms" src="Media/optimized/MSFan.webp" alt="Prodigy MS inline duct fan" loading="eager"/>
-        <img class="hero-product box" src="Media/optimized/CabinetFan.webp" alt="Prodigy cabinet fan" loading="eager"/>
-        <span class="hero-tag one"><strong data-ar="سلسلة HS و MS" data-en="HS & MS SERIES">HS & MS SERIES</strong><span data-ar="مراوح داخل الدكت" data-en="In-line duct fans">In-line duct fans</span></span>
-        <span class="hero-tag two"><strong data-ar="حلول تجارية" data-en="COMMERCIAL RANGE">COMMERCIAL RANGE</strong><span data-ar="حلول تهوية للمشاريع" data-en="Ventilation solutions for projects">Ventilation solutions for projects</span></span>
-      </div>
     </div>
+    <a href="#support" class="hero-advice-card">
+      <i class="fas fa-headset"></i>
+      <span><small data-ar="تحتاج مساعدة؟" data-en="NEED SUPPORT?">NEED SUPPORT?</small><strong data-ar="اطلب دعماً فنياً" data-en="REQUEST TECHNICAL ADVICE">REQUEST TECHNICAL ADVICE</strong></span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
   </section>
 
-  <section class="statement" id="about">
-    <div class="home-shell statement-grid">
+  <section class="manifesto" id="about">
+    <div class="concept-shell manifesto-grid">
       <div>
-        <span class="eyebrow" data-ar="بروديجي لأنظمة التهوية" data-en="PRODIGY VENTILATION SYSTEMS">PRODIGY VENTILATION SYSTEMS</span>
-        <h2><span data-ar="هواء أفضل." data-en="BETTER AIR.">BETTER AIR.</span><br/><span class="light" data-ar="اختيار أوضح." data-en="CLEARER SELECTION.">CLEARER SELECTION.</span></h2>
+        <span class="section-kicker" data-ar="بروديجي لأنظمة التهوية" data-en="PRODIGY VENTILATION SYSTEMS">PRODIGY VENTILATION SYSTEMS</span>
+        <h2><span data-ar="حلول تهوية" data-en="VENTILATION SOLUTIONS">VENTILATION SOLUTIONS</span><br/><em data-ar="لهواء أفضل." data-en="FOR BETTER AIR.">FOR BETTER AIR.</em></h2>
       </div>
-      <div class="statement-copy">
-        <p data-ar="نركز على تقديم منتجات تهوية واضحة وسهلة التطبيق، مع أدوات ومساندة فنية تساعد فرق المشاريع على تنظيم خطوات الحساب والاختيار والوصول إلى معلومات المنتج بسرعة." data-en="We focus on clear, practical ventilation products together with engineering tools and support that help project teams structure calculations, selection and access to product information.">We focus on clear, practical ventilation products together with engineering tools and support that help project teams structure calculations, selection and access to product information.</p>
-        <a class="text-link" href="products.html"><span data-ar="اكتشف مجموعة بروديجي" data-en="Discover the Prodigy range">Discover the Prodigy range</span><i class="fas fa-arrow-right"></i></a>
+      <div class="manifesto-copy">
+        <p data-ar="نركز على منتجات واضحة وسهلة التطبيق، مع أدوات حساب واختيار تساعد الاستشاريين والمقاولين وفرق المشاريع على الوصول إلى المعلومات التي يحتاجونها بشكل أسرع." data-en="We focus on clear, practical products together with calculation and selection tools that help consultants, contractors and project teams reach the information they need faster.">We focus on clear, practical products together with calculation and selection tools that help consultants, contractors and project teams reach the information they need faster.</p>
+        <a class="concept-text-link" href="products.html"><span data-ar="اكتشف مجموعة بروديجي" data-en="DISCOVER THE PRODIGY RANGE">DISCOVER THE PRODIGY RANGE</span><i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
-  <section class="families-section" aria-labelledby="families-title">
-    <div class="home-shell">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow" data-ar="عائلات المنتجات" data-en="PRODUCT FAMILIES">PRODUCT FAMILIES</span>
-          <h2 id="families-title" data-ar="منتجات منظمة حسب التطبيق." data-en="Products organised around the application.">Products organised around the application.</h2>
-        </div>
-        <p data-ar="ابدأ من نوع التطبيق، ثم انتقل إلى صفحة السلسلة أو الموديل للحصول على بيانات المنتج وخيارات الاختيار المتاحة." data-en="Start from the application, then move into the series or model page for product information and available selection details.">Start from the application, then move into the series or model page for product information and available selection details.</p>
+  <section class="family-showcase" aria-labelledby="family-title">
+    <div class="concept-shell">
+      <div class="section-heading">
+        <span class="section-kicker" data-ar="مجموعة المنتجات" data-en="PRODUCT FAMILIES">PRODUCT FAMILIES</span>
+        <h2 id="family-title" data-ar="ابدأ من عائلة المنتج." data-en="START WITH THE PRODUCT FAMILY.">START WITH THE PRODUCT FAMILY.</h2>
       </div>
 
-      <div class="family-grid">
-        <a class="family-card" href="products/commercial/inline-duct-fan.html">
-          <div class="family-media"><img src="Media/optimized/HSFan.webp" alt="Prodigy inline duct fans" loading="lazy"/></div>
-          <div class="family-body">
-            <span class="family-kicker">HS + MS SERIES</span>
-            <h3 data-ar="مراوح داخل الدكت" data-en="In-Line Duct Fans">In-Line Duct Fans</h3>
-            <p data-ar="عائلات بلاستيكية ومعدنية لتطبيقات التهوية داخل مجاري الهواء." data-en="Plastic and metal fan families for ducted ventilation applications.">Plastic and metal fan families for ducted ventilation applications.</p>
-            <span class="family-go"><span data-ar="استعرض السلسلة" data-en="Explore range">Explore range</span><i class="fas fa-arrow-right"></i></span>
-          </div>
+      <div class="family-tabs" aria-label="Product families">
+        <a href="products/commercial/inline-duct-fan.html">HS SERIES</a>
+        <a href="products/commercial/inline-duct-fan.html">MS SERIES</a>
+        <a href="products/commercial/cabinet-fan.html" data-ar="مراوح صندوقية" data-en="CABINET FANS">CABINET FANS</a>
+        <a href="products/commercial/window-fan.html" data-ar="مراوح نافذة" data-en="WINDOW FANS">WINDOW FANS</a>
+        <a href="products/accessories.html" data-ar="الملحقات" data-en="ACCESSORIES">ACCESSORIES</a>
+      </div>
+
+      <div class="family-panels">
+        <a class="family-panel panel-inline" href="products/commercial/inline-duct-fan.html">
+          <div class="panel-copy"><small>HS + MS SERIES</small><h3 data-ar="مراوح داخل الدكت" data-en="In-Line Duct Fans">In-Line Duct Fans</h3><p data-ar="عائلات بلاستيكية ومعدنية لتطبيقات التهوية داخل مجاري الهواء." data-en="Plastic and metal fan families for ducted ventilation applications.">Plastic and metal fan families for ducted ventilation applications.</p><span data-ar="استعرض السلسلة" data-en="EXPLORE RANGE">EXPLORE RANGE</span></div>
+          <div class="panel-products"><img src="Media/optimized/HSFan.webp" alt="Prodigy HS fan"/><img src="Media/optimized/MSFan.webp" alt="Prodigy MS fan"/></div>
         </a>
 
-        <a class="family-card" href="products/commercial/cabinet-fan.html">
-          <div class="family-media"><img src="Media/optimized/CabinetFan.webp" alt="Prodigy cabinet fan" loading="lazy"/></div>
-          <div class="family-body">
-            <span class="family-kicker">COMMERCIAL</span>
-            <h3 data-ar="مراوح صندوقية" data-en="Cabinet Fans">Cabinet Fans</h3>
-            <p data-ar="حلول صندوقية مرتبة للتطبيقات التجارية وربطها بأنظمة الدكت." data-en="Packaged fan solutions for commercial applications and ducted systems.">Packaged fan solutions for commercial applications and ducted systems.</p>
-            <span class="family-go"><span data-ar="استعرض السلسلة" data-en="Explore range">Explore range</span><i class="fas fa-arrow-right"></i></span>
-          </div>
+        <a class="family-panel panel-cabinet" href="products/commercial/cabinet-fan.html">
+          <div class="panel-copy"><small>COMMERCIAL</small><h3 data-ar="مراوح صندوقية" data-en="Cabinet Fans">Cabinet Fans</h3><p data-ar="حلول صندوقية مرتبة لربطها بأنظمة الدكت والتطبيقات التجارية." data-en="Packaged fan solutions for ducted systems and commercial applications.">Packaged fan solutions for ducted systems and commercial applications.</p><span data-ar="استعرض السلسلة" data-en="EXPLORE RANGE">EXPLORE RANGE</span></div>
+          <img class="single-product" src="Media/optimized/CabinetFan.webp" alt="Prodigy cabinet fan"/>
         </a>
 
-        <a class="family-card" href="products/accessories.html">
-          <div class="family-media"><img src="Media/optimized/Flexbleduct.webp" alt="Prodigy ventilation accessories" loading="lazy"/></div>
-          <div class="family-body">
-            <span class="family-kicker">SYSTEM COMPONENTS</span>
-            <h3 data-ar="ملحقات التهوية" data-en="Ventilation Accessories">Ventilation Accessories</h3>
-            <p data-ar="مكونات مساعدة لإكمال شبكة التهوية وربط عناصر النظام ضمن المشروع." data-en="Supporting components used to complete ventilation systems and connect system elements within the project.">Supporting components used to complete ventilation systems and connect system elements within the project.</p>
-            <span class="family-go"><span data-ar="استعرض الملحقات" data-en="Explore accessories">Explore accessories</span><i class="fas fa-arrow-right"></i></span>
-          </div>
+        <a class="family-panel panel-accessories" href="products/accessories.html">
+          <div class="panel-copy"><small>SYSTEM COMPONENTS</small><h3 data-ar="ملحقات التهوية" data-en="Ventilation Accessories">Ventilation Accessories</h3><p data-ar="مكونات مساعدة لإكمال شبكة التهوية وربط عناصر النظام." data-en="Supporting components used to complete ventilation systems and connect system elements.">Supporting components used to complete ventilation systems and connect system elements.</p><span data-ar="استعرض الملحقات" data-en="EXPLORE ACCESSORIES">EXPLORE ACCESSORIES</span></div>
+          <img class="single-product" src="Media/optimized/Flexbleduct.webp" alt="Prodigy ventilation accessories"/>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="engineering-section" aria-labelledby="engineering-title">
-    <div class="home-shell engineering-layout">
-      <div class="engineering-copy split-copy">
-        <span class="eyebrow" data-ar="أدوات المهندسين" data-en="ENGINEERING WORKFLOW">ENGINEERING WORKFLOW</span>
-        <h2 id="engineering-title" data-ar="من تدفق الهواء إلى اختيار المروحة." data-en="From airflow to fan selection.">From airflow to fan selection.</h2>
-        <p data-ar="استخدم أدوات بروديجي لتنظيم خطوات الحساب والاختيار. عندما تحتاج إلى مراجعة فنية أو وثائق منتج، يمكن لفريقنا دعم متطلبات المشروع." data-en="Use Prodigy tools to structure the calculation and selection process. When technical review or product documentation is required, our team can support the project requirements.">Use Prodigy tools to structure the calculation and selection process. When technical review or product documentation is required, our team can support the project requirements.</p>
+  <section class="engineering-platform" aria-labelledby="engineering-title">
+    <div class="concept-shell engineering-grid">
+      <div class="engineering-lead">
+        <span class="section-kicker light-kicker" data-ar="منصة بروديجي الهندسية" data-en="PRODIGY ENGINEERING">PRODIGY ENGINEERING</span>
+        <h2 id="engineering-title"><span data-ar="احسب." data-en="CALCULATE.">CALCULATE.</span><br/><span data-ar="اختر." data-en="SELECT.">SELECT.</span><br/><em data-ar="راجع." data-en="REVIEW.">REVIEW.</em></h2>
+        <p data-ar="ثلاث أدوات مترابطة لتنظيم خطوات تدفق الهواء وضغط النظام واختيار المروحة ضمن سير عمل واحد واضح." data-en="Three connected tools to structure airflow, system pressure and fan selection in one clear workflow.">Three connected tools to structure airflow, system pressure and fan selection in one clear workflow.</p>
       </div>
-
-      <div class="tool-grid">
-        <a class="tool-card" href="tools/fan-selector.html">
-          <span class="tool-icon"><i class="fas fa-fan"></i></span>
-          <h3 data-ar="أداة اختيار المروحة" data-en="Fan Selector">Fan Selector</h3>
-          <p data-ar="انتقل من بيانات المشروع إلى خيارات المراوح المتاحة ضمن أداة اختيار واحدة." data-en="Move from project inputs to available fan options in one selection workflow.">Move from project inputs to available fan options in one selection workflow.</p>
-          <span class="tool-arrow"><span data-ar="ابدأ الاختيار" data-en="Start selection">Start selection</span> <i class="fas fa-arrow-right"></i></span>
-        </a>
-        <a class="tool-card" href="tools/airflow-calculator.html">
-          <span class="tool-icon"><i class="fas fa-wind"></i></span>
-          <h3 data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator">Airflow Calculator</h3>
-          <p data-ar="نظّم خطوة تقدير تدفق الهواء قبل الانتقال إلى اختيار المروحة." data-en="Structure the airflow estimation step before moving into fan selection.">Structure the airflow estimation step before moving into fan selection.</p>
-          <span class="tool-arrow"><span data-ar="افتح الحاسبة" data-en="Open calculator">Open calculator</span> <i class="fas fa-arrow-right"></i></span>
-        </a>
-        <a class="tool-card" href="tools/esp-calculator.html">
-          <span class="tool-icon"><i class="fas fa-gauge-high"></i></span>
-          <h3 data-ar="حاسبة الضغط الساكن" data-en="ESP Calculator">ESP Calculator</h3>
-          <p data-ar="نظّم تقدير ضغط النظام قبل تحديد نقطة تشغيل المروحة." data-en="Structure the system pressure estimate before defining the fan operating point.">Structure the system pressure estimate before defining the fan operating point.</p>
-          <span class="tool-arrow"><span data-ar="احسب الضغط" data-en="Calculate pressure">Calculate pressure</span> <i class="fas fa-arrow-right"></i></span>
-        </a>
+      <div class="engineering-tools">
+        <a class="engineering-tool main-tool" href="tools/fan-selector.html"><span class="tool-number">01</span><div><small data-ar="الأداة الرئيسية" data-en="SELECTION TOOL">SELECTION TOOL</small><h3 data-ar="اختيار المروحة" data-en="Fan Selector">Fan Selector</h3><p data-ar="انتقل من بيانات المشروع إلى خيارات المراوح المتاحة." data-en="Move from project inputs to available fan options.">Move from project inputs to available fan options.</p></div><i class="fas fa-arrow-right"></i></a>
+        <a class="engineering-tool" href="tools/airflow-calculator.html"><span class="tool-number">02</span><div><small data-ar="الحساب" data-en="CALCULATION">CALCULATION</small><h3 data-ar="حاسبة تدفق الهواء" data-en="Airflow Calculator">Airflow Calculator</h3></div><i class="fas fa-arrow-right"></i></a>
+        <a class="engineering-tool" href="tools/esp-calculator.html"><span class="tool-number">03</span><div><small data-ar="ضغط النظام" data-en="SYSTEM PRESSURE">SYSTEM PRESSURE</small><h3 data-ar="حاسبة الضغط الساكن" data-en="ESP Calculator">ESP Calculator</h3></div><i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
-  <section class="featured-section" aria-labelledby="featured-title">
-    <div class="home-shell">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow" data-ar="منتجات مميزة" data-en="FEATURED PRODUCTS">FEATURED PRODUCTS</span>
-          <h2 id="featured-title" data-ar="ابدأ من أكثر العائلات استخداماً." data-en="Start with the core Prodigy range.">Start with the core Prodigy range.</h2>
-        </div>
-        <p data-ar="وصول مباشر إلى عائلات المنتجات الأساسية بدون تشتيت المستخدم بعشرات الخيارات من أول شاشة." data-en="Direct access to the core product families without overwhelming the visitor with too many choices at once.">Direct access to the core product families without overwhelming the visitor with too many choices at once.</p>
+  <section class="applications-section" aria-labelledby="applications-title">
+    <div class="concept-shell">
+      <div class="section-heading split-heading">
+        <div><span class="section-kicker" data-ar="التطبيقات" data-en="APPLICATIONS">APPLICATIONS</span><h2 id="applications-title" data-ar="حلول حسب نوع المشروع." data-en="SOLUTIONS AROUND THE APPLICATION.">SOLUTIONS AROUND THE APPLICATION.</h2></div>
+        <p data-ar="ابدأ من نوع التطبيق، ثم استخدم صفحات المنتجات والأدوات الهندسية للوصول إلى الحل المناسب للمشروع." data-en="Start from the application, then use the product pages and engineering tools to move toward the right project solution.">Start from the application, then use the product pages and engineering tools to move toward the right project solution.</p>
       </div>
-
-      <div class="featured-grid">
-        <a class="featured-card" href="products/commercial/inline-duct-fan.html">
-          <div class="featured-image"><img src="Media/optimized/HSFan.webp" alt="Prodigy HS Series" loading="lazy"/></div>
-          <small>HS SERIES</small>
-          <h3 data-ar="مروحة داخل الدكت - بلاستيك" data-en="Plastic In-Line Duct Fan">Plastic In-Line Duct Fan</h3>
-          <p data-ar="عائلة مراوح داخل الدكت بهيكل بلاستيكي لمجموعة من تطبيقات التهوية." data-en="A plastic in-line duct fan family for a range of ventilation applications.">A plastic in-line duct fan family for a range of ventilation applications.</p>
-        </a>
-
-        <a class="featured-card" href="products/commercial/inline-duct-fan.html">
-          <div class="featured-image"><img src="Media/optimized/MSFan.webp" alt="Prodigy MS Series" loading="lazy"/></div>
-          <small>MS SERIES</small>
-          <h3 data-ar="مروحة داخل الدكت - معدن" data-en="Metal In-Line Duct Fan">Metal In-Line Duct Fan</h3>
-          <p data-ar="عائلة معدنية لتطبيقات الدكت ضمن مجموعة بروديجي التجارية." data-en="A metal duct fan family within the Prodigy commercial ventilation range.">A metal duct fan family within the Prodigy commercial ventilation range.</p>
-        </a>
-
-        <a class="featured-card" href="products/commercial/cabinet-fan.html">
-          <div class="featured-image"><img src="Media/optimized/CabinetFan.webp" alt="Prodigy cabinet fan" loading="lazy"/></div>
-          <small>CABINET RANGE</small>
-          <h3 data-ar="مروحة صندوقية" data-en="Cabinet Fan">Cabinet Fan</h3>
-          <p data-ar="حل صندوقي منظم للتطبيقات التي تحتاج إلى تركيب مدمج ووصول عملي للخدمة." data-en="A packaged fan solution for applications that benefit from a compact installation and practical service access.">A packaged fan solution for applications that benefit from a compact installation and practical service access.</p>
-        </a>
+      <div class="application-grid">
+        <a class="application-card application-commercial" href="products.html"><span><small data-ar="مشاريع" data-en="PROJECTS">PROJECTS</small><strong data-ar="تهوية تجارية" data-en="Commercial Ventilation">Commercial Ventilation</strong><em data-ar="استكشف المنتجات" data-en="EXPLORE PRODUCTS">EXPLORE PRODUCTS</em></span></a>
+        <a class="application-card application-residential" href="products.html"><span><small data-ar="مساحات يومية" data-en="EVERYDAY SPACES">EVERYDAY SPACES</small><strong data-ar="تهوية سكنية" data-en="Residential Ventilation">Residential Ventilation</strong><em data-ar="استكشف المنتجات" data-en="EXPLORE PRODUCTS">EXPLORE PRODUCTS</em></span></a>
+        <a class="application-card application-support" href="#support"><span><small data-ar="الدعم" data-en="SUPPORT">SUPPORT</small><strong data-ar="دعم الاختيار" data-en="Selection Support">Selection Support</strong><em data-ar="تواصل معنا" data-en="TALK TO PRODIGY">TALK TO PRODIGY</em></span></a>
       </div>
     </div>
   </section>
 
-  <section class="support-section" aria-labelledby="support-title">
-    <div class="home-shell support-layout">
-      <div class="support-copy">
-        <span class="eyebrow" data-ar="دعم المشاريع" data-en="PROJECT SUPPORT">PROJECT SUPPORT</span>
-        <h2 id="support-title" data-ar="حلول تهوية مرتبطة بمتطلبات مشروعك." data-en="Ventilation support around your project requirements.">Ventilation support around your project requirements.</h2>
-        <p data-ar="للحصول على معلومات المنتج، وثائق فنية، أو مساعدة في خطوات الاختيار، تواصل مع فريق بروديجي وارسل متطلبات المشروع المتاحة لديك." data-en="For product information, technical documentation or support through the selection process, contact the Prodigy team and share the available project requirements.">For product information, technical documentation or support through the selection process, contact the Prodigy team and share the available project requirements.</p>
-        <div class="support-actions">
-          <a class="home-btn home-btn-light" href="#contact"><span data-ar="اطلب دعماً فنياً" data-en="REQUEST TECHNICAL SUPPORT">REQUEST TECHNICAL SUPPORT</span><i class="fas fa-arrow-right"></i></a>
-        </div>
+  <section class="featured-products" aria-labelledby="featured-title">
+    <div class="concept-shell">
+      <div class="section-heading split-heading">
+        <div><span class="section-kicker" data-ar="منتجات مميزة" data-en="FEATURED PRODUCTS">FEATURED PRODUCTS</span><h2 id="featured-title" data-ar="من مجموعة بروديجي الأساسية." data-en="FROM THE CORE PRODIGY RANGE.">FROM THE CORE PRODIGY RANGE.</h2></div>
+        <a class="concept-text-link" href="products.html"><span data-ar="عرض جميع المنتجات" data-en="VIEW ALL PRODUCTS">VIEW ALL PRODUCTS</span><i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="support-visual"><img src="Media/optimized/MSFan.webp" alt="Prodigy ventilation fan" loading="lazy"/></div>
-    </div>
-  </section>
-
-  <section class="contact-section-home" id="contact">
-    <div class="home-shell contact-layout">
-      <div class="contact-copy">
-        <span class="eyebrow" data-ar="تواصل معنا" data-en="CONTACT PRODIGY">CONTACT PRODIGY</span>
-        <h2 data-ar="جاهز تبدأ مشروعك؟" data-en="Ready to discuss your project?">Ready to discuss your project?</h2>
-        <p data-ar="أرسل متطلباتك أو تواصل معنا للحصول على معلومات المنتج والدعم الفني المتاح." data-en="Send your requirements or contact us for product information and available technical support.">Send your requirements or contact us for product information and available technical support.</p>
-      </div>
-
-      <div class="contact-cards">
-        <div class="contact-card">
-          <i class="fas fa-envelope"></i>
-          <strong data-ar="البريد الإلكتروني" data-en="Email">Email</strong>
-          <a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a>
-        </div>
-        <div class="contact-card">
-          <i class="fas fa-phone"></i>
-          <strong data-ar="الهاتف" data-en="Phone">Phone</strong>
-          <a href="tel:+97192289674">+971 9 228 9674</a>
-        </div>
-        <div class="contact-card">
-          <i class="fas fa-location-dot"></i>
-          <strong data-ar="الموقع" data-en="Location">Location</strong>
-          <span data-ar="الفجيرة، الإمارات العربية المتحدة" data-en="Fujairah, United Arab Emirates">Fujairah, United Arab Emirates</span>
-        </div>
-        <div class="contact-card">
-          <i class="fas fa-mail-bulk"></i>
-          <strong data-ar="صندوق البريد" data-en="P.O. Box">P.O. Box</strong>
-          <span>1216</span>
-        </div>
+      <div class="featured-row">
+        <a class="featured-product" href="products/commercial/inline-duct-fan.html"><div class="featured-img"><img src="Media/optimized/HSFan.webp" alt="Prodigy HS Series"/></div><small>HS SERIES</small><h3 data-ar="مروحة داخل الدكت - بلاستيك" data-en="Plastic In-Line Duct Fan">Plastic In-Line Duct Fan</h3><span data-ar="التفاصيل" data-en="VIEW PRODUCT">VIEW PRODUCT</span></a>
+        <a class="featured-product" href="products/commercial/inline-duct-fan.html"><div class="featured-img"><img src="Media/optimized/MSFan.webp" alt="Prodigy MS Series"/></div><small>MS SERIES</small><h3 data-ar="مروحة داخل الدكت - معدن" data-en="Metal In-Line Duct Fan">Metal In-Line Duct Fan</h3><span data-ar="التفاصيل" data-en="VIEW PRODUCT">VIEW PRODUCT</span></a>
+        <a class="featured-product" href="products/commercial/cabinet-fan.html"><div class="featured-img"><img src="Media/optimized/CabinetFan.webp" alt="Prodigy Cabinet Fan"/></div><small>CABINET RANGE</small><h3 data-ar="مروحة صندوقية" data-en="Cabinet Fan">Cabinet Fan</h3><span data-ar="التفاصيل" data-en="VIEW PRODUCT">VIEW PRODUCT</span></a>
       </div>
     </div>
   </section>
 
+  <section class="support-band" id="support">
+    <div class="concept-shell support-grid">
+      <div><span class="section-kicker light-kicker" data-ar="الدعم الفني" data-en="TECHNICAL SUPPORT">TECHNICAL SUPPORT</span><h2 data-ar="شارك متطلبات مشروعك." data-en="SHARE YOUR PROJECT REQUIREMENTS.">SHARE YOUR PROJECT REQUIREMENTS.</h2></div>
+      <div><p data-ar="للحصول على معلومات المنتج، الوثائق الفنية المتاحة، أو المساعدة في خطوات الاختيار، تواصل مع فريق بروديجي." data-en="For product information, available technical documentation or support through the selection process, contact the Prodigy team.">For product information, available technical documentation or support through the selection process, contact the Prodigy team.</p><a class="concept-btn concept-btn-white" href="#contact"><span data-ar="تواصل مع بروديجي" data-en="CONTACT PRODIGY">CONTACT PRODIGY</span><i class="fas fa-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <section class="contact-section-concept" id="contact">
+    <div class="concept-shell contact-grid">
+      <div><span class="section-kicker" data-ar="تواصل معنا" data-en="CONTACT">CONTACT</span><h2 data-ar="ابدأ المحادثة." data-en="START THE CONVERSATION.">START THE CONVERSATION.</h2><p data-ar="للاستفسار عن المنتجات أو الدعم الفني، تواصل معنا مباشرة." data-en="For product information or technical support, contact us directly.">For product information or technical support, contact us directly.</p></div>
+      <div class="contact-list">
+        <a href="mailto:info@prodigysystems.ae"><i class="fas fa-envelope"></i><span><small data-ar="البريد الإلكتروني" data-en="EMAIL">EMAIL</small><strong>info@prodigysystems.ae</strong></span></a>
+        <a href="tel:+97192289674"><i class="fas fa-phone"></i><span><small data-ar="الهاتف" data-en="PHONE">PHONE</small><strong>+971 9 228 9674</strong></span></a>
+        <div><i class="fas fa-location-dot"></i><span><small data-ar="الموقع" data-en="LOCATION">LOCATION</small><strong data-ar="الفجيرة، الإمارات العربية المتحدة" data-en="Fujairah, United Arab Emirates">Fujairah, United Arab Emirates</strong></span></div>
+        <div><i class="fas fa-mail-bulk"></i><span><small data-ar="صندوق البريد" data-en="P.O. BOX">P.O. BOX</small><strong>1216</strong></span></div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="footer">
+<footer class="footer concept-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-column">
-        <div class="footer-logo">
-          <img alt="Prodigy Logo" class="footer-logo-img" decoding="async" height="388" loading="lazy" src="Media/optimized/logo.webp" width="489"/>
-          <div class="footer-logo-text">
-            <span class="logo-brand">PRODIGY</span>
-            <span class="logo-subtitle" data-ar="أنظمة التهوية" data-en="Ventilation Systems">Ventilation Systems</span>
-          </div>
-        </div>
+        <div class="footer-logo"><img alt="Prodigy Logo" class="footer-logo-img" decoding="async" height="388" loading="lazy" src="Media/optimized/logo.webp" width="489"/><div class="footer-logo-text"><span class="logo-brand">PRODIGY</span><span class="logo-subtitle" data-ar="أنظمة التهوية" data-en="Ventilation Systems">Ventilation Systems</span></div></div>
         <p class="footer-description" data-ar="حلول تهوية احترافية للمشاريع والتطبيقات اليومية." data-en="Professional ventilation solutions for projects and everyday applications.">Professional ventilation solutions for projects and everyday applications.</p>
-        <div class="footer-social">
-          <a aria-label="LinkedIn" class="social-link" href="https://ae.linkedin.com/company/prodigy-ventilation-systems-company-l-l-c?trk=public_post_feed-actor-name" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a aria-label="YouTube" class="social-link" href="https://www.youtube.com/@ProdigyVentilationSystem" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
+        <div class="footer-social"><a aria-label="LinkedIn" class="social-link" href="https://ae.linkedin.com/company/prodigy-ventilation-systems-company-l-l-c?trk=public_post_feed-actor-name" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a><a aria-label="YouTube" class="social-link" href="https://www.youtube.com/@ProdigyVentilationSystem" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a></div>
       </div>
-
-      <div class="footer-column">
-        <h4 data-ar="الأدوات الهندسية" data-en="Engineering tools">Engineering tools</h4>
-        <ul class="footer-links">
-          <li><a data-ar="حاسبة تدفق الهواء" data-en="Airflow calculator" href="tools/airflow-calculator.html">Airflow calculator</a></li>
-          <li><a data-ar="ضغط النظام" data-en="System ESP" href="tools/esp-calculator.html">System ESP</a></li>
-          <li><a data-ar="اختيار المروحة" data-en="Fan selection" href="tools/fan-selector.html">Fan selection</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4 data-ar="الشركة والمنتجات" data-en="Company & products">Company & products</h4>
-        <ul class="footer-links">
-          <li><a data-ar="من نحن" data-en="About us" href="#about">About us</a></li>
-          <li><a data-ar="المنتجات" data-en="Products" href="products.html">Products</a></li>
-          <li><a data-ar="اتصل بنا" data-en="Contact" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4 data-ar="معلومات الاتصال" data-en="Contact Info">Contact Info</h4>
-        <ul class="footer-contact">
-          <li><i class="fas fa-envelope"></i><a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a></li>
-          <li><i class="fas fa-phone"></i>+971 9 228 9674</li>
-          <li><i class="fas fa-map-marker-alt"></i><span data-ar="الفجيرة، الإمارات العربية المتحدة" data-en="Fujairah, United Arab Emirates">Fujairah, United Arab Emirates</span></li>
-          <li><i class="fas fa-mail-bulk"></i><span data-ar="صندوق البريد 1216" data-en="P.O. Box 1216">P.O. Box 1216</span></li>
-        </ul>
-      </div>
+      <div class="footer-column"><h4 data-ar="الأدوات الهندسية" data-en="Engineering tools">Engineering tools</h4><ul class="footer-links"><li><a data-ar="حاسبة تدفق الهواء" data-en="Airflow calculator" href="tools/airflow-calculator.html">Airflow calculator</a></li><li><a data-ar="ضغط النظام" data-en="System ESP" href="tools/esp-calculator.html">System ESP</a></li><li><a data-ar="اختيار المروحة" data-en="Fan selection" href="tools/fan-selector.html">Fan selection</a></li></ul></div>
+      <div class="footer-column"><h4 data-ar="الشركة والمنتجات" data-en="Company & products">Company & products</h4><ul class="footer-links"><li><a data-ar="من نحن" data-en="About us" href="#about">About us</a></li><li><a data-ar="المنتجات" data-en="Products" href="products.html">Products</a></li><li><a data-ar="اتصل بنا" data-en="Contact" href="#contact">Contact</a></li></ul></div>
+      <div class="footer-column"><h4 data-ar="معلومات الاتصال" data-en="Contact Info">Contact Info</h4><ul class="footer-contact"><li><i class="fas fa-envelope"></i><a href="mailto:info@prodigysystems.ae">info@prodigysystems.ae</a></li><li><i class="fas fa-phone"></i>+971 9 228 9674</li><li><i class="fas fa-map-marker-alt"></i><span data-ar="الفجيرة، الإمارات العربية المتحدة" data-en="Fujairah, United Arab Emirates">Fujairah, United Arab Emirates</span></li><li><i class="fas fa-mail-bulk"></i><span data-ar="صندوق البريد 1216" data-en="P.O. Box 1216">P.O. Box 1216</span></li></ul></div>
     </div>
-
-    <div class="footer-bottom">
-      <p>© <span id="currentYear"></span> <span data-ar="أنظمة التهوية بروديجي. جميع الحقوق محفوظة." data-en="Prodigy Ventilation Systems. All Rights Reserved.">Prodigy Ventilation Systems. All Rights Reserved.</span></p>
-    </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> <span data-ar="أنظمة التهوية بروديجي. جميع الحقوق محفوظة." data-en="Prodigy Ventilation Systems. All Rights Reserved.">Prodigy Ventilation Systems. All Rights Reserved.</span></p></div>
   </div>
 </footer>
 
