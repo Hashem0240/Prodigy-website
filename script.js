@@ -68,8 +68,8 @@
   menu?.addEventListener("click", () => {
     const open = !nav.classList.contains("active");
     closeDropdowns();
-    nav.classList.toggle("active", open);
-    menu.setAttribute("aria-expanded", String(open));
+    nav?.classList.toggle("active", open);
+    menu?.setAttribute("aria-expanded", String(open));
   });
   document.querySelectorAll(".dropdown-toggle").forEach((button) => {
     button.addEventListener("click", () => {
@@ -307,4 +307,44 @@ if (document.body.classList.contains("home-intarcon")) {
     }
   `;
   document.head.appendChild(refinement);
+}
+
+/* INTARCON-like primary navigation typography only. */
+if (document.body.classList.contains("home-intarcon")) {
+  const fontLink = document.createElement("link");
+  fontLink.rel = "stylesheet";
+  fontLink.href = "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap";
+  document.head.appendChild(fontLink);
+
+  const navType = document.createElement("style");
+  navType.textContent = `
+    .home-intarcon .concept-header .nav-link,
+    .home-intarcon .concept-header .dropdown-toggle {
+      font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 400 !important;
+      line-height: 1.2 !important;
+      letter-spacing: .055em !important;
+      text-transform: uppercase !important;
+    }
+
+    .home-intarcon .concept-header .dropdown-toggle i {
+      font-size: 9px !important;
+      margin-inline-start: 5px !important;
+    }
+
+    .home-intarcon .concept-header .nav {
+      gap: 29px !important;
+    }
+
+    [dir="rtl"] .home-intarcon .concept-header .nav-link,
+    [dir="rtl"] .home-intarcon .concept-header .dropdown-toggle {
+      font-family: Tahoma, Arial, sans-serif !important;
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0 !important;
+      text-transform: none !important;
+    }
+  `;
+  document.head.appendChild(navType);
 }
