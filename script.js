@@ -311,30 +311,25 @@ if (document.body.classList.contains("home-intarcon")) {
 
 /* INTARCON-like primary navigation typography only. */
 if (document.body.classList.contains("home-intarcon")) {
-  const fontLink = document.createElement("link");
-  fontLink.rel = "stylesheet";
-  fontLink.href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap";
-  document.head.appendChild(fontLink);
-
   const navType = document.createElement("style");
   navType.textContent = `
     .home-intarcon .concept-header .nav-link,
     .home-intarcon .concept-header .dropdown-toggle {
-      font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
+      font-family: Arial, Helvetica, sans-serif !important;
       font-size: 15px !important;
       font-weight: 700 !important;
-      line-height: 1.15 !important;
+      line-height: 1 !important;
       letter-spacing: 0 !important;
       text-transform: uppercase !important;
     }
 
     .home-intarcon .concept-header .dropdown-toggle i {
       font-size: 9px !important;
-      margin-inline-start: 6px !important;
+      margin-inline-start: 5px !important;
     }
 
     .home-intarcon .concept-header .nav {
-      gap: 31px !important;
+      gap: 32px !important;
     }
 
     [dir="rtl"] .home-intarcon .concept-header .nav-link,
