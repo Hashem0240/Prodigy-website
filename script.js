@@ -434,3 +434,65 @@ if (document.body.classList.contains("home-intarcon")) {
   `;
   document.head.appendChild(logoStyle);
 }
+
+/* Final logo ratio correction: balance icon, PRODIGY and subtitle. */
+if (document.body.classList.contains("home-intarcon")) {
+  const logoBalance = document.createElement("style");
+  logoBalance.textContent = `
+    .home-intarcon .concept-logo {
+      min-width: 305px !important;
+      gap: 15px !important;
+    }
+
+    .home-intarcon .concept-logo img {
+      width: 72px !important;
+      height: 72px !important;
+      flex: 0 0 72px !important;
+    }
+
+    .home-intarcon .concept-logo-copy strong {
+      font-size: 30px !important;
+      line-height: .94 !important;
+      letter-spacing: .035em !important;
+    }
+
+    .home-intarcon .concept-logo-copy small {
+      margin-top: 5px !important;
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      line-height: 1.05 !important;
+    }
+
+    @media (max-width: 1180px) {
+      .home-intarcon .concept-logo {
+        min-width: 275px !important;
+      }
+      .home-intarcon .concept-logo img {
+        width: 64px !important;
+        height: 64px !important;
+        flex-basis: 64px !important;
+      }
+      .home-intarcon .concept-logo-copy strong {
+        font-size: 27px !important;
+      }
+      .home-intarcon .concept-logo-copy small {
+        font-size: 16px !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .home-intarcon .concept-logo img {
+        width: 48px !important;
+        height: 48px !important;
+        flex-basis: 48px !important;
+      }
+      .home-intarcon .concept-logo-copy strong {
+        font-size: 22px !important;
+      }
+      .home-intarcon .concept-logo-copy small {
+        font-size: 13px !important;
+      }
+    }
+  `;
+  document.head.appendChild(logoBalance);
+}
