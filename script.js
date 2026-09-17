@@ -181,91 +181,132 @@
   start();
 })();
 
-/* Homepage concept header tuning only. */
+/* Homepage header: restrained manufacturer navigation and controls.
+   Logo artwork and lockup proportions are defined separately below. */
 if (document.body.classList.contains("home-intarcon")) {
-  const style = document.createElement("style");
-  style.textContent = `
-    .home-intarcon .header-shell {
-      gap: 20px !important;
+  const headerStyle = document.createElement("style");
+  headerStyle.textContent = `
+    .home-intarcon .concept-header .header-shell {
+      width: min(1280px, calc(100% - 64px));
+      gap: 24px;
     }
 
-    .home-intarcon .concept-logo {
-      min-width: 255px !important;
-      gap: 14px !important;
+    .home-intarcon .concept-header .nav-link,
+    .home-intarcon .concept-header .dropdown-toggle {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: .015em;
+      text-transform: uppercase;
+      padding-block: 14px;
+      white-space: nowrap;
+    }
+
+    .home-intarcon .concept-header .dropdown-toggle i {
+      font-size: 8px;
+      margin-inline-start: 5px;
     }
 
     .home-intarcon .concept-header .nav {
-      margin-inline-start: 18px !important;
-      gap: 26px !important;
+      margin-inline-start: auto;
+      gap: 28px;
     }
 
     .home-intarcon .concept-header .header-controls {
-      margin-inline-start: auto !important;
-      gap: 8px !important;
-      display: flex !important;
-      align-items: center !important;
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      gap: 6px;
+      margin-inline-start: 0;
+      padding-inline-start: 18px;
+      border-inline-start: 1px solid #e5e7ea;
     }
 
     .home-intarcon .concept-header .control-btn,
     .home-intarcon .concept-header .lang-btn {
-      min-width: 42px !important;
-      height: 42px !important;
-      padding: 0 12px !important;
-      border-radius: 8px !important;
-      border: 1px solid #d9dde2 !important;
-      background: #ffffff !important;
-      color: #2f343b !important;
-      box-shadow: none !important;
-      font-size: 13px !important;
-      font-weight: 700 !important;
+      min-width: 36px;
+      height: 40px;
+      padding: 0 8px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: #31353b;
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 600;
     }
 
     .home-intarcon .concept-header .control-btn {
-      width: 42px !important;
-      padding: 0 !important;
+      width: 36px;
+      padding: 0;
     }
 
     .home-intarcon .concept-header .lang-btn {
-      width: auto !important;
-      min-width: 64px !important;
-      white-space: nowrap !important;
+      width: auto;
+      min-width: 60px;
+      white-space: nowrap;
     }
 
     .home-intarcon .concept-header .control-btn:hover,
     .home-intarcon .concept-header .lang-btn:hover {
-      color: #d71920 !important;
-      border-color: #d71920 !important;
-      background: #fff !important;
+      color: #d71920;
+      background: #f6f7f8;
     }
 
-    @media (max-width: 1180px) {
-      .home-intarcon .concept-logo {
-        min-width: 230px !important;
+    .home-intarcon .concept-header :is(a, button):focus-visible {
+      outline: 2px solid #d71920;
+      outline-offset: 4px;
+    }
+
+    [dir="rtl"] .home-intarcon .concept-header .nav-link,
+    [dir="rtl"] .home-intarcon .concept-header .dropdown-toggle {
+      font-family: Tahoma, Arial, sans-serif;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1180px) {
+      .home-intarcon .concept-header .header-shell {
+        width: calc(100% - 40px);
+        gap: 16px;
       }
       .home-intarcon .concept-header .nav {
-        margin-inline-start: 8px !important;
-        gap: 20px !important;
+        gap: 20px;
+      }
+      .home-intarcon .concept-header .header-controls {
+        padding-inline-start: 12px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .home-intarcon .concept-header .header-shell {
+        width: calc(100% - 28px);
+        gap: 10px;
+      }
+      .home-intarcon .concept-header .header-controls {
+        margin-inline-start: auto;
+        padding-inline-start: 0;
+        border-inline-start: 0;
+        gap: 2px;
+      }
+      .home-intarcon .concept-header .concept-logo {
+        min-width: 0 !important;
+        flex-shrink: 0;
+      }
+      .home-intarcon .concept-header .nav {
+        margin-inline-start: 0;
+        gap: 12px;
       }
     }
   `;
-  document.head.appendChild(style);
+  document.head.appendChild(headerStyle);
 }
 
 /* Homepage concept refinement: nav balance + narrower hero + alternate hero image. */
 if (document.body.classList.contains("home-intarcon")) {
   const refinement = document.createElement("style");
   refinement.textContent = `
-    @media (min-width: 1025px) {
-      .home-intarcon .concept-logo {
-        min-width: 272px !important;
-      }
-
-      .home-intarcon .concept-header .nav {
-        margin-inline-start: 30px !important;
-        gap: 31px !important;
-      }
-    }
-
     .home-intarcon .cinematic-hero {
       background-image: url('Media/optimized/hero-1.jpg') !important;
       background-position: center center !important;
@@ -307,41 +348,6 @@ if (document.body.classList.contains("home-intarcon")) {
     }
   `;
   document.head.appendChild(refinement);
-}
-
-/* INTARCON-like primary navigation typography only. */
-if (document.body.classList.contains("home-intarcon")) {
-  const navType = document.createElement("style");
-  navType.textContent = `
-    .home-intarcon .concept-header .nav-link,
-    .home-intarcon .concept-header .dropdown-toggle {
-      font-family: Arial, Helvetica, sans-serif !important;
-      font-size: 15px !important;
-      font-weight: 700 !important;
-      line-height: 1 !important;
-      letter-spacing: 0 !important;
-      text-transform: uppercase !important;
-    }
-
-    .home-intarcon .concept-header .dropdown-toggle i {
-      font-size: 9px !important;
-      margin-inline-start: 5px !important;
-    }
-
-    .home-intarcon .concept-header .nav {
-      gap: 32px !important;
-    }
-
-    [dir="rtl"] .home-intarcon .concept-header .nav-link,
-    [dir="rtl"] .home-intarcon .concept-header .dropdown-toggle {
-      font-family: Tahoma, Arial, sans-serif !important;
-      font-size: 15px !important;
-      font-weight: 700 !important;
-      letter-spacing: 0 !important;
-      text-transform: none !important;
-    }
-  `;
-  document.head.appendChild(navType);
 }
 
 /* Homepage logo lockup: one set of ratios, including the icon asset's transparent padding.
