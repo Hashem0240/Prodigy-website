@@ -350,8 +350,8 @@ if (document.body.classList.contains("home-intarcon")) {
   document.head.appendChild(refinement);
 }
 
-/* Homepage logo lockup: one set of ratios, including the icon asset's transparent padding.
-   Keep the existing logo allocation so navigation and controls do not move. */
+/* Homepage logo: display the original owner-supplied artwork as a single lockup.
+   Preserve the header allocation and scale the artwork without changing its proportions. */
 if (document.body.classList.contains("home-intarcon")) {
   const logoStyle = document.createElement("style");
   logoStyle.textContent = `
@@ -362,42 +362,11 @@ if (document.body.classList.contains("home-intarcon")) {
     }
 
     .home-intarcon .concept-logo img {
-      width: 94px !important;
-      height: 80px !important;
-      flex: 0 0 94px !important;
+      display: block;
+      width: 269px !important;
+      height: auto !important;
+      flex: 0 0 269px !important;
       object-fit: contain !important;
-    }
-
-    .home-intarcon .concept-logo-copy {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      justify-content: center !important;
-      line-height: 1 !important;
-    }
-
-    .home-intarcon .concept-logo-copy strong {
-      display: block !important;
-      margin: 0 !important;
-      color: #202630 !important;
-      font-family: "Arial Black", Arial, Helvetica, sans-serif !important;
-      font-size: 38px !important;
-      font-weight: 900 !important;
-      line-height: .94 !important;
-      letter-spacing: 0 !important;
-      text-transform: uppercase !important;
-    }
-
-    .home-intarcon .concept-logo-copy small {
-      display: block !important;
-      margin-top: 5px !important;
-      color: #d71920 !important;
-      font-family: Arial, Helvetica, sans-serif !important;
-      font-size: 18px !important;
-      font-weight: 700 !important;
-      line-height: 1.05 !important;
-      letter-spacing: 0 !important;
-      white-space: nowrap !important;
     }
 
     @media (max-width: 1180px) {
@@ -405,30 +374,15 @@ if (document.body.classList.contains("home-intarcon")) {
         min-width: 275px !important;
       }
       .home-intarcon .concept-logo img {
-        width: 82px !important;
-        height: 70px !important;
-        flex-basis: 82px !important;
-      }
-      .home-intarcon .concept-logo-copy strong {
-        font-size: 34px !important;
-      }
-      .home-intarcon .concept-logo-copy small {
-        font-size: 16px !important;
+        width: 239px !important;
+        flex-basis: 239px !important;
       }
     }
 
     @media (max-width: 760px) {
       .home-intarcon .concept-logo img {
-        width: 64px !important;
-        height: 54px !important;
-        flex-basis: 64px !important;
-      }
-      .home-intarcon .concept-logo-copy strong {
-        font-size: 27px !important;
-      }
-      .home-intarcon .concept-logo-copy small {
-        margin-top: 4px !important;
-        font-size: 13px !important;
+        width: 188px !important;
+        flex-basis: 188px !important;
       }
     }
   `;
