@@ -180,3 +180,73 @@
   show(0);
   start();
 })();
+
+/* Homepage concept header tuning only. */
+if (document.body.classList.contains("home-intarcon")) {
+  const style = document.createElement("style");
+  style.textContent = `
+    .home-intarcon .header-shell {
+      gap: 20px !important;
+    }
+
+    .home-intarcon .concept-logo {
+      min-width: 255px !important;
+      gap: 14px !important;
+    }
+
+    .home-intarcon .concept-header .nav {
+      margin-inline-start: 18px !important;
+      gap: 26px !important;
+    }
+
+    .home-intarcon .concept-header .header-controls {
+      margin-inline-start: auto !important;
+      gap: 8px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    .home-intarcon .concept-header .control-btn,
+    .home-intarcon .concept-header .lang-btn {
+      min-width: 42px !important;
+      height: 42px !important;
+      padding: 0 12px !important;
+      border-radius: 8px !important;
+      border: 1px solid #d9dde2 !important;
+      background: #ffffff !important;
+      color: #2f343b !important;
+      box-shadow: none !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+    }
+
+    .home-intarcon .concept-header .control-btn {
+      width: 42px !important;
+      padding: 0 !important;
+    }
+
+    .home-intarcon .concept-header .lang-btn {
+      width: auto !important;
+      min-width: 64px !important;
+      white-space: nowrap !important;
+    }
+
+    .home-intarcon .concept-header .control-btn:hover,
+    .home-intarcon .concept-header .lang-btn:hover {
+      color: #d71920 !important;
+      border-color: #d71920 !important;
+      background: #fff !important;
+    }
+
+    @media (max-width: 1180px) {
+      .home-intarcon .concept-logo {
+        min-width: 230px !important;
+      }
+      .home-intarcon .concept-header .nav {
+        margin-inline-start: 8px !important;
+        gap: 20px !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+}
