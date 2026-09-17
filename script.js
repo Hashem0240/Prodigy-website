@@ -187,7 +187,7 @@ if (document.body.classList.contains("home-intarcon")) {
   const headerStyle = document.createElement("style");
   headerStyle.textContent = `
     .home-intarcon .concept-header .header-shell {
-      width: min(1280px, calc(100% - 64px));
+      width: min(1180px, calc(100% - 64px));
       gap: 24px;
     }
 
@@ -218,7 +218,7 @@ if (document.body.classList.contains("home-intarcon")) {
       align-items: center;
       flex: 0 0 auto;
       gap: 6px;
-      margin-inline-start: 0;
+      margin-inline-start: auto;
       padding-inline-start: 18px;
       border-inline-start: 1px solid #e5e7ea;
     }
