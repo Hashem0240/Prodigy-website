@@ -250,3 +250,61 @@ if (document.body.classList.contains("home-intarcon")) {
   `;
   document.head.appendChild(style);
 }
+
+/* Homepage concept refinement: nav balance + narrower hero + alternate hero image. */
+if (document.body.classList.contains("home-intarcon")) {
+  const refinement = document.createElement("style");
+  refinement.textContent = `
+    @media (min-width: 1025px) {
+      .home-intarcon .concept-logo {
+        min-width: 272px !important;
+      }
+
+      .home-intarcon .concept-header .nav {
+        margin-inline-start: 30px !important;
+        gap: 31px !important;
+      }
+    }
+
+    .home-intarcon .cinematic-hero {
+      background-image: url('Media/optimized/hero-1.jpg') !important;
+      background-position: center center !important;
+    }
+
+    .home-intarcon .hero-copy {
+      max-width: 690px !important;
+    }
+
+    .home-intarcon .hero-copy h1 {
+      max-width: 650px !important;
+      font-size: clamp(3.35rem, 5.55vw, 6.15rem) !important;
+      line-height: .93 !important;
+      letter-spacing: -.05em !important;
+    }
+
+    .home-intarcon .hero-copy p {
+      max-width: 560px !important;
+      font-size: 1.02rem !important;
+      line-height: 1.7 !important;
+    }
+
+    .home-intarcon .hero-overlay {
+      background:
+        linear-gradient(90deg, rgba(8,10,12,.92) 0%, rgba(8,10,12,.78) 34%, rgba(8,10,12,.42) 56%, rgba(8,10,12,.12) 78%, rgba(8,10,12,.06) 100%),
+        linear-gradient(0deg, rgba(8,10,12,.18), rgba(8,10,12,.03)) !important;
+    }
+
+    @media (max-width: 760px) {
+      .home-intarcon .cinematic-hero {
+        background-position: 58% center !important;
+      }
+
+      .home-intarcon .hero-copy,
+      .home-intarcon .hero-copy h1,
+      .home-intarcon .hero-copy p {
+        max-width: 100% !important;
+      }
+    }
+  `;
+  document.head.appendChild(refinement);
+}
