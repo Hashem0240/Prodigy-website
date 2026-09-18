@@ -91,21 +91,24 @@
 }
 
 .home-intarcon .gateway-strip {
+  padding-block: 0;
   background: #fff;
   border-bottom: 1px solid var(--c-line);
 }
 
 .home-intarcon .gateway-grid {
+  width: min(1180px, calc(100% - 64px));
   display: grid;
   grid-template-columns: repeat(5, minmax(0,1fr));
 }
 
 .home-intarcon .gateway-item {
-  min-height: 102px;
+  min-height: 84px;
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 18px 20px;
+  gap: 10px;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--c-ink);
   text-decoration: none;
   border-inline-end: 1px solid var(--c-line);
@@ -120,16 +123,19 @@
   background: #f7f7f7;
 }
 
+.home-intarcon .gateway-item:focus-visible {
+  outline: 2px solid var(--c-red);
+  outline-offset: -3px;
+}
+
 .home-intarcon .gateway-item i {
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
   color: var(--c-red);
-  font-size: 1.05rem;
-  border: 1px solid #e7e8ea;
-  border-radius: 50%;
+  font-size: 1.15rem;
 }
 
 .home-intarcon .gateway-item span {
@@ -139,9 +145,9 @@
 }
 
 .home-intarcon .gateway-item strong {
-  font-size: .73rem;
+  font-size: .75rem;
   line-height: 1.25;
-  letter-spacing: .08em;
+  letter-spacing: .035em;
 }
 
 .home-intarcon .gateway-item small {
