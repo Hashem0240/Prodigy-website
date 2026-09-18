@@ -303,7 +303,7 @@ if (document.body.classList.contains("home-intarcon")) {
   document.head.appendChild(headerStyle);
 }
 
-/* Homepage concept refinement: nav balance + narrower hero + alternate hero image. */
+/* Homepage hero: owner-approved image and balanced text layout. */
 if (document.body.classList.contains("home-intarcon")) {
   const refinement = document.createElement("style");
   refinement.textContent = `
@@ -312,20 +312,28 @@ if (document.body.classList.contains("home-intarcon")) {
       background-position: center center !important;
     }
 
+    .home-intarcon .hero-content {
+      width: min(1180px, calc(100% - 64px));
+      padding-block: 72px 110px;
+    }
+
     .home-intarcon .hero-copy {
-      max-width: 690px !important;
+      max-width: 470px !important;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .home-intarcon .hero-copy h1 {
-      max-width: 650px !important;
-      font-size: clamp(3.35rem, 5.55vw, 6.15rem) !important;
-      line-height: .93 !important;
-      letter-spacing: -.05em !important;
+      max-width: 470px !important;
+      margin: 20px 0 22px;
+      font-size: clamp(2.25rem, 3.2vw, 3.25rem) !important;
+      font-weight: 700;
+      line-height: 1.1 !important;
+      letter-spacing: -.025em !important;
     }
 
     .home-intarcon .hero-copy p {
-      max-width: 560px !important;
-      font-size: 1.02rem !important;
+      max-width: 400px !important;
+      font-size: .95rem !important;
       line-height: 1.7 !important;
     }
 
@@ -338,6 +346,15 @@ if (document.body.classList.contains("home-intarcon")) {
     @media (max-width: 760px) {
       .home-intarcon .cinematic-hero {
         background-position: 58% center !important;
+      }
+
+      .home-intarcon .hero-content {
+        width: calc(100% - 40px);
+        padding-block: 48px 130px;
+      }
+
+      .home-intarcon .hero-copy h1 {
+        font-size: clamp(1.9rem, 7.6vw, 2.7rem) !important;
       }
 
       .home-intarcon .hero-copy,
