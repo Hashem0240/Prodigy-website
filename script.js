@@ -308,7 +308,7 @@ if (document.body.classList.contains("home-intarcon")) {
   const refinement = document.createElement("style");
   refinement.textContent = `
     .home-intarcon .cinematic-hero {
-      background-image: url('Media/optimized/hero-1.jpg') !important;
+      background-image: url('Media/optimized/homepage-hero-products-v1.webp') !important;
       background-position: center center !important;
     }
 
