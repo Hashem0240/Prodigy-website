@@ -552,82 +552,23 @@ html[data-theme="dark"] .home-intarcon .family-card p { color: #b7bdc4; }
   transition: transform .25s ease;
 }
 
-.home-intarcon .engineering-platform {
-  padding: 110px 0;
-  color: #fff;
-  background: #191c20;
-}
-
-.home-intarcon .engineering-grid {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 90px;
-  align-items: center;
-}
-
+.home-intarcon .engineering-platform { padding: 80px 0; color: var(--c-ink); background: var(--c-white); font-family: Arial, sans-serif; }
+.home-intarcon .engineering-platform > .engineering-grid { width: min(1180px, calc(100% - 64px)); }
+.home-intarcon .engineering-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: center; }
 .home-intarcon .light-kicker { color: #fff; }
 .home-intarcon .light-kicker::before { background: var(--c-red); }
-
-.home-intarcon .engineering-lead h2 {
-  margin: 20px 0 25px;
-  color: #fff;
-  font-size: clamp(3.3rem, 5.4vw, 6.1rem);
-  line-height: .88;
-  letter-spacing: -.055em;
-  font-weight: 850;
-}
-
-.home-intarcon .engineering-lead h2 em { color: var(--c-red); font-style: normal; }
-.home-intarcon .engineering-lead p { max-width: 560px; color: #aeb3ba; line-height: 1.8; }
-
-.home-intarcon .engineering-tools {
-  border-top: 1px solid #3d4148;
-}
-
-.home-intarcon .engineering-tool {
-  min-height: 112px;
-  display: grid;
-  grid-template-columns: 58px 1fr 30px;
-  gap: 20px;
-  align-items: center;
-  padding: 25px 10px;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #3d4148;
-  transition: background .2s ease, padding .2s ease;
-}
-
-.home-intarcon .engineering-tool:hover {
-  background: rgba(255,255,255,.04);
-  padding-inline: 22px;
-}
-
-.home-intarcon .engineering-tool.main-tool {
-  min-height: 165px;
-}
-
-.home-intarcon .tool-number {
-  color: var(--c-red);
-  font-size: .76rem;
-  font-weight: 850;
-  letter-spacing: .08em;
-}
-
-.home-intarcon .engineering-tool small {
-  color: #90969f;
-  font-size: .66rem;
-  font-weight: 750;
-  letter-spacing: .10em;
-}
-
-.home-intarcon .engineering-tool h3 {
-  margin: 4px 0;
-  color: #fff;
-  font-size: 1.45rem;
-}
-
-.home-intarcon .engineering-tool p { margin: 6px 0 0; color: #9da3ab; line-height: 1.6; }
-.home-intarcon .engineering-tool > i { color: var(--c-red); }
+.home-intarcon .engineering-lead h2 { margin: 18px 0 22px; color: var(--c-ink); font-size: clamp(1.7rem, 2.7vw, 2.4rem); line-height: 1.2; letter-spacing: -.025em; font-weight: 700; scroll-margin-top: 110px; }
+.home-intarcon .engineering-lead p { max-width: 440px; margin: 0; color: var(--c-muted); font-size: .95rem; line-height: 1.75; }
+.home-intarcon .engineering-tools { border-top: 1px solid var(--c-line); }
+.home-intarcon .engineering-tool { min-height: 126px; display: grid; grid-template-columns: 40px minmax(0, 1fr) 20px; gap: 18px; align-items: center; padding: 24px 16px; color: var(--c-ink); text-decoration: none; border-bottom: 1px solid var(--c-line); transition: background .2s ease; }
+.home-intarcon .engineering-tool:hover { background: var(--c-soft); }
+.home-intarcon .engineering-tool:focus-visible { outline: 2px solid var(--c-red); outline-offset: 3px; }
+.home-intarcon .tool-number { color: var(--c-red); font-size: .85rem; font-weight: 700; }
+.home-intarcon .engineering-tool small { color: var(--c-muted); font-size: .65rem; font-weight: 700; letter-spacing: .1em; }
+.home-intarcon .engineering-tool h3 { margin: 7px 0; color: var(--c-ink); font-size: 1.2rem; font-weight: 700; line-height: 1.3; }
+.home-intarcon .engineering-tool p { margin: 0; color: var(--c-muted); font-size: .85rem; line-height: 1.6; }
+.home-intarcon .engineering-tool > i { color: var(--c-red); font-size: .85rem; }
+[dir="rtl"] .home-intarcon .engineering-tool > i { transform: rotate(180deg); }
 
 .home-intarcon .applications-section,
 .home-intarcon .featured-products,
@@ -892,8 +833,9 @@ html[data-theme="dark"] .home-intarcon .featured-img {
   [dir="rtl"] .home-intarcon .panel-products { inset: 20px 20px 170px; }
   .home-intarcon .single-product { width: 62%; max-height: 55%; left: auto; right: 8%; top: 8%; }
   [dir="rtl"] .home-intarcon .single-product { left: 8%; right: auto; }
-  .home-intarcon .engineering-lead h2 { font-size: clamp(3rem,14vw,5rem); }
-  .home-intarcon .engineering-tool { grid-template-columns: 42px 1fr 22px; }
+  .home-intarcon .engineering-platform > .engineering-grid { width: calc(100% - 40px); }
+  .home-intarcon .engineering-lead h2 { font-size: 1.85rem; }
+  .home-intarcon .engineering-tool { grid-template-columns: 28px minmax(0, 1fr) 18px; gap: 12px; padding: 22px 8px; }
   .home-intarcon .application-grid,
   .home-intarcon .featured-row { grid-template-columns: 1fr; }
   .home-intarcon .application-card,
