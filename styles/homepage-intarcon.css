@@ -595,17 +595,15 @@ html[data-theme="dark"] .home-intarcon .family-card p { color: #b7bdc4; }
 .home-intarcon .applications-section .split-heading { gap: 48px; }
 .home-intarcon .applications-section .split-heading > p { margin: 0; color: var(--c-muted); font-size: .9rem; line-height: 1.7; }
 .home-intarcon .application-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.home-intarcon .application-card { overflow: hidden; display: flex; flex-direction: column; color: var(--c-ink); text-decoration: none; background: var(--c-white); border: 1px solid var(--c-line); transition: border-color .2s ease; }
+.home-intarcon .application-card { overflow: hidden; display: flex; flex-direction: column; color: var(--c-ink); text-decoration: none; background: var(--c-white); border: 1px solid var(--c-line); }
 .home-intarcon .application-image { height: 230px; overflow: hidden; background: #eceeef; }
 .home-intarcon .application-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .home-intarcon .application-residential .application-image { background: #fff; }
 .home-intarcon .application-residential .application-image img { object-fit: contain; }
-.home-intarcon .application-card:hover { border-color: var(--c-red); }
-.home-intarcon .application-card:focus-visible { outline: 2px solid var(--c-red); outline-offset: 4px; }
-.home-intarcon .application-card > span { flex: 1; display: flex; flex-direction: column; padding: 24px; }
+.home-intarcon .application-card > .application-copy { flex: 1; display: flex; flex-direction: column; padding: 24px; }
 .home-intarcon .application-card small { color: var(--c-muted); font-size: .65rem; letter-spacing: .1em; font-weight: 700; }
-.home-intarcon .application-card strong { margin: 10px 0 24px; font-size: 1.2rem; line-height: 1.35; font-weight: 700; }
-.home-intarcon .application-card em { margin-top: auto; color: var(--c-red); font-style: normal; font-size: .75rem; font-weight: 700; }
+.home-intarcon .application-card h3 { margin: 10px 0 12px; color: var(--c-ink); font-size: 1.2rem; line-height: 1.35; font-weight: 700; }
+.home-intarcon .application-card p { margin: 0; color: var(--c-muted); font-size: .875rem; line-height: 1.7; }
 
 .home-intarcon .featured-products { background: var(--c-soft); border-top: 1px solid var(--c-line); }
 .home-intarcon .featured-products .concept-text-link { align-self: end; justify-self: end; margin-top: 0; }
