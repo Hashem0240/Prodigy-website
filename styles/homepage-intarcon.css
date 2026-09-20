@@ -53,27 +53,6 @@
   flex: 0 0 auto;
 }
 
-.home-intarcon .concept-logo-copy {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.home-intarcon .concept-logo-copy strong {
-  color: #202328;
-  font-size: 28px;
-  font-weight: 850;
-  letter-spacing: .09em;
-}
-
-.home-intarcon .concept-logo-copy small {
-  margin-top: 7px;
-  color: var(--c-red);
-  font-size: 14px;
-  font-weight: 750;
-  letter-spacing: .02em;
-}
-
 .home-intarcon .concept-header .nav {
   margin-inline-start: auto;
   gap: 30px;
@@ -411,147 +390,6 @@ html[data-theme="dark"] .home-intarcon .family-card p { color: #b7bdc4; }
 }
 @media (max-width: 420px) { .home-intarcon .family-catalogue { grid-template-columns: 1fr; } }
 
-.home-intarcon .family-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
-  margin-bottom: 24px;
-  border-bottom: 1px solid #d8dade;
-}
-
-.home-intarcon .family-tabs a {
-  padding: 14px 20px 13px;
-  color: #5d636b;
-  text-decoration: none;
-  font-size: .76rem;
-  font-weight: 800;
-  letter-spacing: .07em;
-  border-bottom: 3px solid transparent;
-}
-
-.home-intarcon .family-tabs a:hover {
-  color: var(--c-red);
-  border-bottom-color: var(--c-red);
-}
-
-.home-intarcon .family-panels {
-  display: grid;
-  grid-template-columns: 1.35fr .65fr;
-  grid-template-rows: repeat(2, minmax(300px, auto));
-  gap: 16px;
-}
-
-.home-intarcon .family-panel {
-  position: relative;
-  overflow: hidden;
-  min-height: 300px;
-  display: flex;
-  align-items: stretch;
-  color: inherit;
-  background: #fff;
-  border: 1px solid var(--c-line);
-  text-decoration: none;
-}
-
-.home-intarcon .panel-inline {
-  grid-row: 1 / 3;
-  min-height: 620px;
-  background: linear-gradient(145deg, #fff 0%, #eceef0 100%);
-}
-
-.home-intarcon .panel-cabinet,
-.home-intarcon .panel-accessories {
-  background: linear-gradient(145deg, #fff 0%, #f0f1f2 100%);
-}
-
-.home-intarcon .panel-copy {
-  position: relative;
-  z-index: 3;
-  width: 48%;
-  align-self: flex-end;
-  padding: 38px;
-}
-
-.home-intarcon .panel-cabinet .panel-copy,
-.home-intarcon .panel-accessories .panel-copy {
-  width: 55%;
-  padding: 28px;
-}
-
-.home-intarcon .panel-copy small {
-  color: var(--c-red);
-  font-size: .7rem;
-  font-weight: 850;
-  letter-spacing: .11em;
-}
-
-.home-intarcon .panel-copy h3 {
-  margin: 8px 0 10px;
-  color: var(--c-ink);
-  font-size: clamp(1.6rem, 2.3vw, 2.7rem);
-  line-height: 1.05;
-}
-
-.home-intarcon .panel-copy p {
-  margin: 0 0 20px;
-  color: var(--c-muted);
-  line-height: 1.65;
-  font-size: .9rem;
-}
-
-.home-intarcon .panel-copy > span {
-  display: inline-flex;
-  color: var(--c-ink);
-  font-size: .72rem;
-  font-weight: 850;
-  letter-spacing: .08em;
-  border-bottom: 1px solid var(--c-red);
-  padding-bottom: 5px;
-}
-
-.home-intarcon .panel-products {
-  position: absolute;
-  inset: 25px 15px 25px 38%;
-}
-
-.home-intarcon .panel-products img {
-  position: absolute;
-  max-width: 62%;
-  max-height: 52%;
-  object-fit: contain;
-  filter: drop-shadow(0 22px 25px rgba(20,25,30,.17));
-}
-
-.home-intarcon .panel-products img:first-child { top: 8%; left: 3%; }
-.home-intarcon .panel-products img:last-child { right: 0; bottom: 7%; }
-
-.home-intarcon .single-product {
-  position: absolute;
-  width: 45%;
-  max-height: 78%;
-  object-fit: contain;
-  right: 4%;
-  top: 11%;
-  filter: drop-shadow(0 17px 18px rgba(20,25,30,.15));
-}
-
-.home-intarcon .family-panel::after {
-  content: '';
-  position: absolute;
-  width: 240px;
-  height: 240px;
-  border: 1px solid rgba(215,25,32,.10);
-  border-radius: 50%;
-  right: -70px;
-  top: -60px;
-}
-
-.home-intarcon .family-panel:hover .single-product,
-.home-intarcon .family-panel:hover .panel-products {
-  transform: translateY(-4px);
-  transition: transform .25s ease;
-}
-
 .home-intarcon .engineering-platform { padding: 80px 0; color: var(--c-ink); background: var(--c-white); font-family: Arial, sans-serif; }
 .home-intarcon .engineering-platform > .engineering-grid { width: min(1180px, calc(100% - 64px)); }
 .home-intarcon .engineering-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: center; }
@@ -571,7 +409,6 @@ html[data-theme="dark"] .home-intarcon .family-card p { color: #b7bdc4; }
 [dir="rtl"] .home-intarcon .engineering-tool > i { transform: rotate(180deg); }
 
 .home-intarcon .applications-section,
-.home-intarcon .featured-products,
 .home-intarcon .contact-section-concept {
   padding: 105px 0;
 }
@@ -605,47 +442,6 @@ html[data-theme="dark"] .home-intarcon .family-card p { color: #b7bdc4; }
 .home-intarcon .application-card small { color: var(--c-muted); font-size: .65rem; letter-spacing: .1em; font-weight: 700; }
 .home-intarcon .application-card h3 { margin: 10px 0 12px; color: var(--c-ink); font-size: 1.2rem; line-height: 1.35; font-weight: 700; }
 .home-intarcon .application-card p { margin: 0; color: var(--c-muted); font-size: .875rem; line-height: 1.7; }
-
-.home-intarcon .featured-products { background: var(--c-soft); border-top: 1px solid var(--c-line); }
-.home-intarcon .featured-products .concept-text-link { align-self: end; justify-self: end; margin-top: 0; }
-
-.home-intarcon .featured-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 16px;
-}
-
-.home-intarcon .featured-product {
-  display: flex;
-  flex-direction: column;
-  min-height: 520px;
-  padding-bottom: 26px;
-  color: inherit;
-  background: #fff;
-  border: 1px solid var(--c-line);
-  text-decoration: none;
-}
-
-.home-intarcon .featured-img {
-  height: 330px;
-  display: grid;
-  place-items: center;
-  padding: 30px;
-  background: linear-gradient(150deg,#fff,#eceff1);
-}
-
-.home-intarcon .featured-img img {
-  max-width: 88%;
-  max-height: 260px;
-  object-fit: contain;
-  filter: drop-shadow(0 18px 20px rgba(20,25,30,.14));
-  transition: transform .25s ease;
-}
-
-.home-intarcon .featured-product:hover .featured-img img { transform: scale(1.04); }
-.home-intarcon .featured-product > small { margin: 24px 26px 0; color: var(--c-red); font-size: .68rem; font-weight: 850; letter-spacing: .10em; }
-.home-intarcon .featured-product h3 { margin: 7px 26px 20px; color: var(--c-ink); font-size: 1.35rem; line-height: 1.2; }
-.home-intarcon .featured-product > span { margin: auto 26px 0; color: var(--c-ink); font-size: .72rem; font-weight: 850; letter-spacing: .08em; }
 
 .home-intarcon .support-band { padding: 52px 0; color: #fff; background: var(--c-red); font-family: Arial, sans-serif; scroll-margin-top: 90px; }
 .home-intarcon .support-band > .concept-shell,
@@ -686,19 +482,12 @@ html[data-theme="dark"] .home-intarcon {
 
 html[data-theme="dark"] .home-intarcon .concept-header,
 html[data-theme="dark"] .home-intarcon .gateway-strip,
-html[data-theme="dark"] .home-intarcon .manifesto,
-html[data-theme="dark"] .home-intarcon .featured-product,
-html[data-theme="dark"] .home-intarcon .family-panel {
+html[data-theme="dark"] .home-intarcon .manifesto {
   background-color: #1c1f23;
 }
 
-html[data-theme="dark"] .home-intarcon .concept-logo-copy strong,
 html[data-theme="dark"] .home-intarcon .concept-header .nav-link,
 html[data-theme="dark"] .home-intarcon .gateway-item,
-html[data-theme="dark"] .home-intarcon .panel-copy h3,
-html[data-theme="dark"] .home-intarcon .panel-copy > span,
-html[data-theme="dark"] .home-intarcon .featured-product h3,
-html[data-theme="dark"] .home-intarcon .featured-product > span,
 html[data-theme="dark"] .home-intarcon .contact-list strong {
   color: #f5f6f7;
 }
@@ -706,16 +495,7 @@ html[data-theme="dark"] .home-intarcon .contact-list strong {
 html[data-theme="dark"] .home-intarcon .gateway-item:hover,
 html[data-theme="dark"] .home-intarcon .contact-list > a:hover { background: #24282d; }
 
-html[data-theme="dark"] .home-intarcon .panel-inline,
-html[data-theme="dark"] .home-intarcon .panel-cabinet,
-html[data-theme="dark"] .home-intarcon .panel-accessories,
-html[data-theme="dark"] .home-intarcon .featured-img {
-  background: linear-gradient(145deg,#24282d,#1d2024);
-}
-
 [dir="rtl"] .home-intarcon .hero-advice-card { right: auto; left: 0; }
-[dir="rtl"] .home-intarcon .single-product { right: auto; left: 4%; }
-[dir="rtl"] .home-intarcon .panel-products { inset: 25px 38% 25px 15px; }
 
 @media (max-width: 1180px) {
   .home-intarcon .concept-shell { width: min(100% - 40px, 1400px); }
@@ -724,15 +504,14 @@ html[data-theme="dark"] .home-intarcon .featured-img {
   .home-intarcon .gateway-grid { grid-template-columns: repeat(5, minmax(0,1fr)); }
   .home-intarcon .gateway-item { padding: 14px 12px; }
   .home-intarcon .gateway-item small { display: none; }
-  .home-intarcon .family-panels { grid-template-columns: 1fr 1fr; }
-  .home-intarcon .panel-inline { grid-column: 1 / -1; grid-row: auto; min-height: 520px; }
+
   .home-intarcon .engineering-grid { gap: 50px; }
 }
 
 @media (max-width: 1024px) {
   .home-intarcon .header-shell { min-height: 78px; }
   .home-intarcon .concept-logo img { width: 58px; height: 54px; }
-  .home-intarcon .concept-logo-copy strong { font-size: 24px; }
+
   .home-intarcon .concept-header .nav.active { top: 100%; inset-inline: 0; width: 100%; }
   .home-intarcon .gateway-grid { grid-template-columns: repeat(5, 1fr); overflow-x: auto; }
   .home-intarcon .gateway-item { min-width: 170px; }
@@ -741,11 +520,11 @@ html[data-theme="dark"] .home-intarcon .featured-img {
   .home-intarcon .support-grid,
   .home-intarcon .contact-grid,
   .home-intarcon .split-heading { grid-template-columns: 1fr; gap: 36px; }
-  .home-intarcon .split-heading > p,
-  .home-intarcon .featured-products .concept-text-link { justify-self: start; }
+
+.home-intarcon .split-heading > p { justify-self: start; }
   .home-intarcon .application-grid { gap: 16px; }
   .home-intarcon .application-card:last-child { grid-column: auto; }
-  .home-intarcon .featured-row { grid-template-columns: 1fr 1fr; }
+
 }
 
 @media (max-width: 760px) {
@@ -753,8 +532,7 @@ html[data-theme="dark"] .home-intarcon .featured-img {
   .home-intarcon .header-shell { gap: 10px; }
   .home-intarcon .concept-logo { min-width: 0; gap: 9px; }
   .home-intarcon .concept-logo img { width: 46px; height: 44px; }
-  .home-intarcon .concept-logo-copy strong { font-size: 19px; letter-spacing: .06em; }
-  .home-intarcon .concept-logo-copy small { margin-top: 4px; font-size: 10px; }
+
   .home-intarcon .concept-header .header-controls { margin-inline-start: auto; }
   .home-intarcon .gateway-strip { overflow: hidden; }
   .home-intarcon .gateway-grid { width: 100%; margin: 0; padding-inline: 0; }
@@ -767,40 +545,27 @@ html[data-theme="dark"] .home-intarcon .featured-img {
   .home-intarcon .hero-copy p { font-size: .98rem; }
   .home-intarcon .hero-advice-card { min-width: 0; width: calc(100% - 28px); right: 14px; left: 14px; padding: 18px; grid-template-columns: 34px 1fr 22px; }
   [dir="rtl"] .home-intarcon .hero-advice-card { right: 14px; left: 14px; }
-  .home-intarcon .manifesto,
-  .home-intarcon .family-showcase,
-  .home-intarcon .engineering-platform,
-  .home-intarcon .applications-section,
-  .home-intarcon .featured-products,
-  .home-intarcon .contact-section-concept { padding-block: 78px; }
+
+.home-intarcon .manifesto,
+.home-intarcon .family-showcase,
+.home-intarcon .engineering-platform,
+.home-intarcon .applications-section,
+.home-intarcon .contact-section-concept { padding-block: 78px; }
   .home-intarcon .manifesto h2,
   .home-intarcon .section-heading h2,
   .home-intarcon .contact-section-concept h2 { font-size: clamp(2.5rem,11vw,4rem); }
-  .home-intarcon .family-tabs { overflow-x: auto; flex-wrap: nowrap; }
-  .home-intarcon .family-tabs a { white-space: nowrap; }
-  .home-intarcon .family-panels { grid-template-columns: 1fr; grid-template-rows: auto; }
-  .home-intarcon .panel-inline,
-  .home-intarcon .panel-cabinet,
-  .home-intarcon .panel-accessories { grid-column: auto; min-height: 440px; }
-  .home-intarcon .panel-copy,
-  .home-intarcon .panel-cabinet .panel-copy,
-  .home-intarcon .panel-accessories .panel-copy { width: 100%; padding: 26px; align-self: flex-end; background: linear-gradient(0deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.90) 65%,rgba(255,255,255,0) 100%); }
-  .home-intarcon .panel-products { inset: 20px 20px 170px; }
-  [dir="rtl"] .home-intarcon .panel-products { inset: 20px 20px 170px; }
-  .home-intarcon .single-product { width: 62%; max-height: 55%; left: auto; right: 8%; top: 8%; }
-  [dir="rtl"] .home-intarcon .single-product { left: 8%; right: auto; }
+
   .home-intarcon .engineering-platform > .engineering-grid { width: calc(100% - 40px); }
   .home-intarcon .engineering-lead h2 { font-size: 1.85rem; }
   .home-intarcon .engineering-tool { grid-template-columns: 28px minmax(0, 1fr) 18px; gap: 12px; padding: 22px 8px; }
-  .home-intarcon .application-grid,
-  .home-intarcon .featured-row { grid-template-columns: 1fr; }
+
+.home-intarcon .application-grid { grid-template-columns: 1fr; }
   .home-intarcon .application-card,
   .home-intarcon .application-card:last-child { grid-column: auto; }
   .home-intarcon .applications-section > .concept-shell { width: calc(100% - 40px); }
   .home-intarcon .applications-section .split-heading { gap: 20px; }
   .home-intarcon .application-image { height: 220px; }
-  .home-intarcon .featured-product { min-height: 470px; }
-  .home-intarcon .featured-img { height: 280px; }
+
   .home-intarcon .support-band { padding-block: 44px; }
   .home-intarcon .support-band > .concept-shell,
   .home-intarcon .contact-section-concept > .concept-shell { width: calc(100% - 40px); }
@@ -849,4 +614,207 @@ html[data-theme="dark"] .home-intarcon .featured-img {
   .home-intarcon *,
   .home-intarcon *::before,
   .home-intarcon *::after { transition: none !important; animation: none !important; }
+}
+
+/* Consolidated homepage header, hero and logo presentation. */
+.home-intarcon .concept-header .header-shell {
+  width: min(1180px, calc(100% - 64px));
+  gap: 24px;
+}
+
+.home-intarcon .concept-header .nav-link,
+.home-intarcon .concept-header .dropdown-toggle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .015em;
+  text-transform: uppercase;
+  padding-block: 14px;
+  white-space: nowrap;
+}
+
+.home-intarcon .concept-header .dropdown-toggle i {
+  font-size: 8px;
+  margin-inline-start: 5px;
+}
+
+.home-intarcon .concept-header .nav {
+  margin-inline-start: auto;
+  gap: 28px;
+}
+
+.home-intarcon .concept-header .header-controls {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 6px;
+  margin-inline-start: auto;
+  padding-inline-start: 18px;
+  border-inline-start: 1px solid #e5e7ea;
+}
+
+.home-intarcon .concept-header .control-btn,
+.home-intarcon .concept-header .lang-btn {
+  min-width: 36px;
+  height: 40px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #31353b;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.home-intarcon .concept-header .control-btn {
+  width: 36px;
+  padding: 0;
+}
+
+.home-intarcon .concept-header .lang-btn {
+  width: auto;
+  min-width: 60px;
+  white-space: nowrap;
+}
+
+.home-intarcon .concept-header .control-btn:hover,
+.home-intarcon .concept-header .lang-btn:hover {
+  color: #d71920;
+  background: #f6f7f8;
+}
+
+.home-intarcon .concept-header :is(a, button):focus-visible {
+  outline: 2px solid #d71920;
+  outline-offset: 4px;
+}
+
+[dir="rtl"] .home-intarcon .concept-header .nav-link,
+[dir="rtl"] .home-intarcon .concept-header .dropdown-toggle {
+  font-family: Tahoma, Arial, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (min-width: 1025px) and (max-width: 1180px) {
+  .home-intarcon .concept-header .header-shell {
+    width: calc(100% - 40px);
+    gap: 16px;
+  }
+  .home-intarcon .concept-header .nav {
+    gap: 20px;
+  }
+  .home-intarcon .concept-header .header-controls {
+    padding-inline-start: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-intarcon .concept-header .header-shell {
+    width: calc(100% - 28px);
+    gap: 10px;
+  }
+  .home-intarcon .concept-header .header-controls {
+    margin-inline-start: auto;
+    padding-inline-start: 0;
+    border-inline-start: 0;
+    gap: 2px;
+  }
+  .home-intarcon .concept-header .concept-logo {
+    min-width: 0 !important;
+    flex-shrink: 0;
+  }
+  .home-intarcon .concept-header .nav {
+    margin-inline-start: 0;
+    gap: 12px;
+  }
+}
+
+.home-intarcon .cinematic-hero {
+  background-image: url('../Media/optimized/homepage-hero-hs-owner.webp') !important;
+  background-position: center center !important;
+}
+
+.home-intarcon .hero-content {
+  width: min(1180px, calc(100% - 64px));
+  padding-block: 72px 110px;
+}
+
+.home-intarcon .hero-copy {
+  max-width: 470px !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-intarcon .hero-copy h1 {
+  max-width: 470px !important;
+  margin: 20px 0 22px;
+  font-size: clamp(2.25rem, 3.2vw, 3.25rem) !important;
+  font-weight: 700;
+  line-height: 1.1 !important;
+  letter-spacing: -.025em !important;
+}
+
+.home-intarcon .hero-copy p {
+  max-width: 400px !important;
+  font-size: .95rem !important;
+  line-height: 1.7 !important;
+}
+
+.home-intarcon .hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(8,10,12,.92) 0%, rgba(8,10,12,.78) 34%, rgba(8,10,12,.42) 56%, rgba(8,10,12,.12) 78%, rgba(8,10,12,.06) 100%),
+    linear-gradient(0deg, rgba(8,10,12,.18), rgba(8,10,12,.03)) !important;
+}
+
+@media (max-width: 760px) {
+  .home-intarcon .cinematic-hero {
+    background-position: 58% center !important;
+  }
+
+  .home-intarcon .hero-content {
+    width: calc(100% - 40px);
+    padding-block: 48px 130px;
+  }
+
+  .home-intarcon .hero-copy h1 {
+    font-size: clamp(1.9rem, 7.6vw, 2.7rem) !important;
+  }
+
+  .home-intarcon .hero-copy,
+  .home-intarcon .hero-copy h1,
+  .home-intarcon .hero-copy p {
+    max-width: 100% !important;
+  }
+}
+
+.home-intarcon .concept-logo {
+  min-width: 305px !important;
+  gap: 0 !important;
+  align-items: center !important;
+}
+
+.home-intarcon .concept-logo img {
+  display: block;
+  width: 269px !important;
+  height: auto !important;
+  flex: 0 0 269px !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 1180px) {
+  .home-intarcon .concept-logo {
+    min-width: 275px !important;
+  }
+  .home-intarcon .concept-logo img {
+    width: 239px !important;
+    flex-basis: 239px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-intarcon .concept-logo img {
+    width: 188px !important;
+    flex-basis: 188px !important;
+  }
 }
