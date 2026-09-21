@@ -1,0 +1,9 @@
+/* MS family image treatment only; retain the existing cards and tables. */
+.ms-family-page .product-card img {
+    height: 180px;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #eef0f2;
+    border-radius: 8px;
+    object-fit: contain;
+}
