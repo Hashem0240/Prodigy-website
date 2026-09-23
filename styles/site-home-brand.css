@@ -1,0 +1,9 @@
+/* Shared home link for internal-page headers. */
+.header .site-home-brand { display:block; width:239px; flex:0 0 239px; }
+.header .site-home-brand img { display:block; width:100%; height:auto; }
+.header .site-home-brand:focus-visible { outline:3px solid #c40008; outline-offset:5px; }
+html[data-theme="dark"] .header .site-home-brand { background:#fff; border-radius:3px; }
+@media(max-width:760px) {
+  .header .site-home-brand { width:188px; flex-basis:188px; }
+  .header:has(.site-home-brand) .header-content { flex-wrap:wrap; }
+}
