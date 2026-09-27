@@ -8,6 +8,16 @@
     margin: 0 auto;
 }
 
+/* Accessories navigation path */
+.accessories-breadcrumb { margin-bottom: 20px; font-size: .875rem; }
+.accessories-breadcrumb ol { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 0; margin: 0; list-style: none; }
+.accessories-breadcrumb li { display: flex; align-items: center; gap: 12px; }
+.accessories-breadcrumb li + li::before { content: "/"; color: var(--color-text-light); }
+.accessories-breadcrumb a { color: var(--color-primary); text-decoration: none; }
+.accessories-breadcrumb a:hover { text-decoration: underline; }
+.accessories-breadcrumb a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 4px; }
+.accessories-breadcrumb [aria-current="page"] { color: var(--color-text-light); }
+
 /* Header Section */
 .accessories-header {
     text-align: start;
