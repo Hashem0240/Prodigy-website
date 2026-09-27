@@ -23,6 +23,12 @@
 .inline-family-main .product-grid { padding-top:8px; }
 @media(max-width:768px) { .inline-family-title { width:90%; } }
 @media(max-width:760px) { .inline-family-main { padding-top:150px; } .inline-family-shell { padding-inline:16px; } .inline-family-title { width:100%; } }
+
+/* Family summaries remain visible for mouse, touch and keyboard users. */
+.inline-family-summary { margin:16px 0 0; color:var(--color-text); font-size:1rem; line-height:1.65; }
+.inline-family-link { display:block; margin-top:16px; color:var(--color-primary); font-weight:600; }
+.inline-family-main .product-card a { display:block; }
+.inline-family-main .product-card a:focus-visible { outline:2px solid var(--color-primary); outline-offset:8px; border-radius:4px; }
 </style></head>
 <body><a class="skip-link" data-ar="انتقل إلى المحتوى" data-en="Skip to content" href="#main-content">Skip to content</a>
 <header class="header">
@@ -88,34 +94,16 @@
 <img alt="Mixed Flow Inline Duct Fan" decoding="async" height="507" loading="lazy" src="../../Media/optimized/homepage-family-hs.webp" width="700" style="object-fit:contain;background:#fff;"/>
 <span class="product-name" data-ar="مروحة تدفق مختلط" data-en="Mixed Flow Inline Duct Fan">Mixed
                             Flow Inline Duct Fan</span>
-<div class="product-description">
-<ul class="engineering-features">
-<li><i class="fas fa-flask"></i> <span data-ar="وثائق المنتج متاحة عند الطلب." data-en="Product documentation available on request.">Product documentation available on request.</span></li>
-<li><i class="fas fa-wind"></i> <span data-ar="تدفق هواء مرتفع وضغط ساكن" data-en="High Airflow &amp; Static Pressure">High Airflow &amp; Static Pressure</span></li>
-<li><i class="fas fa-cog"></i> <span data-ar="وثائق المنتج متاحة عند الطلب." data-en="Product documentation available on request.">Product documentation available on request.</span></li>
-<li><i class="fas fa-tools"></i> <span data-ar="سهولة التركيب" data-en="Easy Installation">Easy Installation</span></li>
-<li><i class="fas fa-shield-alt"></i> <span data-ar="وثائق المنتج متاحة عند الطلب." data-en="Product documentation available on request.">Product documentation available on request.</span></li>
-<li><i class="fas fa-thermometer-half"></i> <span data-ar="وثائق المنتج متاحة عند الطلب." data-en="Product documentation available on request.">Product documentation available on request.</span></li>
-</ul>
-</div>
+<p class="inline-family-summary" data-en="HS series — mixed-flow inline duct fans. Explore the available models and product details." data-ar="سلسلة HS — مراوح تدفق مختلط داخل الدكت. استعرض الموديلات المتاحة وتفاصيل المنتجات.">HS series — mixed-flow inline duct fans. Explore the available models and product details.</p>
+<span class="inline-family-link" data-en="Explore HS models" data-ar="استعرض موديلات HS">Explore HS models</span>
 </a>
 </div>
 <div class="product-card">
 <a href="backward-centrifugal/index.html">
 <img alt="Backward Centrifugal Inline Fan" decoding="async" height="610" loading="lazy" src="../../Media/optimized/ms-family-product.webp" width="800" style="object-fit:contain;background:#f0f1f2;"/>
 <span class="product-name" data-ar="مروحة داخل الدكت بشفرات منحنية للخلف" data-en="Backward Centrifugal Inline Fan">Backward Centrifugal Inline Fan</span>
-<div class="product-description">
-<ul class="engineering-features">
-<li><i class="fas fa-volume-up"></i> <span data-ar="كفاءة عالية لأنظمة القنوات بعيدة المدى" data-en="High efficiency for long-distance duct systems">High efficiency for
-                                        long-distance duct systems</span></li>
-<li><i class="fas fa-tint"></i> <span data-ar="تصميم مقاوم للرطوبة" data-en="Moisture-resistant design">Moisture-resistant design</span></li>
-<li><i class="fas fa-cogs"></i> <span data-ar="محرك دوار خارجي نحاسي عالي الكفاءة" data-en="High-efficiency copper outer rotor motor">High-efficiency copper outer rotor
-                                        motor</span></li>
-<li><i class="fas fa-leaf"></i> <span data-ar="تصميم شفرات ديناميكي هوائي متقدم" data-en="Advanced aerodynamic blade design">Advanced aerodynamic blade
-                                        design</span></li>
-<li><i class="fas fa-shield-alt"></i> <span data-ar="طلاء مقاوم للتآكل متين" data-en="Durable anti-corrosion coating">Durable anti-corrosion coating</span></li>
-</ul>
-</div>
+<p class="inline-family-summary" data-en="MS series — backward centrifugal inline fans. Explore the available models and product details." data-ar="سلسلة MS — مراوح طرد مركزي داخل الدكت بشفرات منحنية للخلف. استعرض الموديلات المتاحة وتفاصيل المنتجات.">MS series — backward centrifugal inline fans. Explore the available models and product details.</p>
+<span class="inline-family-link" data-en="Explore MS models" data-ar="استعرض موديلات MS">Explore MS models</span>
 </a>
 </div>
 </div>
@@ -170,16 +158,5 @@
 </div>
 </footer>
 <script src="../../data/fans-master.js"></script><script src="../../scripts/engineering.js"></script><script src="../../script.js"></script>
-<script>
-        document.querySelectorAll('.product-card').forEach(card => {
-            card.addEventListener('click', function (e) {
-                if (window.innerWidth <= 768 && !this.classList.contains('active-hover')) {
-                    e.preventDefault();
-                    document.querySelectorAll('.product-card').forEach(c => c.classList.remove('active-hover'));
-                    this.classList.add('active-hover');
-                }
-            });
-        });
-    </script>
 <script src="../../scripts/product-data.js"></script></body>
 </html>
