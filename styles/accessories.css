@@ -1,7 +1,7 @@
 /* Accessories Page Styles */
 
 .accessories-main {
-    padding-top: 80px;
+    padding-top: 32px;
     padding-bottom: 60px;
     max-width: 1400px;
     margin: 0 auto;
@@ -9,24 +9,25 @@
 
 /* Header Section */
 .accessories-header {
-    text-align: center;
-    padding: 3rem 2rem;
-    margin-bottom: 3rem;
+    text-align: start;
+    padding: 0 2rem;
+    margin-bottom: 24px;
 }
 
 .accessories-header h1 {
-    font-size: 2.8rem;
-    color: var(--color-primary);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    line-height: 1.25;
+    color: var(--color-text);
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .accessories-header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--color-text-light);
     max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.8;
+    margin: 0;
+    line-height: 1.65;
 }
 
 /* Accessories Container */
@@ -290,10 +291,6 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .accessories-header h1 {
-        font-size: 2.2rem;
-    }
-
     .accessories-header p {
         font-size: 1.1rem;
     }
@@ -309,16 +306,12 @@
 
 @media (max-width: 768px) {
     .accessories-main {
-        padding-top: 60px;
+        padding-top: 32px;
     }
 
     .accessories-header {
-        padding: 2rem 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .accessories-header h1 {
-        font-size: 1.8rem;
+        padding: 0 1rem;
+        margin-bottom: 24px;
     }
 
     .accessories-header p {
@@ -363,10 +356,6 @@
 }
 
 @media (max-width: 480px) {
-    .accessories-header h1 {
-        font-size: 1.5rem;
-    }
-
     .accessory-content h2 {
         font-size: 1.3rem;
     }
