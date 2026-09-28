@@ -7,3 +7,16 @@
     border-radius: 8px;
     object-fit: contain;
 }
+
+
+/* MS family introduction only; model cards retain their existing layout. */
+.ms-family-intro { width: 90%; margin: 0 auto 24px; text-align: start; }
+.ms-family-breadcrumb { margin-bottom: 20px; font-size: .875rem; line-height: 1.6; }
+.ms-family-breadcrumb ol { display: flex; flex-wrap: wrap; gap: 8px 12px; list-style: none; margin: 0; padding: 0; }
+.ms-family-breadcrumb li + li::before { content: "/"; margin-inline-end: 12px; color: var(--color-text-light, #64748b); }
+.ms-family-breadcrumb a { color: var(--color-primary, #dc2626); text-decoration: none; }
+.ms-family-breadcrumb a:hover { text-decoration: underline; }
+.ms-family-breadcrumb a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.ms-family-breadcrumb [aria-current] { color: var(--color-text-light, #64748b); }
+.ms-family-intro h1 { margin: 0 0 16px; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.25; color: var(--color-text, #202833); }
+.ms-family-intro .review-note { margin: 0; line-height: 1.65; }
