@@ -818,3 +818,8 @@ html[data-theme="dark"] .home-intarcon .contact-list > a:hover { background: #24
     flex-basis: 188px !important;
   }
 }
+
+/* Contact details are shown once, in the homepage contact section. */
+@media (min-width: 1025px) {
+  .home-intarcon .concept-footer .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+}
