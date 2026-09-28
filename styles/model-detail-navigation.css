@@ -1,0 +1,9 @@
+/* Shared model title and breadcrumb presentation. */
+.model-detail-breadcrumb { margin: 10px 0 20px; font-size: .875rem; line-height: 1.6; text-align: start; }
+.model-detail-breadcrumb ol { display: flex; flex-wrap: wrap; gap: 8px 12px; list-style: none; margin: 0; padding: 0; }
+.model-detail-breadcrumb li + li::before { content: "/"; margin-inline-end: 12px; color: var(--color-text-light, #64748b); }
+.model-detail-breadcrumb a { color: var(--color-primary, #dc2626); text-decoration: none; }
+.model-detail-breadcrumb a:hover { text-decoration: underline; }
+.model-detail-breadcrumb a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.model-detail-breadcrumb [aria-current] { color: var(--color-text-light, #64748b); }
+.product-info .model-detail-title { font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.25; margin: 0 0 16px; color: var(--color-text, #202833); text-align: start; }
