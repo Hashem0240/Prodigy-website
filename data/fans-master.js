@@ -560,10 +560,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "0.16",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-125p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "0.14",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         },
         "low": {
@@ -982,10 +982,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "0.26",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-150p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "0.22",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         },
         "low": {
@@ -1002,10 +1002,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "0.21",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-150p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "0.19",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         }
       },
@@ -1018,10 +1018,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "rpm": {
-            "value": "2250",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-150p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "2550",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           },
           "noiseDb": {
             "value": "33",
@@ -1506,10 +1506,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "0.62",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-200p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "0.53",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         },
         "low": {
@@ -1526,10 +1526,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "0.60",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-200p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "0.52",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         }
       },
@@ -2039,10 +2039,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "1.09",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-250p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "1.20",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         },
         "low": {
@@ -2059,10 +2059,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "currentA": {
-            "value": "0.80",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-250p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "0.75",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         }
       },
@@ -2101,10 +2101,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "noiseDb": {
-            "value": "58",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-250p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "50",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           }
         }
       },
@@ -2570,10 +2570,10 @@
             "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
           },
           "powerW": {
-            "value": "290",
-            "status": "pending_review",
-            "source": "products/commercial/mixed-flow/hs-315p.html",
-            "revision": "f4205e13f04d98d9274868a314c8257d04dca6ef"
+            "value": "275",
+            "status": "verified",
+            "source": "Prodigy HS Data Sheet .pdf, page 2, 220-240 V / 50 Hz; owner-approved 2026-09-29",
+            "revision": "owner-approval-2026-09-29-hs-scalar-corrections"
           },
           "currentA": {
             "value": "1.40",

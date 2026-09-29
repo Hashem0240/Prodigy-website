@@ -199,7 +199,7 @@ test("Selector never recommends legacy models and report context is invalidated"
   dom.window.close();
 });
 module.exports = { load };
-test("Real jsPDF creates a three-page preliminary report without legacy technical values", async () => {
+test("Real jsPDF includes approved scalar values while withholding pending performance", async () => {
   const { dom } = await load("tools/fan-selector.html");
   try {
     const w = dom.window,
@@ -218,8 +218,12 @@ test("Real jsPDF creates a three-page preliminary report without legacy technica
     assert.match(text, /%PDF/);
     assert.match(text, /DATA PENDING VERIFICATION/);
     assert.match(text, /Available fan static pressure/);
-    assert.match(text, /No approved technical fields supplied/);
-    assert.ok(!text.includes("2550"), "legacy conflicting RPM leaked");
+    assert.match(text, /electrical.high.currentA: 0\.22/);
+    assert.match(text, /electrical.low.currentA: 0\.19/);
+    assert.match(text, /speeds.high.rpm: 2550/);
+    assert.ok(!text.includes("speeds.high.rpm: 2250"), "superseded RPM leaked");
+    assert.ok(!text.includes("electrical.high.powerW:"), "unapproved power leaked");
+    assert.match(text, /pending_review \/ unavailable Pa/);
     assert.ok(!text.includes("Pressure After ESP Resistance"));
   } finally {
     dom.window.close();
